@@ -1,0 +1,30 @@
+[project]
+name = "clinotrust"
+version = "0.1.0"
+description = "AI scribe SOAP notes with claim-level verification against the transcript"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115",
+  "uvicorn[standard]>=0.30",
+  "langgraph>=0.2",
+  "pydantic>=2.8",
+  "pydantic-settings>=2.4",
+  "sqlalchemy>=2.0",
+  "groq>=0.11",
+  "python-dotenv>=1.0",
+  "httpx>=0.27",
+  "pandas>=2.2",
+]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+extend-exclude = ["data/raw", "data/processed", "outputs"]
+
+[tool.setuptools]
+packages = ["data", "pipeline", "eval", "api"]
