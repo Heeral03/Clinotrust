@@ -1,0 +1,161 @@
+SCORING VERDICTS FROM: outputs/verdicts/verifier-v1-batched
+  2 verdict files, 44 verdicts for the selected encounters
+  labels: labels/claims.csv   encounters: 01, 02, 03, 04, 05
+
+==============================================================================
+ALL ROWS   [outputs/verdicts/verifier-v1-batched]
+==============================================================================
+gold-labeled claims: 210   scored: 44   no verdict: 166   text mismatch: 0
+  no verdict for: 02:C11, 02:C12, 02:C13, 02:C14, 02:C15, 02:C16, 02:C17, 02:C18, 02:C19, 02:C20, 02:C21, 02:C22, 02:C23, 02:C24, 02:C25, 02:C26, 02:C27, 02:C28, 02:C29, 02:C30 ...
+
+4-class confusion matrix (rows = YOUR label, columns = VERIFIER)
+                   supported  contradicted   unsupported     uncertain         total
+supported                 38             1             0             1            40
+contradicted               0             0             0             0             0
+unsupported                0             0             0             0             0
+uncertain                  0             3             0             1             4
+
+binary: positive = NOT SUPPORTED (contradicted + unsupported + uncertain)
+                      verifier: not supported   verifier: supported
+  you: not supported  TP=4                  FN=0   (errors the verifier missed)
+  you: supported      FP=2                  TN=38   (correct claims it wrongly flagged)
+  precision=0.667  recall=1.000  F1=0.800  4-class accuracy=0.886
+  quotes: 43 given, 0 with quote_valid=False, 0 turn ids corrected
+
+flagging on needs_review = (status != supported) OR (quote_valid is False):
+  you: not supported  TP=4                  FN=0
+  you: supported      FP=2                  TN=38
+  precision=0.667  recall=1.000
+
+recall per error_type (share of that error_type's claims flagged; status | needs_review)
+  negation             n=0
+  overstated           n=3   (you: not-supported 3 )  status 3/3 = 1.000   needs_review 3/3 = 1.000
+  over_interpretation  n=1   (you: not-supported 1 )  status 1/1 = 1.000   needs_review 1/1 = 1.000
+  wrong_section        n=0
+  other                n=0
+
+disagreements (4-class): 5
+
+[01 C9] same side, different label
+  claim   : Patient reports eating only soups
+  YOU     : uncertain / overstated   turns=T36   quote='just soups, and, uh, yeah, light foods'
+  VERIFIER: contradicted   turns=['T36']   quote='just soups, and, uh, yeah, light foods. Like smoothies and, yeah, liquid foods mainly.'   quote_valid=True
+  analysis: The claim states the patient ate 'only' soups. In T36, the patient reports eating 'just soups, and... light foods. Like smoothies and... liquid foods mainly.' The inclusion of smoothies and other light foods contradicts the exclusivity of the word 'only' in the claim.
+
+[01 C10] same side, different label
+  claim   : Patient reports eating only smoothies
+  YOU     : uncertain / overstated   turns=T36   quote='Like smoothies and, yeah, liquid foods mainly'
+  VERIFIER: contradicted   turns=['T36']   quote='just soups, and, uh, yeah, light foods. Like smoothies'   quote_valid=True
+  analysis: In T36, the patient lists 'soups, and, uh, yeah, light foods. Like smoothies'. The claim states the patient reported eating *only* smoothies. The transcript indicates a variety of foods, so the restriction to 'only smoothies' is contradicted by the inclusion of soups and other light foods.
+
+[01 C11] FALSE ALARM (gold supported, verifier flags it)
+  claim   : Patient reports eating only light foods
+  YOU     : supported / none   turns=T36   quote='light foods'
+  VERIFIER: contradicted   turns=['T36']   quote='just soups, and, uh, yeah, light foods. Like smoothies and, yeah, liquid foods mainly.'   quote_valid=True
+  analysis: The claim states the patient eats "only" light foods. In T36, the patient lists "just soups... light foods... smoothies and... liquid foods mainly." The use of "mainly" and the list of specific items contradicts the absolute qualifier "only" in the claim.
+
+[01 C17] same side, different label
+  claim   : Patient reports no other symptoms
+  YOU     : uncertain / over_interpretation   turns=T31;T32;T54   quote='Um, I had a loss of appetite'
+  VERIFIER: contradicted   turns=['T31', 'T32']   quote='anything else that comes to mind? ... I had a loss of appetite'   quote_valid=True
+  analysis: In T31, the doctor asks if there are any other symptoms. In T32, the patient reports, "I had a loss of appetite." Therefore, the patient did report other symptoms, contradicting the claim that they reported *no* other symptoms.
+
+[02 C3] FALSE ALARM (gold supported, verifier flags it)
+  claim   : Patient reports red skin started 4 days ago
+  YOU     : supported / none   turns=T6;T41   quote='a sore, and a red skin'
+  VERIFIER: uncertain   turns=['T6', 'T47']   quote="I have like a sore, and a red skin. ... For the last four days, you've had very itchy skin, very sore skin"   quote_valid=True
+  analysis: The patient reports "red skin" in T6. The doctor summarizes the symptoms in T47 but omits "red," listing only itchy and sore skin. The patient confirms the summary in T48 without adding "red." Thus, the 4-day duration for red skin is not explicitly confirmed in the summary.
+
+==============================================================================
+EXCLUDING error_type = decomposition_error   [outputs/verdicts/verifier-v1-batched]
+==============================================================================
+gold-labeled claims: 205   scored: 44   no verdict: 161   text mismatch: 0
+  no verdict for: 02:C11, 02:C12, 02:C13, 02:C14, 02:C15, 02:C16, 02:C17, 02:C18, 02:C19, 02:C20, 02:C21, 02:C22, 02:C23, 02:C24, 02:C25, 02:C26, 02:C27, 02:C28, 02:C29, 02:C30 ...
+
+4-class confusion matrix (rows = YOUR label, columns = VERIFIER)
+                   supported  contradicted   unsupported     uncertain         total
+supported                 38             1             0             1            40
+contradicted               0             0             0             0             0
+unsupported                0             0             0             0             0
+uncertain                  0             3             0             1             4
+
+binary: positive = NOT SUPPORTED (contradicted + unsupported + uncertain)
+                      verifier: not supported   verifier: supported
+  you: not supported  TP=4                  FN=0   (errors the verifier missed)
+  you: supported      FP=2                  TN=38   (correct claims it wrongly flagged)
+  precision=0.667  recall=1.000  F1=0.800  4-class accuracy=0.886
+  quotes: 43 given, 0 with quote_valid=False, 0 turn ids corrected
+
+flagging on needs_review = (status != supported) OR (quote_valid is False):
+  you: not supported  TP=4                  FN=0
+  you: supported      FP=2                  TN=38
+  precision=0.667  recall=1.000
+
+recall per error_type (share of that error_type's claims flagged; status | needs_review)
+  negation             n=0
+  overstated           n=3   (you: not-supported 3 )  status 3/3 = 1.000   needs_review 3/3 = 1.000
+  over_interpretation  n=1   (you: not-supported 1 )  status 1/1 = 1.000   needs_review 1/1 = 1.000
+  wrong_section        n=0
+  other                n=0
+
+comparison folders:  single=outputs/verdicts/verifier-v0   batched=outputs/verdicts/verifier-v0-batched
+
+==============================================================================
+SINGLE vs BATCHED (claims with a usable verdict in both)
+==============================================================================
+claims in both: 56
+  same 4-class status: 55/56 = 0.982
+  same side (supported vs not supported): 55/56 = 0.982
+  batched verdicts came via: {'batch': 56}  (single-retry = re-asked alone)
+  vs your labels on the 56 shared labeled claims: single 50/56, batched 49/56 exact-status matches
+  [02 C6] single=supported    batched=contradicted you=supported    | Patient reports skin involvement on arms
+
+==============================================================================
+v0 vs v1 PROMPT, same claims, same labels  [ALL ROWS; v0=outputs/verdicts/verifier-v0-batched v1=outputs/verdicts/verifier-v1-batched]
+==============================================================================
+                                      v0        v1
+  claims compared                     44        44
+  4-class accuracy                 0.886     0.886
+  precision (status)               0.750     0.667
+  recall (status)                  0.750     1.000
+  precision (needs_review)         0.750     0.667
+  recall (needs_review)            0.750     1.000
+  missed errors FN (status)            1         0
+  false alarms FP (status)             1         2
+  quotes not found                     0         0
+  turn ids corrected                   0         0
+
+  recall per error_type, flagged/n  (status | needs_review):
+    overstated                 2/3 | 2/3       3/3 | 3/3
+    over_interpretation        1/1 | 1/1       1/1 | 1/1
+
+  status changed on 4 claims: 2 FIXED, 2 BROKEN
+    [01 C11] BROKEN              v0=supported    v1=contradicted you=supported    (none) | Patient reports eating only light foods
+    [01 C31] FIXED               v0=supported    v1=uncertain    you=uncertain    (overstated) | Prescribe paracetamol 2 tablets up to 4 times daily for
+    [02 C3] BROKEN              v0=supported    v1=uncertain    you=supported    (none) | Patient reports red skin started 4 days ago
+    [02 C6] FIXED               v0=contradicted v1=supported    you=supported    (none) | Patient reports skin involvement on arms
+
+==============================================================================
+v0 vs v1 PROMPT, same claims, same labels  [EXCLUDING decomposition_error; v0=outputs/verdicts/verifier-v0-batched v1=outputs/verdicts/verifier-v1-batched]
+==============================================================================
+                                      v0        v1
+  claims compared                     44        44
+  4-class accuracy                 0.886     0.886
+  precision (status)               0.750     0.667
+  recall (status)                  0.750     1.000
+  precision (needs_review)         0.750     0.667
+  recall (needs_review)            0.750     1.000
+  missed errors FN (status)            1         0
+  false alarms FP (status)             1         2
+  quotes not found                     0         0
+  turn ids corrected                   0         0
+
+  recall per error_type, flagged/n  (status | needs_review):
+    overstated                 2/3 | 2/3       3/3 | 3/3
+    over_interpretation        1/1 | 1/1       1/1 | 1/1
+
+  status changed on 4 claims: 2 FIXED, 2 BROKEN
+    [01 C11] BROKEN              v0=supported    v1=contradicted you=supported    (none) | Patient reports eating only light foods
+    [01 C31] FIXED               v0=supported    v1=uncertain    you=uncertain    (overstated) | Prescribe paracetamol 2 tablets up to 4 times daily for
+    [02 C3] BROKEN              v0=supported    v1=uncertain    you=supported    (none) | Patient reports red skin started 4 days ago
+    [02 C6] FIXED               v0=contradicted v1=supported    you=supported    (none) | Patient reports skin involvement on arms

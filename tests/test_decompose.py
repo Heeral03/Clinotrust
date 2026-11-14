@@ -279,3 +279,75 @@ def test_single_claim_differing_only_in_trailing_punctuation_keeps_original_text
                              "assessment": ["Not documented"], "plan": ["Not documented"]}}  # fmt: skip
     res = decompose(note, Fake(reply(**{"subjective:0": [stmt.rstrip(".")]})))
     assert res.claims[0].text == stmt and not res.fallbacks
+
+
+ONLY = "Patient reports loss of appetite, eating only soups, smoothies, light foods, and drinking fluids."
+ONLY_BAD = [
+    "Patient reports loss of appetite",
+    "Patient reports eating only soups",
+    "Patient reports eating only smoothies",
+    "Patient reports eating only light foods",
+    "Patient reports drinking fluids",
+]
+ONLY_BAD_KEPT_LIST = [  # qualifier repeated only because the list was split
+    "Patient reports loss of appetite",
+    "Patient reports eating only soups, smoothies and light foods",
+    "Patient reports drinking fluids",
+]
+
+
+def _only_note():
+    return {**NOTE, "soap": {"subjective": [ONLY], "objective": [], "assessment": [], "plan": []}}
+
+
+def test_prompt_is_v4_and_has_scope_list_rule():
+    from pipeline.decompose import SYSTEM_PROMPT
+
+    assert DECOMPOSE_PROMPT_VERSION == "decomp-prompt-v4"
+    assert "only" in SYSTEM_PROMPT and "mainly" in SYSTEM_PROMPT and "except" in SYSTEM_PROMPT
+    assert (
+        "ONE claim" in SYSTEM_PROMPT and "applies to EVERY item" in SYSTEM_PROMPT
+    )  # v3 rules kept
+
+
+def test_scope_word_copied_onto_list_items_is_flagged():
+    from pipeline.decompose import check_scope_list
+
+    for c in ONLY_BAD[1:4]:
+        assert "scope word 'only'" in check_scope_list(ONLY, c), c
+    assert check_scope_list(ONLY, ONLY_BAD[0]) is None
+    assert check_scope_list(ONLY, ONLY_BAD[4]) is None
+    assert check_scope_list(ONLY, "Patient reports eating soups") is None
+
+
+def test_only_list_split_is_retried_then_falls_back_unsplit():
+    fake = Fake(reply(**{"subjective:0": ONLY_BAD}), reply(**{"subjective:0": ONLY_BAD}))
+    res = decompose(_only_note(), fake)
+    assert len(fake.payloads) == 2 and res.fallbacks
+    assert "scope word" in res.fallbacks[0].reason
+    assert [c.text for c in res.claims] == [ONLY]
+
+
+def test_only_list_split_recovers_on_retry():
+    good = ["Patient reports loss of appetite",
+            "Patient reports eating only soups, smoothies and light foods",
+            "Patient reports drinking fluids"]  # fmt: skip
+    fake = Fake(reply(**{"subjective:0": ONLY_BAD}), reply(**{"subjective:0": good}))
+    res = decompose(_only_note(), fake)
+    assert not res.fallbacks and [c.text for c in res.claims] == good
+
+
+def test_no_a_b_or_c_still_passes():
+    src = "Patient reports no nausea, vomiting or diarrhea."
+    claims = [
+        "Patient reports no nausea",
+        "Patient reports no vomiting",
+        "Patient reports no diarrhea",
+    ]
+    from pipeline.decompose import check_scope_list
+
+    assert all(check_scope_list(src, c) is None for c in claims)
+    note = {**NOTE, "soap": {"subjective": [src], "objective": [], "assessment": [], "plan": []}}
+    fake = Fake(reply(**{"subjective:0": claims}))
+    res = decompose(note, fake)
+    assert len(fake.payloads) == 1 and not res.fallbacks and [c.text for c in res.claims] == claims

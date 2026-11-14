@@ -1,6 +1,6 @@
 """Compare two decomposer versions for one encounter, statement by statement (read-only).
 
-Usage: uv run python -m pipeline.diff_claims day1_consultation05 --old decomp-prompt-v2 --new decomp-prompt-v3
+Usage: uv run python -m pipeline.diff_claims day1_consultation05 --old decomp-prompt-v3 --new decomp-prompt-v4
 
 Old claims show the label you gave them in labels/claims.csv (matched on section + text).
 """

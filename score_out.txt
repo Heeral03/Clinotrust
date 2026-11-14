@@ -1,0 +1,78 @@
+
+==============================================================================
+ALL ROWS
+==============================================================================
+gold-labeled claims: 79   scored: 53   no verdict: 26   text mismatch: 0
+  no verdict for: 02:C20, 02:C21, 02:C22, 02:C23, 02:C24, 02:C25, 02:C26, 02:C27, 02:C28, 02:C29, 02:C30, 02:C31, 02:C32, 02:C33, 02:C34, 02:C35, 02:C36, 02:C37, 02:C38, 02:C39 ...
+
+4-class confusion matrix (rows = YOUR label, columns = VERIFIER)
+               supportedcontradicted unsupported   uncertain       total
+supported             47           0           0           0          47
+contradicted           0           0           0           0           0
+unsupported            0           0           0           0           0
+uncertain              3           3           0           0           6
+
+binary: positive = NOT SUPPORTED (contradicted + unsupported + uncertain)
+                      verifier: not supported   verifier: supported
+  you: not supported  TP=3                  FN=3   (errors the verifier missed)
+  you: supported      FP=0                  TN=47   (correct claims it wrongly flagged)
+  precision=1.000  recall=0.500  F1=0.667  4-class accuracy=0.887
+  quotes: 52 given, 2 NOT found in cited turns
+
+disagreements (4-class): 6
+
+[01 C9] same side, different label
+  claim   : Patient reports eating only soups
+  YOU     : uncertain / overstated   turns=T36   quote='just soups, and, uh, yeah, light foods'
+  VERIFIER: contradicted   turns=['T36']   quote='just soups, and, uh, yeah, light foods. Like smoothies and, yeah, liquid foods mainly.'   quote_valid=True
+  reason  : The patient reports eating soups, light foods, smoothies, and liquid foods, not only soups.
+
+[01 C10] same side, different label
+  claim   : Patient reports eating only smoothies
+  YOU     : uncertain / overstated   turns=T36   quote='Like smoothies and, yeah, liquid foods mainly'
+  VERIFIER: contradicted   turns=['T36']   quote='just soups, and, uh, yeah, light foods. Like smoothies and, yeah, liquid foods mainly.'   quote_valid=True
+  reason  : The patient reports eating soups and light foods in addition to smoothies, not only smoothies.
+
+[01 C17] same side, different label
+  claim   : Patient reports no other symptoms
+  YOU     : uncertain / over_interpretation   turns=T31;T32;T54   quote='Um, I had a loss of appetite'
+  VERIFIER: contradicted   turns=['T32']   quote="I had a loss of appetite, um, so I haven't been eating as much"   quote_valid=True
+  reason  : The patient explicitly reports a loss of appetite in T32, which contradicts the claim that they reported no other symptoms.
+
+[01 C31] MISSED (gold not-supported, verifier says supported)
+  claim   : Prescribe paracetamol 2 tablets up to 4 times daily for feverish or weak symptoms
+  YOU     : uncertain / overstated   turns=T82   quote='taking some paracetamol, uh, two tablets up to four times a day'
+  VERIFIER: supported   turns=['T82']   quote='taking some paracetamol, uh, two tablets up to four times a day for the first few days can also help'   quote_valid=True
+  reason  : The doctor explicitly recommends taking paracetamol, two tablets up to four times a day, if the patient feels feverish and weak.
+
+[02 C15] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports no urinary issues
+  YOU     : uncertain / overstated   turns=T59;T60   quote='I I think so.'
+  VERIFIER: supported   turns=['T59', 'T60']   quote="You're passing urine OK. ... I I think so."   quote_valid=True
+  reason  : The doctor asks if the patient is passing urine OK, and the patient affirms this by saying 'I think so', indicating no reported urinary issues.
+
+[02 C16] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports no bowel issues
+  YOU     : uncertain / overstated   turns=T56   quote='So your, your bowels are working OK?'
+  VERIFIER: supported   turns=['T56', 'T58']   quote='So your, your bowels are working OK? ... No.'   quote_valid=True
+  reason  : The doctor asked if the patient's bowels were working OK, and the patient responded with 'No' in the context of denying symptoms (consistent with the pattern of denying other symptoms like cough or fever in the same turn), implying no issues.
+
+==============================================================================
+EXCLUDING error_type = decomposition_error
+==============================================================================
+gold-labeled claims: 79   scored: 53   no verdict: 26   text mismatch: 0
+  no verdict for: 02:C20, 02:C21, 02:C22, 02:C23, 02:C24, 02:C25, 02:C26, 02:C27, 02:C28, 02:C29, 02:C30, 02:C31, 02:C32, 02:C33, 02:C34, 02:C35, 02:C36, 02:C37, 02:C38, 02:C39 ...
+
+4-class confusion matrix (rows = YOUR label, columns = VERIFIER)
+               supportedcontradicted unsupported   uncertain       total
+supported             47           0           0           0          47
+contradicted           0           0           0           0           0
+unsupported            0           0           0           0           0
+uncertain              3           3           0           0           6
+
+binary: positive = NOT SUPPORTED (contradicted + unsupported + uncertain)
+                      verifier: not supported   verifier: supported
+  you: not supported  TP=3                  FN=3   (errors the verifier missed)
+  you: supported      FP=0                  TN=47   (correct claims it wrongly flagged)
+  precision=1.000  recall=0.500  F1=0.667  4-class accuracy=0.887
+  quotes: 52 given, 2 NOT found in cited turns

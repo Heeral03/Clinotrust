@@ -14,7 +14,7 @@ from pydantic import BaseModel, Field, ValidationError
 
 from pipeline.generate import GroqClient, LLMClient, extract_json
 
-DECOMPOSE_PROMPT_VERSION = "decomp-prompt-v3"
+DECOMPOSE_PROMPT_VERSION = "decomp-prompt-v4"
 REASONING_EFFORT = (
     "low"  # gpt-oss at default effort exhausts 2048 tokens on reasoning -> empty output
 )
@@ -53,6 +53,10 @@ Rules:
    Never turn a possibility into a fact, or a negation into an affirmation.
 8. Use only words already in the statement. Do not add facts, causes, doses or explanations.
 9. If a statement is already a single fact, return it unchanged as one claim.
+10. A list governed by "only", "just", "mainly", "mostly", "at least", "up to" or "except" stays in
+   ONE claim. Never split it by repeating the qualifier on each item.
+   "Patient reports eating only soups, smoothies and light foods" is ONE claim, not
+   "eating only soups" + "eating only smoothies" + "eating only light foods".
 
 Return ONLY JSON: {"results": [{"key": "...", "claims": ["...", "..."]}]} with one entry per key.
 """
@@ -141,6 +145,26 @@ def check_negation_scope(source: str, claim: str) -> str | None:
         m = _CUE.search(clause)
         if m and content <= _stems(clause[m.end() :]) - _ALLOWED - _NEGATION:
             return f"negation dropped: '{m[0]}' covers this claim in the source"
+    return None
+
+
+_SCOPE_WORDS = ("only", "just", "mainly", "mostly", "at least", "up to", "except")
+_LIST_MARK = r",|\b(and|or)\b"
+_SCOPE_RE = re.compile(r"\b(" + "|".join(_SCOPE_WORDS) + r")\b", re.IGNORECASE)
+
+
+def check_scope_list(source: str, claim: str) -> str | None:
+    """Flag a SPLIT claim that carries a scope word (only, just, mainly...) the source puts in
+    front of a list. "eating only soups, smoothies, light foods" must not become three claims
+    each saying "only". Only call this when the statement was split into several claims."""
+    for m in _SCOPE_RE.finditer(source):
+        word = m[1].lower()
+        tail = _CLAUSE.split(source[m.end() :], maxsplit=1)[0]
+        if not re.search(_LIST_MARK, tail, re.IGNORECASE):
+            continue  # the source word does not govern a list
+        c = re.search(rf"\b{re.escape(word)}\b", claim, re.IGNORECASE)
+        if c and not re.search(_LIST_MARK, claim[c.end() :], re.IGNORECASE):
+            return f"scope word '{word}' copied onto one item of a list"
     return None
 
 
@@ -261,6 +285,8 @@ def decompose_statements(
             bad = next((r for c in claims if (r := check_claim(s, c))), None) or check_coverage(
                 s, claims
             )
+            if not bad and len(claims) > 1:
+                bad = next((r for c in claims if (r := check_scope_list(s, c))), None)
             if bad:
                 reasons[key] = bad
                 failed[key] = (sec, s)

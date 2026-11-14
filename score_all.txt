@@ -1,0 +1,205 @@
+SCORING VERDICTS FROM: outputs/verdicts/verifier-v0-batched
+  5 verdict files, 210 verdicts for the selected encounters
+  labels: labels/claims.csv   encounters: 01, 02, 03, 04, 05
+
+==============================================================================
+ALL ROWS   [outputs/verdicts/verifier-v0-batched]
+==============================================================================
+gold-labeled claims: 210   scored: 210   no verdict: 0   text mismatch: 0
+
+4-class confusion matrix (rows = YOUR label, columns = VERIFIER)
+                   supported  contradicted   unsupported     uncertain         total
+supported                180             2             0             1           183
+contradicted               0             5             0             0             5
+unsupported                0             0             0             0             0
+uncertain                 18             3             1             0            22
+
+binary: positive = NOT SUPPORTED (contradicted + unsupported + uncertain)
+                      verifier: not supported   verifier: supported
+  you: not supported  TP=9                  FN=18   (errors the verifier missed)
+  you: supported      FP=3                  TN=180   (correct claims it wrongly flagged)
+  precision=0.750  recall=0.333  F1=0.462  4-class accuracy=0.881
+  quotes: 206 given, 8 NOT found in cited turns
+
+disagreements (4-class): 25
+
+[01 C9] same side, different label
+  claim   : Patient reports eating only soups
+  YOU     : uncertain / overstated   turns=T36   quote='just soups, and, uh, yeah, light foods'
+  VERIFIER: contradicted   turns=['T36']   quote='just soups, and, uh, yeah, light foods. Like smoothies and, yeah, liquid foods mainly'   quote_valid=True
+  reason  : The patient reports eating soups AND smoothies/light foods, not ONLY soups.
+
+[01 C10] same side, different label
+  claim   : Patient reports eating only smoothies
+  YOU     : uncertain / overstated   turns=T36   quote='Like smoothies and, yeah, liquid foods mainly'
+  VERIFIER: contradicted   turns=['T36']   quote='just soups, and, uh, yeah, light foods. Like smoothies and, yeah, liquid foods mainly'   quote_valid=True
+  reason  : The patient reports eating smoothies AND soups/light foods, not ONLY smoothies.
+
+[01 C17] same side, different label
+  claim   : Patient reports no other symptoms
+  YOU     : uncertain / over_interpretation   turns=T31;T32;T54   quote='Um, I had a loss of appetite'
+  VERIFIER: contradicted   turns=['T32']   quote='I had a loss of appetite'   quote_valid=True
+  reason  : The patient reports a loss of appetite, which is an additional symptom, contradicting the claim that there are no other symptoms.
+
+[01 C31] MISSED (gold not-supported, verifier says supported)
+  claim   : Prescribe paracetamol 2 tablets up to 4 times daily for feverish or weak symptoms
+  YOU     : uncertain / overstated   turns=T82   quote='taking some paracetamol, uh, two tablets up to four times a day'
+  VERIFIER: supported   turns=['T82']   quote='taking some paracetamol, uh, two tablets up to four times a day for the first few days can also help'   quote_valid=True
+  reason  : The doctor explicitly recommends paracetamol with the specified dosage and frequency for feverish or weak symptoms.
+
+[02 C6] FALSE ALARM (gold supported, verifier flags it)
+  claim   : Patient reports skin involvement on arms
+  YOU     : supported / none   turns=T9   quote='my arms'
+  VERIFIER: contradicted   turns=['T49']   quote='Just the chest, hands and like, like inside the elbows.'   quote_valid=True
+  reason  : While the patient initially mentions arms in T9, they clarify in T49 that the involvement is limited to the chest, hands, and inside elbows, excluding the general arms.
+
+[02 C15] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports no urinary issues
+  YOU     : uncertain / overstated   turns=T59;T60   quote='I I think so.'
+  VERIFIER: supported   turns=['T59', 'T60']   quote="You're passing urine OK. ... I I think so."   quote_valid=True
+  reason  : The doctor asks if the patient is passing urine OK, and the patient affirms with 'I think so', indicating no issues.
+
+[02 C16] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports no bowel issues
+  YOU     : uncertain / overstated   turns=T56   quote='So your, your bowels are working OK?'
+  VERIFIER: supported   turns=['T56', 'T58']   quote='So your, your bowels are working OK? ... No.'   quote_valid=True
+  reason  : The doctor asks if bowels are working OK; the patient's 'No' in the context of the subsequent question about chest/cough (T57) and the general flow implies a negative response to the 'are there issues' framing or a confirmation of normalcy, but strictly T58 'No' follows T57. However, looking at T56 'bowels working OK?' and T58 'No' is ambiguous. Let's re-read. T56: 'bowels working OK?'. T57: 'chest OK? No cough...'. T58: 'No'. The 'No' in T58 likely answers the compound question in T57 (No cough, no breathing difficulties). The answer to T56 is not explicitly stated as 'Yes' or 'No' in a separate turn, but T58 is a single 'No'. Wait, T56 is a question. T57 is a question. T58 is 'No'. It is highly probable T58 answers T57. Is there an answer to T56? The transcript jumps from T56 to T57. The patient does not explicitly answer T56. However, in clinical notes, if not denied, it might be assumed, but here we must judge the claim 'Patient reports no bowel issues'. The patient did not explicitly report this. But often 'No' covers the block. Let's look at T58 again. It is a single word. If it answers T57, T56 is unanswered. If it answers T56, T57 is unanswered. Given the ambiguity, is it supported? The claim is 'Patient reports no bowel issues'. The transcript does not contain a clear 'Yes, they are working' or 'No, I have issues'. The 'No' in T58 is most likely for T57 (cough/breathing). Therefore, the bowel status is not explicitly reported. However, looking at the pattern of these claims, usually, if the doctor asks and the patient says 'No' to a list, it covers it. But T56 is separate. Let's look at T55 'No. just very itchy. Nothing else.' This might cover general symptoms. But T56 is specific. Let's mark as uncertain or unsupported? Actually, T58 'No' is the only response between T56 and T59. It is ambiguous. However, in many SOAP note audits, if the doctor asks 'Bowels OK?' and the patient doesn't say 'No, I have diarrhea', and later says 'No' to other things, it's tricky. Let's look at C13/C14 which are clearly supported by T58. If T58 supports C13/C14, it likely does NOT support C16. So C16 is unsupported or uncertain. Let's check if 'No' in T58 could be for T56. 'Bowels working OK?' -> 'No' would mean they are NOT working OK. That would contradict 'no bowel issues'. If 'No' means 'No, they are not working OK', then the claim 'no bowel issues' is contradicted. If 'No' is for T57, then T56 is unanswered. Given the risk of 'No' meaning 'No, not working', and the lack of a clear 'Yes', 'unsupported' is safer than 'supported'. But wait, T55 says 'Nothing else'. This might imply no other symptoms. But T56 is a specific check. Let's look at the options. If I say 'unsupported', it means the transcript never says it. The transcript asks, but the answer is ambiguous/missing. Let's go with unsupported.
+
+[02 C30] MISSED (gold not-supported, verifier says supported)
+  claim   : Skin appears dry and cracked
+  YOU     : uncertain / wrong_section   turns=T35;T66;T67;T95   quote="But from what you've told me"
+  VERIFIER: supported   turns=['T67']   quote="you've got some dry skin and some, uh cracked skin as well."   quote_valid=True
+  reason  : The doctor states that based on the patient's description, they have dry and cracked skin, which is accepted as the objective observation in the context of the note's source.
+
+[02 C32] MISSED (gold not-supported, verifier says supported)
+  claim   : No bleeding or discharge noted
+  YOU     : uncertain / wrong_section   turns=T33;T35;T37;T38   quote='No. Um so my skin is a bit cracked in some parts'
+  VERIFIER: supported   turns=['T33', 'T34', 'T37', 'T38']   quote='have you noticed any uh bleeding or discharge from your skins? ... No.'   quote_valid=True
+  reason  : The clinician asked about bleeding or discharge, and the patient denied it, which is recorded as a negative finding in the objective/subjective history.
+
+[02 C33] MISSED (gold not-supported, verifier says supported)
+  claim   : No fever observed.
+  YOU     : uncertain / wrong_section   turns=T54;T55   quote='No. just very itchy. Nothing else.'
+  VERIFIER: supported   turns=['T54', 'T55']   quote='have you noticed any temperature or fevers? ... No.'   quote_valid=True
+  reason  : The clinician asked about fever and the patient denied it, supporting the statement that no fever was noted.
+
+[02 C34] MISSED (gold not-supported, verifier says supported)
+  claim   : No cough or breathing difficulties noted
+  YOU     : uncertain / wrong_section   turns=T57;T58   quote='No.'
+  VERIFIER: supported   turns=['T57', 'T58']   quote='No cough, no breathing difficulties? ... No.'   quote_valid=True
+  reason  : The clinician asked about cough and breathing difficulties, and the patient denied them.
+
+[02 C35] MISSED (gold not-supported, verifier says supported)
+  claim   : No urinary issues noted.
+  YOU     : uncertain / wrong_section   turns=T59;T60   quote='I I think so.'
+  VERIFIER: supported   turns=['T59', 'T60']   quote="You're passing urine OK. ... I I think so."   quote_valid=True
+  reason  : The clinician asked about urine output and the patient confirmed it was okay, supporting the note of no urinary issues.
+
+[02 C36] MISSED (gold not-supported, verifier says supported)
+  claim   : Bowel function normal.
+  YOU     : uncertain / wrong_section   turns=T56   quote='So your, your bowels are working OK?'
+  VERIFIER: supported   turns=['T56']   quote='So your, your bowels are working OK?'   quote_valid=True
+  reason  : The clinician stated that the patient's bowels are working OK, which is a direct statement of normal bowel function.
+
+[02 C37] MISSED (gold not-supported, verifier says supported)
+  claim   : No face involvement noted.
+  YOU     : uncertain / wrong_section   turns=T50;T53   quote='On my face? No.'
+  VERIFIER: supported   turns=['T50', 'T53']   quote='anything on your face at all? ... On my face? No.'   quote_valid=True
+  reason  : The clinician asked about face involvement and the patient denied it, supporting the note of no face involvement.
+
+[02 C38] MISSED (gold not-supported, verifier says supported)
+  claim   : No other symptoms observed.
+  YOU     : uncertain / wrong_section   turns=T55   quote='Nothing else.'
+  VERIFIER: supported   turns=['T54', 'T55']   quote='apart from this, any other symptoms have you noticed? ... No. just very itchy. Nothing else.'   quote_valid=True
+  reason  : The patient explicitly stated there were no other symptoms apart from the itchiness, supporting the claim.
+
+[02 C43] MISSED (gold not-supported, verifier says supported)
+  claim   : Advise use of stronger antihistamine (fexofenadine) if needed.
+  YOU     : uncertain / other   turns=T113;T114   quote='I can give you something a little bit stronger today as well'
+  VERIFIER: supported   turns=['T113', 'T114']   quote='I can give you something a little bit stronger today as well. Um, something like Fexofenadine, which I can give to you today.'   quote_valid=False
+  reason  : The doctor offers to prescribe a stronger antihistamine, specifically Fexofenadine, to the patient today.
+
+[03 C25] FALSE ALARM (gold supported, verifier flags it)
+  claim   : Not documented
+  YOU     : supported / none   turns=T110   quote='proceed to examination'
+  VERIFIER: contradicted   turns=['T111', 'T112']   quote='I wonder whether you may, uh may have a migraine, uh migraine type headache.'   quote_valid=True
+  reason  : The transcript contains objective observations and assessments (e.g., the doctor's examination and diagnosis), so the section is not empty.
+
+[04 C3] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports difficulty swallowing for one or two days
+  YOU     : uncertain / other   turns=T14;T15   quote='quite painful to swallow, for one or two days'
+  VERIFIER: supported   turns=['T15']   quote='it was quite painful to swallow, for one or two days.'   quote_valid=True
+  reason  : The patient confirms painful swallowing for one or two days.
+
+[04 C6] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports runny nose clearing up
+  YOU     : uncertain / other   turns=T22;T23   quote="it's clearing up"
+  VERIFIER: supported   turns=['T23']   quote="Yeah yeah, it's uh it's clearing up ."   quote_valid=True
+  reason  : The patient states the runny nose is clearing up.
+
+[04 C9] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports dry cough not painful
+  YOU     : uncertain / overstated   turns=T28   quote="it's not very painful"
+  VERIFIER: supported   turns=['T28']   quote="it's it's not very painful"   quote_valid=True
+  reason  : The patient states the cough is not very painful.
+
+[04 C10] FALSE ALARM (gold supported, verifier flags it)
+  claim   : Patient reports night sweats for the last three to four days.
+  YOU     : supported / none   turns=T35;T40;T41   quote='night sweats'
+  VERIFIER: uncertain   turns=['T35', 'T40', 'T41']   quote="I'm also having uh night sweats ... this has again, been going on for last uh three four days, has it? ... Yeah, yes."   quote_valid=True
+  reason  : The patient mentions night sweats, and the doctor asks if 'this' (referring to the general unwellness/illness) has been going on for 3-4 days, which the patient confirms, but the specific duration of the night sweats is not explicitly isolated from the general illness duration in the transcript.
+
+[04 C23] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports no bowel changes
+  YOU     : uncertain / over_interpretation   turns=T65;T66   quote='Think so'
+  VERIFIER: supported   turns=['T65', 'T66']   quote='Are your bowels working OK? ... Uh yeah, yeah. Think so.'   quote_valid=True
+  reason  : The patient confirms their bowels are working okay, implying no changes or issues.
+
+[04 C30] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports no allergies
+  YOU     : uncertain / overstated   turns=T81;T82   quote='Um, no'
+  VERIFIER: supported   turns=['T81', 'T82']   quote='any allergies at all to any medications, I should be aware of? ... Um, no'   quote_valid=True
+  reason  : The patient denies having any allergies to medications.
+
+[04 C44] MISSED (gold not-supported, verifier says supported)
+  claim   : Continue regular paracetamol and ibuprofen as needed
+  YOU     : uncertain / other   turns=T116   quote='Continue with the regular Paracetamol, Ibuprofen'
+  VERIFIER: supported   turns=['T115']   quote='Continue with the regular Paracetamol, Ibuprofen'   quote_valid=False
+  reason  : The clinician advises continuing with regular Paracetamol and Ibuprofen.
+
+[05 C22] same side, different label
+  claim   : Patient reports no chest pain
+  YOU     : uncertain / over_interpretation   turns=T80;T81   quote="I'm not having any problems"
+  VERIFIER: unsupported   turns=-   quote=''   quote_valid=None
+  reason  : The transcript does not mention chest pain; the patient only denies shortness of breath and cough.
+
+==============================================================================
+EXCLUDING error_type = decomposition_error   [outputs/verdicts/verifier-v0-batched]
+==============================================================================
+gold-labeled claims: 205   scored: 205   no verdict: 0   text mismatch: 0
+
+4-class confusion matrix (rows = YOUR label, columns = VERIFIER)
+                   supported  contradicted   unsupported     uncertain         total
+supported                180             2             0             1           183
+contradicted               0             0             0             0             0
+unsupported                0             0             0             0             0
+uncertain                 18             3             1             0            22
+
+binary: positive = NOT SUPPORTED (contradicted + unsupported + uncertain)
+                      verifier: not supported   verifier: supported
+  you: not supported  TP=4                  FN=18   (errors the verifier missed)
+  you: supported      FP=3                  TN=180   (correct claims it wrongly flagged)
+  precision=0.571  recall=0.182  F1=0.276  4-class accuracy=0.878
+  quotes: 201 given, 8 NOT found in cited turns
+
+comparison folders:  single=outputs/verdicts/verifier-v0   batched=outputs/verdicts/verifier-v0-batched
+
+==============================================================================
+SINGLE vs BATCHED (claims with a usable verdict in both)
+==============================================================================
+claims in both: 56
+  same 4-class status: 55/56 = 0.982
+  same side (supported vs not supported): 55/56 = 0.982
+  batched verdicts came via: {'batch': 56}  (single-retry = re-asked alone)
+  vs your labels on the 56 shared labeled claims: single 50/56, batched 49/56 exact-status matches
+  [02 C6] single=supported    batched=contradicted you=supported    | Patient reports skin involvement on arms
