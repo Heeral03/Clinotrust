@@ -1,0 +1,206 @@
+encounter_id,claim_id,section,source_statement_index,claim_text,status,evidence_turns,evidence_quote,error_type,severity,notes
+day1_consultation01,C1,subjective,0,"Patient reports loose, watery diarrhea for the last three days, approximately six to seven times per day",supported,T3;T5;T7,six or seven times a day,none,none,
+day1_consultation01,C2,subjective,1,"Patient reports left lower abdominal crampy pain that comes and goes, associated with feeling weak and shaky",supported,T12;T14;T16;T18,like a muscular cramp,none,none,
+day1_consultation01,C3,subjective,2,Patient reports feverish feeling about three to four days ago,supported,T21;T22;T23;T25,I did notice um a temperature when the symptoms started,none,none,patient said she felt a bit hot and did not measure (T25); doctor asked about feverish in T21 and patient said Yeah (T22)
+day1_consultation01,C4,subjective,2,Patient reports no current fever,supported,T23,"I haven't had a fever, um, at the moment",none,none,
+day1_consultation01,C5,subjective,3,"Patient reports vomiting at the start of symptoms, now stopped",supported,T28,I vomited at the start of the symptoms but now um I've stopped vomiting,none,none,
+day1_consultation01,C6,subjective,3,Patient reports vomit was normal color,supported,T29;T30,just normal vomit,none,none,
+day1_consultation01,C7,subjective,3,Patient reports no blood,supported,T8;T9,"No, no blood",none,none,T9 answers blood in stool; blood in vomit is T30
+day1_consultation01,C8,subjective,4,Patient reports loss of appetite,supported,T32,I had a loss of appetite,none,none,
+day1_consultation01,C9,subjective,4,Patient reports eating only soups,uncertain,T36,"just soups, and, uh, yeah, light foods",overstated,minor,"claim says only soups/smoothies; patient listed soups, light foods, smoothies, liquid foods mainly. Check the generated JSON to see whether 'only' came from the note or the splitter"
+day1_consultation01,C10,subjective,4,Patient reports eating only smoothies,uncertain,T36,"Like smoothies and, yeah, liquid foods mainly",overstated,minor,"claim says only soups/smoothies; patient listed soups, light foods, smoothies, liquid foods mainly. Check the generated JSON to see whether 'only' came from the note or the splitter"
+day1_consultation01,C11,subjective,4,Patient reports eating only light foods,supported,T36,light foods,none,none,"'only' is loose, but soups and smoothies are light foods"
+day1_consultation01,C12,subjective,4,Patient reports drinking fluids,supported,T32;T35,I've been able to hold down fluids,none,none,
+day1_consultation01,C13,subjective,5,Patient reports a Chinese takeaway meal four days ago as a possible trigger.,supported,T37;T38;T41,I had takeaway about four days ago,none,none,patient answered the doctor's trigger question (T37) with the takeaway; the causal link is the doctor's idea (T69). Patient says takeaway in T38 and Chinese restaurant in T41
+day1_consultation01,C14,subjective,6,Patient reports no blood in stool or vomit,supported,T8;T9;T29;T30,"No no blood, no",none,none,
+day1_consultation01,C15,subjective,6,Patient reports no sweating,supported,T26;T27,"Uh, no.",none,none,"T27 starts inside the doctor's turn T26; T28 answers the vomiting part, so T27 answers sweating and night sweats"
+day1_consultation01,C16,subjective,6,Patient reports no night sweats,supported,T26;T27,"Uh, no.",none,none,same single No as C15
+day1_consultation01,C17,subjective,6,Patient reports no other symptoms,uncertain,T31;T32;T54,"Um, I had a loss of appetite",over_interpretation,minor,patient answered 'any other symptoms' with loss of appetite (T32) and called the toilet trips the main concern (T54); never said there were no other symptoms
+day1_consultation01,C18,subjective,7,Patient reports asthma,supported,T45,other than um athsma,none,none,
+day1_consultation01,C19,subjective,7,Patient reports well controlled with inhaler,supported,T46;T47,that's under control,none,none,
+day1_consultation01,C20,subjective,7,Patient reports no other medications,supported,T50;T51,no other medications,none,none,
+day1_consultation01,C21,subjective,8,Patient reports no smoking,supported,T65;T66,I don't smoke,none,none,
+day1_consultation01,C22,subjective,8,Patient reports no alcohol use,supported,T67;T68,don't drink alcohol,none,none,
+day1_consultation01,C23,subjective,9,Patient reports working as an accountant,supported,T58,I'm an accountant,none,none,
+day1_consultation01,C24,subjective,9,Patient reports attending work during the last three days,supported,T60;T61,I've been going to work,none,none,
+day1_consultation01,C25,subjective,10,Patient reports living with wife and two children,supported,T43;T63;T64,a wife and two kids,none,none,
+day1_consultation01,C26,subjective,10,Patient reports one child vomiting,supported,T43,child was vomiting,none,none,
+day1_consultation01,C27,subjective,10,Patient reports one child no diarrhea,supported,T43,they haven't got diarrhea,none,none,'they' may mean the whole family
+day1_consultation01,C28,objective,0,Not documented,supported,T69,"I like to um, examine you if that's okay",none,none,doctor did not examine and no vitals were stated
+day1_consultation01,C29,assessment,0,Clinician considers possible gastroenteritis (viral or bacterial),supported,T72;T73,"it seems like you may have something, uh, called gastroenteritis",none,none,
+day1_consultation01,C30,plan,0,"Recommend conservative management with oral rehydration solution (e.g., Dioralyte)",supported,T76;T78,there are things like Dioralyte you can get from the pharmacy,none,none,
+day1_consultation01,C31,plan,1,Prescribe paracetamol 2 tablets up to 4 times daily for feverish or weak symptoms,uncertain,T82,"taking some paracetamol, uh, two tablets up to four times a day",overstated,minor,doctor advised an over-the-counter option; he did not say he would prescribe it
+day1_consultation01,C32,plan,2,Advise rest and time off work for 2-3 days,supported,T84,take some time off work,none,none,
+day1_consultation01,C33,plan,3,"If symptoms have not improved in 3-4 days, return for review",supported,T87,I'd like to come and see you again,none,none,
+day1_consultation01,C34,plan,4,"If symptoms persist, consider stool sample testing",supported,T89;T91,we may need to do further tests like um taking a sample of your stool,none,none,
+day1_consultation02,C1,subjective,0,Patient reports itchy skin started 4 days ago,supported,T6;T41,Four days ago.,none,none,
+day1_consultation02,C2,subjective,0,Patient reports sore skin started 4 days ago,supported,T6;T41,"I have like a sore, and a red skin",none,none,
+day1_consultation02,C3,subjective,0,Patient reports red skin started 4 days ago,supported,T6;T41,"a sore, and a red skin",none,none,
+day1_consultation02,C4,subjective,1,Patient reports skin involvement on chest,supported,T9,mostly like my chest,none,none,
+day1_consultation02,C5,subjective,1,Patient reports skin involvement on hands,supported,T9;T49,"my, my hands",none,none,
+day1_consultation02,C6,subjective,1,Patient reports skin involvement on arms,supported,T9,my arms,none,none,
+day1_consultation02,C7,subjective,1,Patient reports skin involvement on inside elbows,supported,T49,inside the elbows,none,none,
+day1_consultation02,C8,subjective,2,Patient reports difficulty sleeping due to itching.,supported,T9;T10,I can't even sleep at night,none,none,
+day1_consultation02,C9,subjective,3,Patient reports difficulty focusing at work due to itching.,supported,T10,I can't actually focus on my work,none,none,
+day1_consultation02,C10,subjective,4,Patient reports using a steroid cream from pharmacy last night with no relief.,supported,T19,"bought a, a steroid cream at the pharmacy last night",none,none,
+day1_consultation02,C11,subjective,5,Patient reports prior eczema treated with cream.,supported,T13;T15,earlier I was like prescribed for my eczema,none,none,
+day1_consultation02,C12,subjective,6,Patient reports no fever,supported,T54;T55,No. just very itchy. Nothing else.,none,none,
+day1_consultation02,C13,subjective,6,Patient reports no cough,supported,T57;T58,No.,none,none,bare No to a negatively phrased question (T57); read as a denial of cough
+day1_consultation02,C14,subjective,6,Patient reports no breathing difficulties,supported,T57;T58,No.,none,none,same single No as C13
+day1_consultation02,C15,subjective,6,Patient reports no urinary issues,uncertain,T59;T60,I I think so.,overstated,minor,patient hedged
+day1_consultation02,C16,subjective,6,Patient reports no bowel issues,uncertain,T56,"So your, your bowels are working OK?",overstated,minor,no patient answer was transcribed after the bowel question
+day1_consultation02,C17,subjective,7,Patient reports no bleeding or discharge from skin,supported,T33;T35;T37;T38,No. Um so my skin is a bit cracked in some parts,none,none,
+day1_consultation02,C18,subjective,8,Patient reports no face involvement.,supported,T50;T53,On my face? No.,none,none,
+day1_consultation02,C19,subjective,9,Patient reports no other symptoms.,supported,T55,Nothing else.,none,none,
+day1_consultation02,C20,subjective,10,Patient reports no known allergies.,supported,T76;T82,"allergies. Uh, no.",none,none,
+day1_consultation02,C21,subjective,11,Patient reports no regular medications.,supported,T74;T75,Uh no.,none,none,
+day1_consultation02,C22,subjective,12,Patient reports past asthma,supported,T73,I just had asthma in the past,none,none,
+day1_consultation02,C23,subjective,12,Patient reports no current asthma,supported,T73,But not anymore.,none,none,
+day1_consultation02,C24,subjective,13,Patient reports no smoking.,supported,T88;T89,No.,none,none,answers the smoking question T88
+day1_consultation02,C25,subjective,14,Patient reports occasional alcohol consumption.,supported,T90;T91,"a few, a few beers per week",none,none,
+day1_consultation02,C26,subjective,15,Patient reports living with flatmates.,supported,T84,I live with a few flatmates,none,none,
+day1_consultation02,C27,subjective,16,Patient reports full-time job at pharmaceutical company.,supported,T84;T86,I work uh at a pharmaceutical company,none,none,full-time job is T84
+day1_consultation02,C28,subjective,17,Patient reports no identified triggers.,supported,T44;T65,I really have no idea,none,none,T44 is garbled; T65 is clearer
+day1_consultation02,C29,subjective,18,Patient reports having tried antihistamines recently with no benefit.,supported,T109;T111,"I have tried uh antihistamines, but uh but it didn't really help",none,none,
+day1_consultation02,C30,objective,0,Skin appears dry and cracked,uncertain,T35;T66;T67;T95,But from what you've told me,wrong_section,minor,cracked skin is patient-reported (T35); 'dry' only appears in the doctor's recap (T67); doctor said he would normally examine (T66) but later says he looked at the skin (T95)
+day1_consultation02,C31,objective,1,Rash appears familiar to clinician.,supported,T95,the rash does appear quite familiar,none,none,T66 says he would normally examine but T95 says 'having looked at your skin'; sound quality was poor
+day1_consultation02,C32,objective,2,No bleeding or discharge noted,uncertain,T33;T35;T37;T38,No. Um so my skin is a bit cracked in some parts,wrong_section,minor,"patient-reported, not an exam finding"
+day1_consultation02,C33,objective,3,No fever observed.,uncertain,T54;T55,No. just very itchy. Nothing else.,wrong_section,major,nobody measured or examined for fever; the patient only said No
+day1_consultation02,C34,objective,4,No cough or breathing difficulties noted,uncertain,T57;T58,No.,wrong_section,minor,patient-reported
+day1_consultation02,C35,objective,5,No urinary issues noted.,uncertain,T59;T60,I I think so.,wrong_section,minor,patient-reported and hedged
+day1_consultation02,C36,objective,6,Bowel function normal.,uncertain,T56,"So your, your bowels are working OK?",wrong_section,major,no patient answer transcribed; presented as an objective finding
+day1_consultation02,C37,objective,7,No face involvement noted.,uncertain,T50;T53,On my face? No.,wrong_section,minor,patient-reported; doctor says he looked at the skin (T95) but never mentions the face
+day1_consultation02,C38,objective,8,No other symptoms observed.,uncertain,T55,Nothing else.,wrong_section,minor,"symptoms are reported by the patient, not observed"
+day1_consultation02,C39,assessment,0,Clinician considers possible eczema flare-up.,supported,T93,I do wonder whether this is a flare-up of your eczema,none,none,
+day1_consultation02,C40,plan,0,Prescribe stronger topical steroid.,supported,T96;T97,I'm happy to prescribe to you today,none,none,
+day1_consultation02,C41,plan,1,Prescribe emollients for use in bath and shower for 7-10 days,supported,T97;T100,using that for the first seven to ten days,none,none,7 to 10 days is a trial period before reassessing (T102)
+day1_consultation02,C42,plan,2,Advise use of over-the-counter antihistamines such as loratadine or piritone,supported,T104;T105,Things like Loratadine or Piriton,other,minor,medicine name is misspelled 'piritone' in the claim
+day1_consultation02,C43,plan,3,Advise use of stronger antihistamine (fexofenadine) if needed.,uncertain,T113;T114,I can give you something a little bit stronger today as well,other,minor,'if needed' was not said; doctor offers to give it today
+day1_consultation02,C44,plan,4,Advise keeping a diary of triggers.,supported,T107,it's also worth keeping a diary of any triggers,none,none,
+day1_consultation02,C45,plan,5,Follow up in one week if symptoms do not improve.,supported,T117,"do come back and see me next week, if things don't get better",none,none,
+day1_consultation03,C1,subjective,0,Patient reports a left-sided throbbing headache that started at mid‑day and is still present,supported,T4;T5;T18,I guess it's throbbing,none,none,
+day1_consultation03,C2,subjective,1,Patient reports nausea,supported,T5;T38;T39,I just feel like I need to vomit,none,none,
+day1_consultation03,C3,subjective,1,Patient reports has vomited twice earlier today,supported,T40;T41,I vomited twice,none,none,
+day1_consultation03,C4,subjective,2,Patient reports blurred vision,supported,T9,My vision blurred,none,none,
+day1_consultation03,C5,subjective,2,Patient reports sensitivity to bright lights,supported,T37,the light's really hurting my eyes,none,none,
+day1_consultation03,C6,subjective,3,Patient reports headache worsens with neck movement.,supported,T22,headache gets worse,none,none,
+day1_consultation03,C7,subjective,4,Patient reports no fever,supported,T42,no I don't feel feverish,none,none,
+day1_consultation03,C8,subjective,4,Patient reports no rash,supported,T44,"No, I haven't noticed anything like that",none,none,
+day1_consultation03,C9,subjective,4,Patient reports no speech or limb weakness,supported,T61;T62;T63;T64,No.,none,none,two separate No answers: speech (T62) and arms/legs (T64)
+day1_consultation03,C10,subjective,4,Patient reports no balance issues,supported,T65;T66,No.,none,none,
+day1_consultation03,C11,subjective,4,Patient reports no recent head injury,supported,T67;T68,No.,none,none,
+day1_consultation03,C12,subjective,5,Patient reports no frequent headaches,supported,T46,I'm not really prone to them,none,none,
+day1_consultation03,C13,subjective,5,Patient reports had a similar headache a few weeks ago lasting a couple of days and treated with painkillers and rest,supported,T46;T50;T52,had to take painkillers,none,none,
+day1_consultation03,C14,subjective,6,Patient reports working in the fashion industry,supported,T54,I work in the fashion industry,none,none,
+day1_consultation03,C15,subjective,6,Patient reports experiencing stress,supported,T94,it's really stressful,none,none,
+day1_consultation03,C16,subjective,6,Patient reports no exercise,supported,T101;T102,No.,none,none,
+day1_consultation03,C17,subjective,6,Patient reports living alone,supported,T104,I live on my own,none,none,
+day1_consultation03,C18,subjective,7,Patient reports no smoking,supported,T107;T108,No.,none,none,"doctor asked smoking and alcohol in one turn; patient answered No twice (T108, T109)"
+day1_consultation03,C19,subjective,7,Patient reports no alcohol use,supported,T107;T109,No.,none,none,"doctor asked smoking and alcohol in one turn; patient answered No twice (T108, T109)"
+day1_consultation03,C20,subjective,8,Patient reports taking the oral contraceptive pill Microgynon for 3 months for contraception.,supported,T85;T87;T89,it's for contraception,none,none,
+day1_consultation03,C21,subjective,9,Patient reports mother has migraines,supported,T76,"my mum has, has migraines",none,none,
+day1_consultation03,C22,subjective,9,Patient reports mother has underactive thyroid,supported,T81,My mom has an underactive thyroid,none,none,
+day1_consultation03,C23,subjective,9,Patient reports no other family brain disease,supported,T82;T83,No.,none,none,
+day1_consultation03,C24,subjective,10,Patient reports worry about brain cancer.,supported,T24,it could be a sign of brain cancer,none,none,
+day1_consultation03,C25,objective,0,Not documented,supported,T110,proceed to examination,none,none,doctor never examined and no vitals were stated
+day1_consultation03,C26,assessment,0,Clinician considers possible migraine headache.,supported,T111,"I wonder whether you may, uh may have a migraine",none,none,
+day1_consultation03,C27,assessment,1,Clinician reassures no evidence of meningitis or brain cancer,supported,T113;T114,I'm reassured that you don't have anything more serious,none,none,"judgement call: doctor said this from the history only, before any exam. 'no evidence of' reads a bit stronger than 'reassured'"
+day1_consultation03,C28,plan,0,Clinician recommends keeping a headache diary.,supported,T118,keeping a headache diary,none,none,
+day1_consultation03,C29,plan,1,Clinician recommends acute treatment with paracetamol or co‑codamol,supported,T119,"think about Paracetamol, or even Co-codamol",none,none,
+day1_consultation03,C30,plan,2,Clinician recommends NSAIDs such as ibuprofen or naproxen,supported,T120,"some anti-inflammatories, such as Ibuprofen and Naproxen",none,none,
+day1_consultation03,C31,plan,3,"Clinician suggests considering prophylactic medication if headaches persist, to discuss next week",supported,T122;T123,something prophylactic medicines,none,none,
+day1_consultation03,C32,plan,4,Clinician advises patient to return immediately if headache worsens,supported,T127,if your headache's getting worse,none,none,
+day1_consultation03,C33,plan,4,Clinician advises patient to return immediately if does not respond to medication,supported,T127,not responding to medications,none,none,
+day1_consultation03,C34,plan,4,Clinician advises patient to return immediately if neck pain worsens,supported,T128,neck pain is getting worse,none,none,patient never reported neck pain; the doctor named it as a warning sign
+day1_consultation03,C35,plan,4,Clinician advises patient to return immediately if new weakness or vision changes occur,supported,T128,"develop any weakness in your arms and legs, or your vision",none,none,
+day1_consultation03,C36,plan,5,Clinician advises patient to monitor symptoms over the next 2–3 days.,supported,T126,next two three days,none,none,
+day1_consultation04,C1,subjective,0,Patient reports feeling under the weather for the past four days.,supported,T4,under the weather for the past four days,none,none,
+day1_consultation04,C2,subjective,1,"Patient reports sore throat and runny nose at onset, now a dry cough; sore throat was painful for one or two days and has improved.",supported,T5;T6;T12,is kind of going away,none,none,
+day1_consultation04,C3,subjective,2,Patient reports difficulty swallowing for one or two days,uncertain,T14;T15,"quite painful to swallow, for one or two days",other,minor,"patient said swallowing was painful; claim says 'difficulty swallowing', which is a different symptom"
+day1_consultation04,C4,subjective,3,Patient reports nasal congestion,supported,T25;T26,"Yeah, quite congested",none,none,
+day1_consultation04,C5,subjective,3,Patient reports stuffed nose,supported,T24,getting my nose stuffed all the time,none,none,
+day1_consultation04,C6,subjective,3,Patient reports runny nose clearing up,uncertain,T22;T23,it's clearing up,other,minor,doctor asked whether the discharge is clear or coloured; 'it's clearing up' may mean 'it's clear' (transcript is ambiguous)
+day1_consultation04,C7,subjective,4,Patient reports dry cough started yesterday,supported,T28,maybe yesterday,none,none,
+day1_consultation04,C8,subjective,4,Patient reports dry cough constant,supported,T34;T35,it's sort of constant,none,none,
+day1_consultation04,C9,subjective,4,Patient reports dry cough not painful,uncertain,T28,it's not very painful,overstated,minor,patient said 'not very painful'; claim drops 'very'. Check whether the note or the splitter dropped it
+day1_consultation04,C10,subjective,5,Patient reports night sweats for the last three to four days.,supported,T35;T40;T41,night sweats,none,none,
+day1_consultation04,C11,subjective,6,Patient reports initial fever that has subsided,supported,T43;T114,"I had some some fever in the beginning, but it's now sort of uh going down",none,none,patient said going down; doctor summarised it as settled (T114)
+day1_consultation04,C12,subjective,6,Patient reports taking paracetamol and ibuprofen with relief,supported,T43,they help,none,none,
+day1_consultation04,C13,subjective,7,Patient reports feeling winded on exertion but not at rest,supported,T46;T49,feel a bit winded on exertion,none,none,
+day1_consultation04,C14,subjective,7,Patient reports no chest pain,supported,T46,no pain in chest,none,none,
+day1_consultation04,C15,subjective,8,Patient reports no ear pain,supported,T52,Um no,none,none,
+day1_consultation04,C16,subjective,8,Patient reports no ear blockage,supported,T53;T54,"No, I don't think so",none,none,mild hedge
+day1_consultation04,C17,subjective,8,Patient reports no discharge,supported,T53;T54,"No, I don't think so",none,none,mild hedge
+day1_consultation04,C18,subjective,9,Patient reports general intermittent headaches,supported,T56;T58,it's sort of general,none,none,
+day1_consultation04,C19,subjective,9,Patient reports no vision problems,supported,T59;T60,Um no,none,none,
+day1_consultation04,C20,subjective,9,Patient reports no photophobia,supported,T61;T62,"No, I don't think so",none,none,mild hedge
+day1_consultation04,C21,subjective,10,Patient reports no nausea,supported,T63;T64,"No, none of that",none,none,
+day1_consultation04,C22,subjective,10,Patient reports no vomiting,supported,T63;T64,"No, none of that",none,none,
+day1_consultation04,C23,subjective,10,Patient reports no bowel changes,uncertain,T65;T66,Think so,over_interpretation,minor,"patient said bowels working OK ('Think so', hedged); 'no bowel changes' is a slightly different statement"
+day1_consultation04,C24,subjective,10,Patient reports no urinary issues,supported,T67;T68,"Yeah, yeah",none,none,
+day1_consultation04,C25,subjective,11,Patient reports increased fluid intake,supported,T70,drinking a lot more than the usual,none,none,
+day1_consultation04,C26,subjective,11,Patient reports decreased appetite,supported,T71;T72,"maybe a bit less than uh than what I, I would usually have",none,none,patient said eating a bit less; 'decreased appetite' is a small inference. Doctor's appetite question (T69) was answered about drinking
+day1_consultation04,C27,subjective,12,Patient reports muscle aches started in the past couple days.,supported,T75;T76,that sort of started in the past couple days,none,none,
+day1_consultation04,C28,subjective,13,Patient reports no known medical problems,supported,T77;T78,I'm fine,none,none,
+day1_consultation04,C29,subjective,13,Patient reports no medications,supported,T78,there isn't anything that I'm taking,none,none,means regular medication; he was taking paracetamol and ibuprofen for this illness (T43)
+day1_consultation04,C30,subjective,13,Patient reports no allergies,uncertain,T81;T82,"Um, no",overstated,minor,doctor asked only about allergies to medications; claim says 'no allergies'
+day1_consultation04,C31,subjective,14,Patient reports family history of type 2 diabetes (grandma),supported,T85;T88,my grandma has diabetes,none,none,patient said 'I think it's type two' (T88)
+day1_consultation04,C32,subjective,14,Patient reports family history of eczema (great grandad),supported,T91,great grandads had an eczema,none,none,
+day1_consultation04,C33,subjective,15,Patient reports living alone,supported,T93,I live alone,none,none,
+day1_consultation04,C34,subjective,15,Patient reports works as accountant,supported,T97,I'm an accountant,none,none,
+day1_consultation04,C35,subjective,15,Patient reports mild work-related stress,supported,T99;T101,a bit of a stressful period,none,none,
+day1_consultation04,C36,subjective,16,Patient reports occasional cigar use at parties,supported,T106,cigars and things on company parties,none,none,
+day1_consultation04,C37,subjective,16,Patient reports no regular smoking,supported,T106;T107,"so not, not regular",none,none,
+day1_consultation04,C38,subjective,16,Patient reports occasional alcohol consumption,supported,T109,occasionally yeah I would have some,none,none,
+day1_consultation04,C39,subjective,16,Patient reports not a heavy drinker,supported,T109,I'm not a very big drinker,none,none,
+day1_consultation04,C40,objective,0,Not documented,supported,T113,just having listened to your story,none,none,doctor never examined and no vitals were stated
+day1_consultation04,C41,assessment,0,Clinician considers possible viral upper respiratory tract infection or early flu,supported,T114,a viral upper respiratory tract infection,none,none,
+day1_consultation04,C42,plan,0,Advise patient to get plenty of rest and take a day or two off work if possible.,supported,T115,get plenty of rest,none,none,
+day1_consultation04,C43,plan,1,Advise patient to stay well-hydrated.,supported,T116,make yourself well-hydrated,none,none,
+day1_consultation04,C44,plan,2,Continue regular paracetamol and ibuprofen as needed,uncertain,T116,"Continue with the regular Paracetamol, Ibuprofen",other,minor,"doctor said 'regular'; claim says 'as needed', which was not said"
+day1_consultation04,C45,plan,3,Advise patient to return next week if not better,supported,T116,"if next week you're still not better, I'd like you to come back and see me",none,none,
+day1_consultation04,C46,plan,3,Advise patient to return sooner if high fever,supported,T120,if you have a high fever,none,none,
+day1_consultation04,C47,plan,3,Advise patient to return sooner if worsening breathing,supported,T120,your breathing is becoming a bit more labored,none,none,
+day1_consultation04,C48,plan,3,Advise patient to return sooner if chest pain,supported,T120,or chest pain,none,none,
+day1_consultation04,C49,plan,4,Patient will take a couple days off work.,supported,T118,I think I'll take a couple days off,none,none,
+day1_consultation05,C1,subjective,0,"Patient reports lower abdominal pain, burning, constant, worsening over 2 days, gradual onset.",supported,T4;T7;T11;T13;T17,a burning pain,none,none,
+day1_consultation05,C2,subjective,1,Patient reports pain is sore when pressed below the belly button.,supported,T9,sore when I press on it,none,none,
+day1_consultation05,C3,subjective,2,"Patient reports constipation last week, now normal.",supported,T19;T21,"I had a bit of constipation, but that's better, now",none,none,
+day1_consultation05,C4,subjective,3,Patient reports pink urine,supported,T24,"the urine was a little pink, in colour",none,none,
+day1_consultation05,C5,subjective,3,Patient reports increased frequency,supported,T25,"I was peeing more, regularly",none,none,patient also said she has been drinking lots of fluids (T25)
+day1_consultation05,C6,subjective,3,Patient reports no burning during urination,supported,T24;T30,it hasn't really been burning,none,none,
+day1_consultation05,C7,subjective,3,Patient reports no pain during urination,supported,T24,hurting when I pee,none,none,
+day1_consultation05,C8,subjective,4,Patient reports nausea,supported,T33,Just a little nauseous,none,none,
+day1_consultation05,C9,subjective,4,Patient reports feeling hot and sweaty,supported,T4,hot and sweaty,none,none,
+day1_consultation05,C10,subjective,4,Patient reports no fever measured,supported,T35,I haven't really measured it,none,none,
+day1_consultation05,C11,subjective,5,Patient reports no vomiting.,supported,T33,no vomiting,none,none,
+day1_consultation05,C12,subjective,6,Patient reports last sexual activity 4 days ago with same partner,supported,T38,we were last sexually active about four days ago,none,none,
+day1_consultation05,C13,subjective,6,Patient reports Implanon inserted 1 year ago,supported,T42,I had the Implanon inserted about a year ago,none,none,
+day1_consultation05,C14,subjective,6,Patient reports last period 2 weeks ago,supported,T46,"I mean, two weeks ago",none,none,"patient first said three weeks, then corrected to two"
+day1_consultation05,C15,subjective,7,Patient reports no other medications except Implanon.,supported,T59,"I'm not on any other medication, I just have the Implanon",none,none,
+day1_consultation05,C16,subjective,8,Patient reports no surgical history.,supported,T58,I don't have any surgical history,none,none,
+day1_consultation05,C17,subjective,9,Patient reports no family history of bowel disease.,supported,T63;T64,not that I'm aware of,none,none,"hedged, 'not that I'm aware of'"
+day1_consultation05,C18,subjective,10,Patient reports living in share house with two roommates.,supported,T66,I live in a share house,none,none,
+day1_consultation05,C19,subjective,11,Patient reports working as accountant.,supported,T70,I am an accountant,none,none,
+day1_consultation05,C20,subjective,12,Patient reports no smoking,supported,T72;T73,No.,none,none,
+day1_consultation05,C21,subjective,12,Patient reports drinks socially,supported,T74;T75,socially I drink,none,none,
+day1_consultation05,C22,subjective,13,Patient reports no chest pain,uncertain,T80;T81,I'm not having any problems,over_interpretation,minor,"doctor asked 'how's your chest?'; patient said no breathlessness, no cough, 'no problems'. Chest pain was never asked directly"
+day1_consultation05,C23,subjective,13,Patient reports shortness of breath,contradicted,T80;T81,I don't feel short of breath,negation,major,"patient DENIED this. Claim has lost the 'no'. Same source statement as C22; check whether the generated note listed these as negatives and the decomposer dropped the 'no' (likely a decomposer bug, not a generator error)"
+day1_consultation05,C24,subjective,13,Patient reports cough,contradicted,T80;T81,I don't have a cough,negation,major,"patient DENIED this. Claim has lost the 'no'. Same source statement as C22; check whether the generated note listed these as negatives and the decomposer dropped the 'no' (likely a decomposer bug, not a generator error)"
+day1_consultation05,C25,subjective,13,Patient reports palpitations,contradicted,T82;T83,"Not that it, no",negation,major,"patient DENIED this. Claim has lost the 'no'. Same source statement as C22; check whether the generated note listed these as negatives and the decomposer dropped the 'no' (likely a decomposer bug, not a generator error)"
+day1_consultation05,C26,subjective,13,Patient reports headaches,contradicted,T84;T85,No.,negation,major,"patient DENIED this. Claim has lost the 'no'. Same source statement as C22; check whether the generated note listed these as negatives and the decomposer dropped the 'no' (likely a decomposer bug, not a generator error)"
+day1_consultation05,C27,subjective,13,Patient reports vision problems,contradicted,T84;T85,No.,negation,major,"patient DENIED this. Claim has lost the 'no'. Same source statement as C22; check whether the generated note listed these as negatives and the decomposer dropped the 'no' (likely a decomposer bug, not a generator error)"
+day1_consultation05,C28,objective,0,Not documented,supported,T77,before I go to the examination,none,none,doctor never examined and no vitals were stated
+day1_consultation05,C29,assessment,0,Clinician considers possible urinary tract infection,supported,T89;T93,could just be a urine infection,none,none,
+day1_consultation05,C30,assessment,0,Clinician considers possible gastrointestinal cause,supported,T89,something related to your gut,none,none,
+day1_consultation05,C31,assessment,0,Clinician considers possible pregnancy-related cause,supported,T89,a pregnancy-related cause,none,none,
+day1_consultation05,C32,plan,0,"Prescribe Trimethoprim 2 tablets, one tablet twice daily for 3 days.",supported,T104,Trimethoprim,none,none,"doctor's wording is itself unclear ('two tablets, one tablet twice a day for three days'); claim repeats it. Dose is worth a human look"
+day1_consultation05,C33,plan,1,Advise patient to take paracetamol for pain relief.,supported,T100,Paracetamol would be advisable,none,none,
+day1_consultation05,C34,plan,2,Advise patient to drink plenty of fluids,supported,T100,drink plenty of fluids,none,none,
+day1_consultation05,C35,plan,2,Advise patient to consume cranberry juice,supported,T101,cranberry juice,none,none,
+day1_consultation05,C36,plan,3,Advise patient to obtain a pregnancy test.,supported,T96,have a pregnancy test done,none,none,
+day1_consultation05,C37,plan,4,Advise patient to return in a few days if symptoms do not improve or worsen.,supported,T97,come back and see me in a few days time,none,none,
+day1_consultation05,C38,plan,5,Advise patient to monitor for worsening abdominal pain,supported,T98,worsening tummy pain,none,none,
+day1_consultation05,C39,plan,5,Advise patient to monitor for persistent hot and sweaty feeling,supported,T98,if you're feeling really hot or sweaty,none,none,
+day1_consultation05,C40,plan,5,Advise patient to monitor for vomiting,supported,T98,vomiting,none,none,
+day1_consultation05,C41,plan,6,Advise patient to call if concerned.,supported,T102,give me a call,none,none,

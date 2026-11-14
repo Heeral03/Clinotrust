@@ -128,7 +128,13 @@ class LLMClient(Protocol):
 
 
 class GroqClient:
-    def __init__(self, api_key: str | None = None, model: str | None = None):
+    def __init__(
+        self,
+        api_key: str | None = None,
+        model: str | None = None,
+        reasoning_effort: str | None = None,
+        max_completion_tokens: int | None = None,
+    ):
         from groq import Groq
 
         key = api_key or settings.groq_api_key
@@ -136,16 +142,28 @@ class GroqClient:
             raise RuntimeError("GROQ_API_KEY is not set (add it to .env)")
         self._client = Groq(api_key=key)
         self.model = model or settings.groq_model
+        # Optional per-client overrides (None = provider default, so existing callers are unchanged).
+        # Reasoning models (gpt-oss) can spend the whole default budget on hidden reasoning and
+        # return empty content with finish_reason="length".
+        self.reasoning_effort = reasoning_effort
+        self.max_completion_tokens = max_completion_tokens
 
     def _call(self, system: str, user: str, json_mode: bool) -> str:
         kwargs = {"response_format": {"type": "json_object"}} if json_mode else {}
+        if self.reasoning_effort:
+            kwargs["reasoning_effort"] = self.reasoning_effort
+        if self.max_completion_tokens:
+            kwargs["max_completion_tokens"] = self.max_completion_tokens
         r = self._client.chat.completions.create(
             model=self.model,
             temperature=0,
             messages=[{"role": "system", "content": system}, {"role": "user", "content": user}],
             **kwargs,
         )
-        return r.choices[0].message.content or ""
+        choice = r.choices[0]
+        if choice.finish_reason == "length" and not (choice.message.content or "").strip():
+            raise ValueError("model output truncated (finish_reason=length, empty content)")
+        return choice.message.content or ""
 
     def complete(self, system: str, user: str) -> str:
         from groq import BadRequestError

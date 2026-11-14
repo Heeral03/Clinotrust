@@ -1,0 +1,26 @@
+encounter_id,omission_id,section,missing_information,evidence_turns,evidence_quote,severity,notes
+day1_consultation01,O1,plan,No antibiotics needed (conservative management),T76,I don't think you need anything like antibiotics,minor,
+day1_consultation01,O2,subjective,Pain does not spread to the back,T19;T20,"no, just maybe my stomach",minor,
+day1_consultation01,O3,subjective,No other stomach or bowel problems,T48;T49,"you don't have any other tummy problem, bowel problems I should be aware of",minor,
+day1_consultation01,O4,subjective,Diarrhea is affecting daily activities and he needs to stay close to the toilet,T3;T54,I need to stay close to the toilet,minor,
+day1_consultation02,O1,subjective,Patient is 31 years old,T84,I'm thirty one,minor,
+day1_consultation02,O2,subjective,Skin is cracked in some parts,T35,my skin is a bit cracked in some parts,minor,cracked skin only appears in the Objective section of the note
+day1_consultation02,O3,subjective,Earlier eczema was only on the arm; now also on chest and hands,T26,my eczema was more like only in the arm,minor,
+day1_consultation02,O4,subjective,Earlier eczema treatments did not work this time,T18,I tried those and it didn't work,minor,
+day1_consultation02,O5,subjective,Needs a shower every day to ease the itching and cannot go hiking,T29,I have to take like showers every day,minor,
+day1_consultation02,O6,plan,Discuss an eczema CU if triggers are causing the symptoms,T108,we need to have a discussion about an eczema CU,minor,
+day1_consultation03,O1,subjective,Saw zig-zag lines in vision a few minutes before the headache started (visual aura),T7,I noticed some zig-zag lines in my vision,major,central to the migraine picture; note only says blurred vision
+day1_consultation03,O2,subjective,Headache does not move elsewhere,T19;T20,"No, but it's worse when I move",minor,
+day1_consultation03,O3,subjective,"Blurred vision in both eyes, only some days",T33;T35,feels like it some days,minor,
+day1_consultation03,O4,subjective,No other medical history and never diagnosed with migraines,T72;T76,I've not been diagnosed,minor,
+day1_consultation03,O5,subjective,Friend's mother recently died of a brain tumour (source of the cancer worry),T29,she recently died of a brain tumor,minor,
+day1_consultation03,O6,subjective,Worried about missing work and career; needs to return to work today,T56,I need to get back to work today,minor,
+day1_consultation04,O1,subjective,Feeling bad and tired,T8,kind of uh bad and tired,minor,fatigue not in the note
+day1_consultation04,O2,subjective,Exposure to a colleague who kept sneezing,T11,she just kept sneezing next to me,minor,
+day1_consultation04,O3,subjective,No skin rashes,T73;T74,"Um no, no",minor,
+day1_consultation04,O4,plan,Illness usually lasts about a week and improves with time,T115,these normally last about seven to days,minor,
+day1_consultation05,O1,plan,Tests were offered first; patient asked to treat empirically instead of having tests,T89;T94;T95,"can we do that instead of me, going for tests",major,judgement call on severity: explains why antibiotics were given without tests
+day1_consultation05,O2,subjective,Pain has not spread anywhere else,T13,It hasn't spread anywhere else,minor,
+day1_consultation05,O3,subjective,Never had these symptoms before,T61,I've never had these symptoms before,minor,
+day1_consultation05,O4,subjective,Last STI screen was normal about six months ago,T38,my last STD screen was normal,minor,
+day1_consultation05,O5,subjective,Unsure whether there was blood in the urine ('maybe'),T28,"I can't say, I mean maybe",minor,
