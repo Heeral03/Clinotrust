@@ -1,9 +1,9 @@
-"""Run the verifier (prompt v0 or v1) over labels/claims.csv (reads ONLY encounter_id, claim_id, section, claim_text).
+"""Run the verifier (prompt v0, v1 or v1.1) over labels/claims.csv (reads ONLY encounter_id, claim_id, section, claim_text).
 
-Usage: uv run python -m pipeline.run_verify [--prompt v0|v1] [--batched] [--only ID ...] [--limit N]
+Usage: uv run python -m pipeline.run_verify [--prompt v0|v1|v1.1] [--batched] [--only ID ...] [--limit N]
 
 Resumable: claims already verified are skipped, and the verdict file is saved after every claim.
-Writes to outputs/verdicts/verifier-v0[-batched]/ (v0) or verifier-v1[-batched]/ (v1). A v1 run can
+Writes to outputs/verdicts/verifier-v0[-batched]/ (v0) or verifier-v1[-batched]/ (v1) or verifier-v1.1[-batched]/ (v1.1). A v1/v1.1 run can
 never write into a v0 folder. Never writes to labels/.
 """
 
@@ -18,6 +18,8 @@ from pipeline.verify import (
     DAILY_TOKEN_CAP,
     LEDGER,
     SPECS,
+    V1_1_BATCH_VERDICTS_DIR,
+    V1_1_VERDICTS_DIR,
     V1_BATCH_VERDICTS_DIR,
     V1_VERDICTS_DIR,
     VERDICTS_DIR,
@@ -49,6 +51,7 @@ def main() -> None:
     defaults = {
         ("v0", False): VERDICTS_DIR, ("v0", True): BATCH_VERDICTS_DIR,
         ("v1", False): V1_VERDICTS_DIR, ("v1", True): V1_BATCH_VERDICTS_DIR,
+        ("v1.1", False): V1_1_VERDICTS_DIR, ("v1.1", True): V1_1_BATCH_VERDICTS_DIR,
     }  # fmt: skip
     out = Path(a.out or defaults[(a.prompt, a.batched)])
     v0_dirs = {VERDICTS_DIR.resolve(), BATCH_VERDICTS_DIR.resolve()}

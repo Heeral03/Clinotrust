@@ -79,7 +79,7 @@ def test_v0_prompts_are_byte_identical_to_the_version_that_produced_the_v0_outpu
     )
     assert V0.single_system == SYSTEM_PROMPT and V0.batch_system == BATCH_SYSTEM_PROMPT
     assert (V0.single_version, V0.batch_version) == ("verify-prompt-v0", "verify-prompt-v0-batch")
-    assert not V0.search_all_turns and V1.search_all_turns and set(SPECS) == {"v0", "v1"}
+    assert not V0.search_all_turns and V1.search_all_turns and {"v0", "v1"} <= set(SPECS)
 
 
 # ------------------------------------------------------------------ v1 prompt content

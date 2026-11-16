@@ -48,7 +48,7 @@ day1_consultation02,C11,subjective,5,Patient reports prior eczema treated with c
 day1_consultation02,C12,subjective,6,Patient reports no fever,supported,T54;T55,No. just very itchy. Nothing else.,none,none,
 day1_consultation02,C13,subjective,6,Patient reports no cough,supported,T57;T58,No.,none,none,bare No to a negatively phrased question (T57); read as a denial of cough
 day1_consultation02,C14,subjective,6,Patient reports no breathing difficulties,supported,T57;T58,No.,none,none,same single No as C13
-day1_consultation02,C15,subjective,6,Patient reports no urinary issues,uncertain,T59;T60,I I think so.,overstated,minor,patient hedged
+day1_consultation02,C15,subjective,6,Patient reports no urinary issues,supported,T59;T60,I I think so.,none,none,patient hedged
 day1_consultation02,C16,subjective,6,Patient reports no bowel issues,uncertain,T56,"So your, your bowels are working OK?",overstated,minor,no patient answer was transcribed after the bowel question
 day1_consultation02,C17,subjective,7,Patient reports no bleeding or discharge from skin,supported,T33;T35;T37;T38,No. Um so my skin is a bit cracked in some parts,none,none,
 day1_consultation02,C18,subjective,8,Patient reports no face involvement.,supported,T50;T53,On my face? No.,none,none,
@@ -75,7 +75,7 @@ day1_consultation02,C38,objective,8,No other symptoms observed.,uncertain,T55,No
 day1_consultation02,C39,assessment,0,Clinician considers possible eczema flare-up.,supported,T93,I do wonder whether this is a flare-up of your eczema,none,none,
 day1_consultation02,C40,plan,0,Prescribe stronger topical steroid.,supported,T96;T97,I'm happy to prescribe to you today,none,none,
 day1_consultation02,C41,plan,1,Prescribe emollients for use in bath and shower for 7-10 days,supported,T97;T100,using that for the first seven to ten days,none,none,7 to 10 days is a trial period before reassessing (T102)
-day1_consultation02,C42,plan,2,Advise use of over-the-counter antihistamines such as loratadine or piritone,supported,T104;T105,Things like Loratadine or Piriton,other,minor,medicine name is misspelled 'piritone' in the claim
+day1_consultation02,C42,plan,2,Advise use of over-the-counter antihistamines such as loratadine or piritone,supported,T104;T105,Things like Loratadine or Piriton,none,none,medicine name is misspelled 'piritone' in the claim
 day1_consultation02,C43,plan,3,Advise use of stronger antihistamine (fexofenadine) if needed.,uncertain,T113;T114,I can give you something a little bit stronger today as well,other,minor,'if needed' was not said; doctor offers to give it today
 day1_consultation02,C44,plan,4,Advise keeping a diary of triggers.,supported,T107,it's also worth keeping a diary of any triggers,none,none,
 day1_consultation02,C45,plan,5,Follow up in one week if symptoms do not improve.,supported,T117,"do come back and see me next week, if things don't get better",none,none,
@@ -137,13 +137,13 @@ day1_consultation04,C19,subjective,9,Patient reports no vision problems,supporte
 day1_consultation04,C20,subjective,9,Patient reports no photophobia,supported,T61;T62,"No, I don't think so",none,none,mild hedge
 day1_consultation04,C21,subjective,10,Patient reports no nausea,supported,T63;T64,"No, none of that",none,none,
 day1_consultation04,C22,subjective,10,Patient reports no vomiting,supported,T63;T64,"No, none of that",none,none,
-day1_consultation04,C23,subjective,10,Patient reports no bowel changes,uncertain,T65;T66,Think so,over_interpretation,minor,"patient said bowels working OK ('Think so', hedged); 'no bowel changes' is a slightly different statement"
+day1_consultation04,C23,subjective,10,Patient reports no bowel changes,supported,T65;T66,Think so,none,none,"patient said bowels working OK ('Think so', hedged); 'no bowel changes' is a slightly different statement"
 day1_consultation04,C24,subjective,10,Patient reports no urinary issues,supported,T67;T68,"Yeah, yeah",none,none,
 day1_consultation04,C25,subjective,11,Patient reports increased fluid intake,supported,T70,drinking a lot more than the usual,none,none,
 day1_consultation04,C26,subjective,11,Patient reports decreased appetite,supported,T71;T72,"maybe a bit less than uh than what I, I would usually have",none,none,patient said eating a bit less; 'decreased appetite' is a small inference. Doctor's appetite question (T69) was answered about drinking
 day1_consultation04,C27,subjective,12,Patient reports muscle aches started in the past couple days.,supported,T75;T76,that sort of started in the past couple days,none,none,
 day1_consultation04,C28,subjective,13,Patient reports no known medical problems,supported,T77;T78,I'm fine,none,none,
-day1_consultation04,C29,subjective,13,Patient reports no medications,supported,T78,there isn't anything that I'm taking,none,none,means regular medication; he was taking paracetamol and ibuprofen for this illness (T43)
+day1_consultation04,C29,subjective,13,Patient reports no medications,uncertain,T78,there isn't anything that I'm taking,overstated,minor,means regular medication; he was taking paracetamol and ibuprofen for this illness (T43)
 day1_consultation04,C30,subjective,13,Patient reports no allergies,uncertain,T81;T82,"Um, no",overstated,minor,doctor asked only about allergies to medications; claim says 'no allergies'
 day1_consultation04,C31,subjective,14,Patient reports family history of type 2 diabetes (grandma),supported,T85;T88,my grandma has diabetes,none,none,patient said 'I think it's type two' (T88)
 day1_consultation04,C32,subjective,14,Patient reports family history of eczema (great grandad),supported,T91,great grandads had an eczema,none,none,

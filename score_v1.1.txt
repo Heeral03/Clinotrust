@@ -1,0 +1,222 @@
+SCORING VERDICTS FROM: outputs/verdicts/verifier-v1.1-batched
+  5 verdict files, 211 verdicts for the selected encounters
+  labels: labels/claims.csv   encounters: 01, 02, 03, 04, 05
+
+==============================================================================
+ALL ROWS   [outputs/verdicts/verifier-v1.1-batched]
+==============================================================================
+gold-labeled claims: 211   scored: 211   no verdict: 0   text mismatch: 0
+
+4-class confusion matrix (rows = YOUR label, columns = VERIFIER)
+                   supported  contradicted   unsupported     uncertain         total
+supported                181             0             0             3           184
+contradicted               1             7             0             0             8
+unsupported                0             0             0             0             0
+uncertain                  4             1             1            13            19
+
+binary: positive = NOT SUPPORTED (contradicted + unsupported + uncertain)
+                      verifier: not supported   verifier: supported
+  you: not supported  TP=22                 FN=5   (errors the verifier missed)
+  you: supported      FP=3                  TN=181   (correct claims it wrongly flagged)
+  precision=0.880  recall=0.815  F1=0.846  4-class accuracy=0.953
+  quotes: 206 given, 4 with quote_valid=False, 2 turn ids corrected
+
+flagging on needs_review = (status != supported) OR (quote_valid is False):
+  you: not supported  TP=22                 FN=5
+  you: supported      FP=7                  TN=177
+  precision=0.759  recall=0.815
+
+recall per error_type (share of that error_type's claims flagged; status | needs_review)
+  negation             n=0
+  overstated           n=5   (you: not-supported 5 )  status 3/5 = 0.600   needs_review 3/5 = 0.600
+  over_interpretation  n=2   (you: not-supported 2 )  status 2/2 = 1.000   needs_review 2/2 = 1.000
+  wrong_section        n=8   (you: not-supported 8 )  status 8/8 = 1.000   needs_review 8/8 = 1.000
+  other                n=4   (you: not-supported 4 )  status 2/4 = 0.500   needs_review 2/4 = 0.500
+  decomposition_error  n=8   (you: not-supported 8 )  status 7/8 = 0.875   needs_review 7/8 = 0.875
+
+disagreements (4-class): 10
+
+[01 C11] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports eating only light foods
+  YOU     : contradicted / decomposition_error   turns=T36   quote='light foods'
+  VERIFIER: supported   turns=['T34', 'T36']   quote='just soups, and, uh, yeah, light foods. Like smoothies and, yeah, liquid foods mainly.'   quote_valid=True
+  analysis: In T34, the doctor asks what kind of foods the patient has managed to eat. In T36, the patient responds, 'just soups, and, uh, yeah, light foods. Like smoothies and, yeah, liquid foods mainly.' This directly supports the claim that the patient reports eating only light foods.
+
+[01 C17] same side, different label
+  claim   : Patient reports no other symptoms
+  YOU     : uncertain / over_interpretation   turns=T31;T32;T54   quote='Um, I had a loss of appetite'
+  VERIFIER: contradicted   turns=['T31', 'T32']   quote='anything else that comes to mind? ... I had a loss of appetite'   quote_valid=True
+  analysis: The claim is contradicted. In T31, the doctor asks if there are any other symptoms. In T32, the patient explicitly reports a 'loss of appetite' and states they haven't been eating as much, which is an additional symptom.
+
+[01 C31] MISSED (gold not-supported, verifier says supported)
+  claim   : Prescribe paracetamol 2 tablets up to 4 times daily for feverish or weak symptoms
+  YOU     : uncertain / overstated   turns=T82   quote='taking some paracetamol, uh, two tablets up to four times a day'
+  VERIFIER: supported   turns=['T82']   quote='taking some paracetamol, uh, two tablets up to four times a day'   quote_valid=True
+  analysis: The doctor advises taking paracetamol (2 tablets up to 4 times a day) if feeling feverish and weak. The claim uses "Prescribe," which is stronger than the transcript's "recommend" or "taking... can also help," but the dosage and indication match exactly.
+
+[02 C15] FALSE ALARM (gold supported, verifier flags it)
+  claim   : Patient reports no urinary issues
+  YOU     : supported / none   turns=T59;T60   quote='I I think so.'
+  VERIFIER: uncertain   turns=['T59', 'T60']   quote="You're passing urine OK. ... I I think so."   quote_valid=True
+  analysis: In T59, the doctor asks 'You're passing urine OK.' (a statement/question). In T60, the patient responds 'I I think so.' This is a hedged response, not a clear confirmation of 'no issues' or a definitive 'yes'.
+
+[02 C30] same side, different label
+  claim   : Skin appears dry and cracked
+  YOU     : uncertain / wrong_section   turns=T35;T66;T67;T95   quote="But from what you've told me"
+  VERIFIER: unsupported   turns=-   quote=''   quote_valid=None
+  analysis: The transcript contains no examination findings or measurements. The doctor mentions dry and cracked skin in T67, but explicitly attributes this to what the patient told them ('from what you've told me'), not an objective observation.
+
+[04 C3] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports difficulty swallowing for one or two days
+  YOU     : uncertain / other   turns=T14;T15   quote='quite painful to swallow, for one or two days'
+  VERIFIER: supported   turns=['T14', 'T15']   quote='Yeah it was uh, it was quite painful to swallow, for one or two days.'   quote_valid=True
+  analysis: In T14, the doctor asks about difficulty or pain on swallowing. In T15, the patient replies, "Yeah it was uh, it was quite painful to swallow, for one or two days." This directly supports the claim.
+
+[04 C6] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports runny nose clearing up
+  YOU     : uncertain / other   turns=T22;T23   quote="it's clearing up"
+  VERIFIER: supported   turns=['T22', 'T23']   quote="Yeah yeah, it's uh it's clearing up ."   quote_valid=True
+  analysis: In T23, in response to the doctor's question about discharge, the patient says, "Yeah yeah, it's uh it's clearing up." This directly supports the claim that the runny nose is clearing up.
+
+[04 C7] FALSE ALARM (gold supported, verifier flags it)
+  claim   : Patient reports dry cough started yesterday
+  YOU     : supported / none   turns=T28   quote='maybe yesterday'
+  VERIFIER: uncertain   turns=['T28']   quote='that started recently, like just uh um maybe yesterday'   quote_valid=True
+  analysis: In T28, the patient states regarding the cough, "that started recently, like just uh um maybe yesterday." The use of "maybe" indicates uncertainty about the exact timing, making the specific claim of "started yesterday" uncertain rather than fully supported.
+
+[04 C29] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports no medications
+  YOU     : uncertain / overstated   turns=T78   quote="there isn't anything that I'm taking"
+  VERIFIER: supported   turns=['T77', 'T78']   quote="there isn't anything that I'm taking"   quote_valid=True
+  analysis: In response to the question about medical problems/treatment (T77), the patient stated, "There's... isn't anything that I'm taking" (T78), which reports no current medications.
+
+[04 C35] FALSE ALARM (gold supported, verifier flags it)
+  claim   : Patient reports mild work-related stress
+  YOU     : supported / none   turns=T99;T101   quote='a bit of a stressful period'
+  VERIFIER: uncertain   turns=['T99', 'T101']   quote="a bit of a stressful period ... it's the good kind of stress."   quote_valid=True
+  analysis: The patient describes the work period as "a bit of a stressful period" (T99) but clarifies it is "good kind of stress" (T101). The claim uses the qualifier "mild," which is not explicitly stated in the transcript, making it uncertain.
+
+==============================================================================
+EXCLUDING error_type = decomposition_error   [outputs/verdicts/verifier-v1.1-batched]
+==============================================================================
+gold-labeled claims: 203   scored: 203   no verdict: 0   text mismatch: 0
+
+4-class confusion matrix (rows = YOUR label, columns = VERIFIER)
+                   supported  contradicted   unsupported     uncertain         total
+supported                181             0             0             3           184
+contradicted               0             0             0             0             0
+unsupported                0             0             0             0             0
+uncertain                  4             1             1            13            19
+
+binary: positive = NOT SUPPORTED (contradicted + unsupported + uncertain)
+                      verifier: not supported   verifier: supported
+  you: not supported  TP=15                 FN=4   (errors the verifier missed)
+  you: supported      FP=3                  TN=181   (correct claims it wrongly flagged)
+  precision=0.833  recall=0.789  F1=0.811  4-class accuracy=0.956
+  quotes: 198 given, 4 with quote_valid=False, 2 turn ids corrected
+
+flagging on needs_review = (status != supported) OR (quote_valid is False):
+  you: not supported  TP=15                 FN=4
+  you: supported      FP=7                  TN=177
+  precision=0.682  recall=0.789
+
+recall per error_type (share of that error_type's claims flagged; status | needs_review)
+  negation             n=0
+  overstated           n=5   (you: not-supported 5 )  status 3/5 = 0.600   needs_review 3/5 = 0.600
+  over_interpretation  n=2   (you: not-supported 2 )  status 2/2 = 1.000   needs_review 2/2 = 1.000
+  wrong_section        n=8   (you: not-supported 8 )  status 8/8 = 1.000   needs_review 8/8 = 1.000
+  other                n=4   (you: not-supported 4 )  status 2/4 = 0.500   needs_review 2/4 = 0.500
+
+comparison folders:  single=outputs/verdicts/verifier-v0   batched=outputs/verdicts/verifier-v0-batched
+
+==============================================================================
+SINGLE vs BATCHED (claims with a usable verdict in both)
+==============================================================================
+claims in both: 56
+  same 4-class status: 55/56 = 0.982
+  same side (supported vs not supported): 55/56 = 0.982
+  batched verdicts came via: {'batch': 56}  (single-retry = re-asked alone)
+  vs your labels on the 56 shared labeled claims: single 52/56, batched 51/56 exact-status matches
+  [02 C6] single=supported    batched=contradicted you=supported    | Patient reports skin involvement on arms
+
+==============================================================================
+v0 vs v1 PROMPT, same claims, same labels  [ALL ROWS; v0=outputs/verdicts/verifier-v0-batched v1=outputs/verdicts/verifier-v1-batched]
+==============================================================================
+                                      v0        v1
+  claims compared                    209       209
+  4-class accuracy                 0.890     0.928
+  precision (status)               0.750     0.808
+  recall (status)                  0.333     0.778
+  precision (needs_review)         0.550     0.750
+  recall (needs_review)            0.407     0.778
+  missed errors FN (status)           18         6
+  false alarms FP (status)             3         5
+  quotes not found                     8         3
+  turn ids corrected                   0         3
+
+  recall per error_type, flagged/n  (status | needs_review):
+    overstated                 0/5 | 0/5       2/5 | 2/5
+    over_interpretation        2/2 | 2/2       2/2 | 2/2
+    wrong_section              0/8 | 0/8       7/8 | 7/8
+    other                      0/4 | 2/4       2/4 | 2/4
+    decomposition_error        7/8 | 7/8       8/8 | 8/8
+
+  status changed on 18 claims: 12 FIXED, 4 BROKEN
+    [01 C11] FIXED               v0=supported    v1=contradicted you=contradicted (decomposition_error) | Patient reports eating only light foods
+    [01 C31] FIXED               v0=supported    v1=uncertain    you=uncertain    (overstated) | Prescribe paracetamol 2 tablets up to 4 times daily for
+    [02 C3] BROKEN              v0=supported    v1=uncertain    you=supported    (none) | Patient reports red skin started 4 days ago
+    [02 C6] FIXED               v0=contradicted v1=supported    you=supported    (none) | Patient reports skin involvement on arms
+    [02 C15] BROKEN              v0=supported    v1=uncertain    you=supported    (none) | Patient reports no urinary issues
+    [02 C32] FIXED               v0=supported    v1=uncertain    you=uncertain    (wrong_section) | No bleeding or discharge noted
+    [02 C33] FIXED               v0=supported    v1=uncertain    you=uncertain    (wrong_section) | No fever observed.
+    [02 C34] FIXED               v0=supported    v1=uncertain    you=uncertain    (wrong_section) | No cough or breathing difficulties noted
+    [02 C35] FIXED               v0=supported    v1=uncertain    you=uncertain    (wrong_section) | No urinary issues noted.
+    [02 C36] changed, both wrong v0=supported    v1=unsupported  you=uncertain    (wrong_section) | Bowel function normal.
+    [02 C37] FIXED               v0=supported    v1=uncertain    you=uncertain    (wrong_section) | No face involvement noted.
+    [02 C38] FIXED               v0=supported    v1=uncertain    you=uncertain    (wrong_section) | No other symptoms observed.
+    [02 C43] FIXED               v0=supported    v1=uncertain    you=uncertain    (other) | Advise use of stronger antihistamine (fexofenadine) if 
+    [03 C25] FIXED               v0=contradicted v1=supported    you=supported    (none) | Not documented
+    [04 C7] BROKEN              v0=supported    v1=uncertain    you=supported    (none) | Patient reports dry cough started yesterday
+    [04 C9] FIXED               v0=supported    v1=uncertain    you=uncertain    (overstated) | Patient reports dry cough not painful
+    [04 C35] BROKEN              v0=supported    v1=uncertain    you=supported    (none) | Patient reports mild work-related stress
+    [04 C44] changed, both wrong v0=supported    v1=unsupported  you=uncertain    (other) | Continue regular paracetamol and ibuprofen as needed
+
+==============================================================================
+v0 vs v1 PROMPT, same claims, same labels  [EXCLUDING decomposition_error; v0=outputs/verdicts/verifier-v0-batched v1=outputs/verdicts/verifier-v1-batched]
+==============================================================================
+                                      v0        v1
+  claims compared                    201       201
+  4-class accuracy                 0.891     0.925
+  precision (status)               0.400     0.722
+  recall (status)                  0.105     0.684
+  precision (needs_review)         0.308     0.650
+  recall (needs_review)            0.211     0.684
+  missed errors FN (status)           17         6
+  false alarms FP (status)             3         5
+  quotes not found                     8         3
+  turn ids corrected                   0         3
+
+  recall per error_type, flagged/n  (status | needs_review):
+    overstated                 0/5 | 0/5       2/5 | 2/5
+    over_interpretation        2/2 | 2/2       2/2 | 2/2
+    wrong_section              0/8 | 0/8       7/8 | 7/8
+    other                      0/4 | 2/4       2/4 | 2/4
+
+  status changed on 17 claims: 11 FIXED, 4 BROKEN
+    [01 C31] FIXED               v0=supported    v1=uncertain    you=uncertain    (overstated) | Prescribe paracetamol 2 tablets up to 4 times daily for
+    [02 C3] BROKEN              v0=supported    v1=uncertain    you=supported    (none) | Patient reports red skin started 4 days ago
+    [02 C6] FIXED               v0=contradicted v1=supported    you=supported    (none) | Patient reports skin involvement on arms
+    [02 C15] BROKEN              v0=supported    v1=uncertain    you=supported    (none) | Patient reports no urinary issues
+    [02 C32] FIXED               v0=supported    v1=uncertain    you=uncertain    (wrong_section) | No bleeding or discharge noted
+    [02 C33] FIXED               v0=supported    v1=uncertain    you=uncertain    (wrong_section) | No fever observed.
+    [02 C34] FIXED               v0=supported    v1=uncertain    you=uncertain    (wrong_section) | No cough or breathing difficulties noted
+    [02 C35] FIXED               v0=supported    v1=uncertain    you=uncertain    (wrong_section) | No urinary issues noted.
+    [02 C36] changed, both wrong v0=supported    v1=unsupported  you=uncertain    (wrong_section) | Bowel function normal.
+    [02 C37] FIXED               v0=supported    v1=uncertain    you=uncertain    (wrong_section) | No face involvement noted.
+    [02 C38] FIXED               v0=supported    v1=uncertain    you=uncertain    (wrong_section) | No other symptoms observed.
+    [02 C43] FIXED               v0=supported    v1=uncertain    you=uncertain    (other) | Advise use of stronger antihistamine (fexofenadine) if 
+    [03 C25] FIXED               v0=contradicted v1=supported    you=supported    (none) | Not documented
+    [04 C7] BROKEN              v0=supported    v1=uncertain    you=supported    (none) | Patient reports dry cough started yesterday
+    [04 C9] FIXED               v0=supported    v1=uncertain    you=uncertain    (overstated) | Patient reports dry cough not painful
+    [04 C35] BROKEN              v0=supported    v1=uncertain    you=supported    (none) | Patient reports mild work-related stress
+    [04 C44] changed, both wrong v0=supported    v1=unsupported  you=uncertain    (other) | Continue regular paracetamol and ibuprofen as needed

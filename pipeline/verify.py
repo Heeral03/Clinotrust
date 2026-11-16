@@ -28,6 +28,10 @@ V1_PROMPT_VERSION = "verify-prompt-v1"
 V1_BATCH_PROMPT_VERSION = "verify-prompt-v1-batch"
 V1_VERDICTS_DIR = Path("outputs/verdicts/verifier-v1")
 V1_BATCH_VERDICTS_DIR = Path("outputs/verdicts/verifier-v1-batched")
+V1_1_PROMPT_VERSION = "verify-prompt-v1.1"
+V1_1_BATCH_PROMPT_VERSION = "verify-prompt-v1.1-batch"
+V1_1_VERDICTS_DIR = Path("outputs/verdicts/verifier-v1.1")
+V1_1_BATCH_VERDICTS_DIR = Path("outputs/verdicts/verifier-v1.1-batched")
 ANALYSIS_MAX_WORDS = 50
 BATCH_SIZE = 10
 LEDGER = Path("outputs/verdicts/token_ledger.jsonl")
@@ -294,6 +298,57 @@ def _check_v0(v: Verdict) -> None:
         raise ValueError("missing reason")
 
 
+_HEDGE_V1 = 'Hedged answers ("I think so", "maybe", "I guess", "not sure") are uncertain.\n'
+_HEDGE_V1_1 = (
+    'Hedging: a clear yes or no followed by a softener ("Yeah, I think so", "No, I don\'t think '
+    'so") counts as that yes or no. Approximate words about time or amount ("maybe yesterday", '
+    '"about three days", "a bit") do not make a claim uncertain. Use uncertain for hedging only '
+    'when the patient gives no clear direction (a bare "not sure", "I don\'t know", "maybe", or a '
+    "changed answer).\n"
+)
+_QUAL_END_V1 = "If the\nclaim is stronger or different than the transcript, it is NOT supported.\n"
+_SCOPE_V1_1 = (
+    "Scope test: could the claim be false while the patient's answer is still true? Example: the "
+    'doctor asked about drug allergies and the claim says "no allergies"; or the doctor asked about '
+    'regular medicines and the claim says "no medications". If yes, the claim is uncertain.\n'
+)
+_PAIR_END_V1 = "patient answered only the last) does not count.\n"
+_PAIR_V1_1 = (
+    "Find the doctor's question about the claim's topic. The patient's answer counts only if it "
+    "comes before the doctor asks something else. If the doctor asks a second question straight "
+    'after (for example "Bowels OK?" then "Chest OK? Any cough?") and the next patient turn is a '
+    'bare "No.", that "No." answers the LAST question. Then nothing answers the first topic, so a '
+    "claim about it is uncertain.\n"
+)
+
+
+def _derive_v1_1(v1: str) -> str:
+    """SYSTEM_PROMPT_V1 with exactly three changes (hedging, scope test, pairing)."""
+    for anchor in (_HEDGE_V1, _QUAL_END_V1, _PAIR_END_V1):
+        if v1.count(anchor) != 1:
+            raise ValueError(f"v1 prompt anchor not found exactly once: {anchor!r}")
+    return (
+        v1.replace(_HEDGE_V1, _HEDGE_V1_1)
+        .replace(_QUAL_END_V1, _QUAL_END_V1 + _SCOPE_V1_1)
+        .replace(_PAIR_END_V1, _PAIR_END_V1 + _PAIR_V1_1)
+    )
+
+
+SYSTEM_PROMPT_V1_1 = _derive_v1_1(SYSTEM_PROMPT_V1)
+
+_BATCH_TAIL_V1 = BATCH_SYSTEM_PROMPT_V1[
+    len(
+        SYSTEM_PROMPT_V1.split("\nReturn ONLY")[0].replace(
+            "audit one claim", "audit several claims"
+        )
+    ) :
+]
+BATCH_SYSTEM_PROMPT_V1_1 = (
+    SYSTEM_PROMPT_V1_1.split("\nReturn ONLY")[0].replace("audit one claim", "audit several claims")
+    + _BATCH_TAIL_V1
+)
+
+
 def _check_v1(v: Verdict) -> None:
     n = len(v.analysis.split())
     if n == 0:
@@ -317,7 +372,9 @@ V0 = PromptSpec("v0", SYSTEM_PROMPT, BATCH_SYSTEM_PROMPT, VERIFY_PROMPT_VERSION,
                 BATCH_PROMPT_VERSION, _check_v0, False)  # fmt: skip
 V1 = PromptSpec("v1", SYSTEM_PROMPT_V1, BATCH_SYSTEM_PROMPT_V1, V1_PROMPT_VERSION,
                 V1_BATCH_PROMPT_VERSION, _check_v1, True)  # fmt: skip
-SPECS = {"v0": V0, "v1": V1}
+V1_1 = PromptSpec("v1.1", SYSTEM_PROMPT_V1_1, BATCH_SYSTEM_PROMPT_V1_1, V1_1_PROMPT_VERSION,
+                  V1_1_BATCH_PROMPT_VERSION, _check_v1, True)  # fmt: skip
+SPECS = {"v0": V0, "v1": V1, "v1.1": V1_1}
 
 
 def build_user_prompt(enc: Encounter, claim: ClaimInput) -> str:

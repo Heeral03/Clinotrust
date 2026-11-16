@@ -1,0 +1,12 @@
+encounter_id,claim_id,field,old,new,reason,made_after_seeing_verifier_v1_output
+day1_consultation02,C15,status,uncertain,supported,hedge rule chosen by Heeral: a clear yes/no with a softener ('I think so') counts as supported; only answers with no clear direction are uncertain.,yes
+day1_consultation02,C15,error_type,overstated,none,hedge rule chosen by Heeral: a clear yes/no with a softener ('I think so') counts as supported; only answers with no clear direction are uncertain.,yes
+day1_consultation02,C15,severity,minor,none,hedge rule chosen by Heeral: a clear yes/no with a softener ('I think so') counts as supported; only answers with no clear direction are uncertain.,yes
+day1_consultation02,C42,error_type,other,none,"status is supported; 'piritone' is a typo of a drug name, not a labeled error. Row was the only status/error_type mismatch in the file.",yes
+day1_consultation02,C42,severity,minor,none,severity follows error_type: no error means severity none.,yes
+day1_consultation04,C23,status,uncertain,supported,hedge rule chosen by Heeral: a clear yes/no with a softener ('I think so') counts as supported; only answers with no clear direction are uncertain.,yes
+day1_consultation04,C23,error_type,over_interpretation,none,hedge rule chosen by Heeral: a clear yes/no with a softener ('I think so') counts as supported; only answers with no clear direction are uncertain.,yes
+day1_consultation04,C23,severity,minor,none,hedge rule chosen by Heeral: a clear yes/no with a softener ('I think so') counts as supported; only answers with no clear direction are uncertain.,yes
+day1_consultation04,C29,status,supported,uncertain,scope rule chosen by Heeral: a claim broader than what was asked or true is flagged. Patient was taking paracetamol and ibuprofen (T43); same logic as 04 C30.,yes
+day1_consultation04,C29,error_type,none,overstated,same scope rule as 04 C30,yes
+day1_consultation04,C29,severity,none,minor,same as 04 C30,yes
