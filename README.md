@@ -94,13 +94,13 @@ Remaining verifier mistakes in v1.1, from `score_v1.1.txt`:
     uv sync
     cp .env.example .env   # add GROQ_API_KEY
     uv run pytest
-    uv run uvicorn api.main:app --reload
+    uv run uvicorn api.main:app --reload   # landing page at /, claim review dashboard at /app
 
 ## Layout
 - `data/` loaders + schemas (`data/raw/` holds PriMock57 and ACI-Bench, gitignored)
 - `pipeline/` generate -> decompose -> verify -> review (LangGraph)
 - `eval/` metrics and `eval/labeled/` labeled claim sets
-- `api/` FastAPI, `tests/`
+- `api/` FastAPI (JSON API + serves `web/`), `web/` landing page and review dashboard, `tests/`
 
 ## Data
 - PriMock57: github.com/babylonhealth/primock57 (57 consultations)

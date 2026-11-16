@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ClinoTrust dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css"></head>
+<body><div class="wrap">
+<nav><a class="brand" href="/">ClinoTrust</a><span class="label">Claim review · verifier prompt v1.1</span></nav>
+<div class="bar">
+  <label class="label">Consultation <select id="enc"></select></label>
+  <div id="tabs" role="tablist"></div>
+</div>
+<div id="summary" class="label"></div>
+<div id="root"><div class="empty">Loading…</div></div>
+<p class="label" style="margin:18px 0 40px">Verdicts come from a model and can be wrong. Open the evidence before trusting any claim. Use ↑ ↓ to move between claims.</p>
+</div>
+<script src="/static/review.js"></script>
+<script>
+const $=id=>document.getElementById(id);
+const TABS=[["all","All"],["review","Needs review"],["supported","Supported"],["uncertain","Uncertain"],["unsupported","Unsupported"],["contradicted","Contradicted"]];
+let view=null,filter="all";
+function tabs(){$("tabs").textContent="";for(const [k,t] of TABS){const b=document.createElement("button");b.className="tab"+(k===filter?" on":"");b.textContent=t;b.style.marginLeft="6px";
+ b.onclick=()=>{filter=k;tabs();view&&view.setFilter(k)};$("tabs").append(b)}}
+async function load(id){
+  $("root").innerHTML='<div class="empty">Loading…</div>';
+  try{
+    const r=await fetch("/api/encounters/"+id);if(!r.ok)throw 0;const d=await r.json();
+    const n=d.claims.filter(c=>c.needs_review).length;
+    $("summary").textContent=d.claims.length+" claims · "+n+" need review · "+(d.claims.length-n)+" supported with a valid quote";
+    view=ClinoReview.mount($("root"),d,{filter});
+    const first=d.claims.find(c=>c.needs_review)||d.claims[0];first&&view.select(first.id);
+    history.replaceState(null,"","#"+id);
+  }catch(e){$("root").innerHTML='<div class="empty">Could not load this consultation.</div>'}
+}
+(async()=>{
+  tabs();
+  try{
+    const list=await (await fetch("/api/encounters")).json();
+    if(!list.length){$("root").innerHTML='<div class="empty">No verdict files found in outputs/verdicts/verifier-v1.1-batched. Run the verifier first.</div>';return}
+    for(const e of list){const o=document.createElement("option");o.value=e.id;o.textContent=e.id.replace("day","day ").replace("_consultation"," · consultation ")+" ("+e.needs_review+" to review)";$("enc").append(o)}
+    const want=location.hash.slice(1);if(list.some(e=>e.id===want))$("enc").value=want;
+    $("enc").onchange=()=>load($("enc").value);load($("enc").value);
+  }catch(e){$("root").innerHTML='<div class="empty">API not reachable. Start it with: uv run uvicorn api.main:app</div>'}
+})();
+</script></body></html>

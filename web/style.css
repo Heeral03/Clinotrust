@@ -1,0 +1,45 @@
+:root{color-scheme:light;--bg:#fff;--panel:#fff;--ink:#14181f;--muted:#6b7380;--line:#e3e6eb;--soft:#f6f7f9;
+--ok-bg:#e8f7ef;--ok-fg:#14693f;--ok-bd:#b9e4cb;--warn-bg:#fdf1cf;--warn-fg:#7a4a06;--warn-bd:#f0d98a;
+--bad-bg:#fde6e3;--bad-fg:#9a2a1c;--bad-bd:#f3b9b1;--hl:#e8f7ef;--mark:#fff1a8;--accent:#14181f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Inter,system-ui,sans-serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2{font-family:"Newsreader",Georgia,serif;font-weight:400;letter-spacing:-.02em;line-height:1.1;margin:0}
+h1{font-size:clamp(2.4rem,6vw,4rem)} h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+.mono,.label{font:11px/1.4 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+a{color:inherit}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.brand{font:600 15px "IBM Plex Mono",monospace;text-decoration:none}
+.btn{display:inline-block;background:var(--accent);color:var(--bg);padding:11px 20px;border-radius:8px;text-decoration:none;font-weight:500;font-size:15px}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line)}
+section{padding:56px 0;border-top:1px solid var(--line)}
+.hero{padding:64px 0 56px;border:0}.hero p{max-width:620px;font-size:1.15rem;color:var(--muted);margin:20px 0 28px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:28px}
+.card{border:1px solid var(--line);border-radius:10px;padding:18px;background:var(--panel)}
+.card h3{margin:6px 0 6px;font-size:1rem}.card p{margin:0;color:var(--muted);font-size:.95rem}
+.stats{display:flex;gap:32px;flex-wrap:wrap;margin-top:24px}.stats b{display:block;font:400 2rem "Newsreader",serif}
+footer{padding:32px 0 48px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+/* review component */
+.rv{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:24px;margin-top:16px}
+.rv-col{min-width:0}.rv-scroll{max-height:68vh;overflow:auto;padding:2px}
+.claim{display:flex;justify-content:space-between;align-items:center;gap:10px;width:100%;text-align:left;
+ background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:0 0 8px;font:inherit;cursor:pointer}
+.claim:hover{background:var(--soft)}.claim.on{border-color:var(--ink);background:var(--soft)}
+.claim .cid{font:11px "IBM Plex Mono",monospace;color:var(--muted);margin-right:8px}
+.claim .sec{display:block;font:10px "IBM Plex Mono",monospace;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
+.chip{flex:none;font:11px "IBM Plex Mono",monospace;padding:3px 9px;border-radius:99px;border:1px solid}
+.chip.supported{background:var(--ok-bg);color:var(--ok-fg);border-color:var(--ok-bd)}
+.chip.unsupported,.chip.uncertain{background:var(--warn-bg);color:var(--warn-fg);border-color:var(--warn-bd)}
+.chip.contradicted{background:var(--bad-bg);color:var(--bad-fg);border-color:var(--bad-bd)}
+.why{border:1px dashed var(--line);border-radius:10px;padding:14px 16px;margin-top:8px;background:var(--bg)}
+.why p{margin:6px 0}.why .ev{font:12px "IBM Plex Mono",monospace;color:var(--muted)}
+.why .agree{font-size:.85rem;margin-top:8px}.warnline{color:var(--warn-fg)}
+.turn{padding:9px 12px;border-radius:8px;border:1px solid transparent;font-size:.95rem}
+.turn .tid{font:11px "IBM Plex Mono",monospace;color:var(--muted);margin-right:8px}
+.turn.ev{background:var(--hl);border-color:var(--ok-bd)}
+mark{background:var(--mark);color:inherit;border-radius:3px;padding:0 2px}
+.bar{display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between;padding:12px 0}
+select,.tab{font:inherit;font-size:14px;background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 11px}
+.tab{cursor:pointer}.tab.on{background:var(--accent);color:var(--bg);border-color:var(--accent)}
+.empty{color:var(--muted);padding:24px 4px}
+@media(max-width:760px){.rv,.grid3{grid-template-columns:1fr}.rv-scroll{max-height:none}}

@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ClinoTrust: check every claim in an AI-written note</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Newsreader&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css"></head>
+<body><div class="wrap">
+<nav><a class="brand" href="/">ClinoTrust</a><a class="btn ghost" href="/app">Open the dashboard</a></nav>
+
+<div class="hero">
+  <div class="label">01 / What it is</div><br>
+  <h1>AI wrote the note.<br>Is every claim in it true?</h1>
+  <p>ClinoTrust splits an AI-written SOAP note into single claims and checks each one against the
+  consultation transcript. Every verdict points to the exact turn and quote, so a clinician reviews
+  only what needs a second look.</p>
+  <a class="btn" href="/app">Review real notes</a> <a class="btn ghost" href="#try">Try the example</a>
+</div>
+
+<section>
+  <div class="label">02 / Why it matters</div><br>
+  <h2>Fluent notes can still be wrong.</h2>
+  <div class="grid3">
+    <div class="card"><div class="label">Softened no</div><h3>"I don't think so" becomes "denies"</h3><p>Hedges get flattened into facts.</p></div>
+    <div class="card"><div class="label">Wrong section</div><h3>Patient words filed as exam findings</h3><p>"No fever observed", when nobody examined anything.</p></div>
+    <div class="card"><div class="label">Overstated</div><h3>"Advise" becomes "prescribe"</h3><p>Small verb changes carry clinical weight.</p></div>
+  </div>
+  <div class="stats">
+    <div><b>211</b><span class="label">labelled claims, 5 consultations</span></div>
+    <div><b>0.95</b><span class="label">dev accuracy, prompt v1.1</span></div>
+    <div><b>0.82</b><span class="label">of errors caught (dev set)</span></div>
+  </div>
+  <p class="label" style="margin-top:14px">Dev-set numbers, tuned on this set. Held-out test pending.</p>
+</section>
+
+<section id="try">
+  <div class="label">03 / Try it</div><br>
+  <h2>Click a claim. See the evidence.</h2>
+  <p class="label" style="margin-top:14px">Synthetic example. Not from a real consultation.</p>
+  <div id="demo"></div>
+</section>
+
+<section>
+  <div class="label">04 / How it works</div><br>
+  <h2>Four steps, no guessing.</h2>
+  <div class="grid3" style="grid-template-columns:repeat(4,1fr)">
+    <div class="card"><div class="label">1</div><h3>Generate</h3><p>An AI scribe writes the SOAP note from the transcript.</p></div>
+    <div class="card"><div class="label">2</div><h3>Split</h3><p>The note is broken into atomic claims.</p></div>
+    <div class="card"><div class="label">3</div><h3>Verify</h3><p>A different model checks each claim and must quote the transcript.</p></div>
+    <div class="card"><div class="label">4</div><h3>Review</h3><p>Quotes are checked verbatim. Anything doubtful is flagged.</p></div>
+  </div>
+  <p style="margin-top:28px"><a class="btn" href="/app">Open the dashboard</a></p>
+</section>
+
+<footer>Research prototype on the public PriMock57 role-played consultations. Not a medical device and not for clinical use.</footer>
+</div>
+<script src="/static/review.js"></script>
+<script>
+const turns=[
+["T1","doctor","What brings you in today?"],
+["T2","patient","A sore throat for three days. No chest pain, no cough, but I have had a fever."],
+["T3","doctor","How high was the fever?"],
+["T4","patient","I did not measure it. I just felt hot at night."],
+["T5","doctor","Any allergies to medication?"],
+["T6","patient","Penicillin gives me a rash."],
+["T7","doctor","Okay. Let's do a throat swab, and I will prescribe paracetamol for the fever."],
+["T8","doctor","Come back in a week if it has not improved."]].map(([id,speaker,text])=>({id,speaker,text}));
+const c=(id,text,status,analysis,ev,quote)=>({id,text,status,analysis,evidence_turns:ev,quote,quote_valid:ev.length?true:null,needs_review:status!=="supported"});
+ClinoReview.mount(document.getElementById("demo"),{turns,claims:[
+c("C1","Sore throat for 3 days.","supported","The patient says three days.",["T2"],"A sore throat for three days"),
+c("C2","Denies chest pain and cough.","supported","The patient denies both in the same sentence.",["T2"],"No chest pain, no cough"),
+c("C3","Fever up to 39 C.","unsupported","The patient never measured the fever, so no temperature is given.",["T4"],"I did not measure it"),
+c("C4","Allergic to penicillin (rash).","supported","The patient names penicillin and the rash.",["T6"],"Penicillin gives me a rash"),
+c("C5","No known drug allergies.","contradicted","The patient reports a penicillin allergy.",["T6"],"Penicillin gives me a rash"),
+c("C6","Likely streptococcal pharyngitis.","uncertain","The doctor orders a swab but states no diagnosis.",["T7"],"throat swab"),
+c("C7","Follow up in one week if no improvement.","supported","The doctor says to return in a week if not improved.",["T8"],"Come back in a week if it has not improved")]});
+</script></body></html>
