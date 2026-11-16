@@ -35,7 +35,7 @@ async function load(id){
   tabs();
   try{
     const list=await (await fetch("/api/encounters")).json();
-    if(!list.length){$("root").innerHTML='<div class="empty">No verdict files found in outputs/verdicts/verifier-v1.1-batched. Run the verifier first.</div>';return}
+    if(!list.length){$("root").innerHTML='<div class="empty">No demo data found in web/demo. Run: uv run python -m pipeline.export_demo</div>';return}
     for(const e of list){const o=document.createElement("option");o.value=e.id;o.textContent=e.id.replace("day","day ").replace("_consultation"," · consultation ")+" ("+e.needs_review+" to review)";$("enc").append(o)}
     const want=location.hash.slice(1);if(list.some(e=>e.id===want))$("enc").value=want;
     $("enc").onchange=()=>load($("enc").value);load($("enc").value);

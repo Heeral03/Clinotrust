@@ -4,9 +4,9 @@ GET /                      landing page
 GET /app                   claim review dashboard
 GET /api/encounters        encounters that have verifier verdicts
 GET /api/encounters/{id}   transcript + verdicts (+ reviewer labels when labelled)
+Data is read from web/demo/ (committed); rebuild it with `uv run python -m pipeline.export_demo`.
 """
 
-import csv
 import json
 import re
 from pathlib import Path
@@ -17,9 +17,7 @@ from fastapi.staticfiles import StaticFiles
 
 ROOT = Path(__file__).resolve().parent.parent
 WEB = ROOT / "web"
-PROCESSED = ROOT / "data" / "processed"
-VERDICTS = ROOT / "outputs" / "verdicts" / "verifier-v1.1-batched"
-LABELS = ROOT / "labels" / "claims.csv"
+DEMO = WEB / "demo"  # built by `python -m pipeline.export_demo`
 ID_RE = re.compile(r"^day\d+_consultation\d+$")
 
 app = FastAPI(title="Clinotrust")
@@ -41,55 +39,24 @@ def dashboard():
     return FileResponse(WEB / "app.html")
 
 
-def _labels(encounter_id: str) -> dict[str, dict]:
-    if not LABELS.exists():
-        return {}
-    with LABELS.open(newline="") as f:
-        return {
-            r["claim_id"]: r
-            for r in csv.DictReader(f)
-            if r["encounter_id"] == encounter_id and r["status"]
-        }
-
-
 @app.get("/api/encounters")
 def encounters():
     out = []
-    for f in sorted(VERDICTS.glob("*.json")):
-        recs = json.loads(f.read_text())["records"]
-        flagged = sum(1 for r in recs if r["needs_review"])
-        out.append({"id": f.stem, "claims": len(recs), "needs_review": flagged})
+    for f in sorted(DEMO.glob("*.json")):
+        claims = json.loads(f.read_text())["claims"]
+        out.append(
+            {
+                "id": f.stem,
+                "claims": len(claims),
+                "needs_review": sum(c["needs_review"] for c in claims),
+            }
+        )
     return out
 
 
 @app.get("/api/encounters/{encounter_id}")
 def encounter(encounter_id: str):
-    vf, tf = VERDICTS / f"{encounter_id}.json", PROCESSED / f"{encounter_id}.json"
-    if not ID_RE.match(encounter_id) or not vf.exists() or not tf.exists():
+    f = DEMO / f"{encounter_id}.json"
+    if not ID_RE.match(encounter_id) or not f.exists():
         raise HTTPException(404, "unknown encounter")
-    enc = json.loads(tf.read_text())
-    labels = _labels(encounter_id)
-    claims = []
-    for r in json.loads(vf.read_text())["records"]:
-        v = r["verdict"] or {}
-        lab = labels.get(r["claim_id"])
-        claims.append(
-            {
-                "id": r["claim_id"],
-                "section": r["section"],
-                "text": r["claim_text"],
-                "status": v.get("status", "uncertain"),
-                "analysis": v.get("analysis", ""),
-                "evidence_turns": v.get("evidence_turns", []),
-                "quote": v.get("evidence_quote", ""),
-                "quote_valid": r["quote_valid"],
-                "needs_review": r["needs_review"],
-                "error": r["error"],
-                "reviewer": {"status": lab["status"], "error_type": lab["error_type"]}
-                if lab
-                else None,
-            }
-        )
-    # reference_note is deliberately not exposed: it is only a hint for omissions.
-    turns = [{"id": t["id"], "speaker": t["speaker"], "text": t["text"]} for t in enc["turns"]]
-    return {"id": encounter_id, "turns": turns, "claims": claims}
+    return json.loads(f.read_text())

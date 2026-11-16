@@ -1,0 +1,1421 @@
+{
+ "id": "day1_consultation05",
+ "turns": [
+  {
+   "id": "T1",
+   "speaker": "doctor",
+   "text": "Hello?"
+  },
+  {
+   "id": "T2",
+   "speaker": "doctor",
+   "text": ". Good morning, Tim. Um, how can I help you this morning?"
+  },
+  {
+   "id": "T3",
+   "speaker": "patient",
+   "text": "Um, so I'm"
+  },
+  {
+   "id": "T4",
+   "speaker": "patient",
+   "text": "Having some, some pain, uh, in my tummy, like the lower part of my tummy. Um and I've just been feeling, quite, hot and sweaty."
+  },
+  {
+   "id": "T5",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T6",
+   "speaker": "doctor",
+   "text": "Right, I'm sorry to hear that. When, when did your symptoms all start?"
+  },
+  {
+   "id": "T7",
+   "speaker": "patient",
+   "text": "About two days ago."
+  },
+  {
+   "id": "T8",
+   "speaker": "doctor",
+   "text": "OK. And whereabouts in your tummy is the pain, exactly?"
+  },
+  {
+   "id": "T9",
+   "speaker": "patient",
+   "text": "Uh, like below my belly button, it's like quite, sore when I press on it."
+  },
+  {
+   "id": "T10",
+   "speaker": "doctor",
+   "text": "OK. Did the pain come on quite suddenly, or was it more gradual?"
+  },
+  {
+   "id": "T11",
+   "speaker": "patient",
+   "text": ", it hasn't been, it's more gradual and it's just, it is getting a bit worse now."
+  },
+  {
+   "id": "T12",
+   "speaker": "doctor",
+   "text": "OK, OK. And can you describe the pain to me?"
+  },
+  {
+   "id": "T13",
+   "speaker": "patient",
+   "text": "Uh, it's kind of like a, a, I guess a burning pain. Uh, and it's just right there yeah, in that spot, like uh, that's mostly where I'm feeling it. It hasn't spread anywhere else."
+  },
+  {
+   "id": "T14",
+   "speaker": "doctor",
+   "text": "Just in, just below your belly button you uh, mentioned."
+  },
+  {
+   "id": "T15",
+   "speaker": "patient",
+   "text": "Yeah."
+  },
+  {
+   "id": "T16",
+   "speaker": "doctor",
+   "text": "OK. Um, and is the pain constant, or does it come and go?"
+  },
+  {
+   "id": "T17",
+   "speaker": "patient",
+   "text": "It's pretty constant, it's like getting worse. Um, it's not like, I , I can still move and walk around. Uh, I mean I'm still kind of functioning, it's just uh, I'm aware of it time."
+  },
+  {
+   "id": "T18",
+   "speaker": "doctor",
+   "text": ". Mm-hmm. OK. Um, and with the pain have you noticed any other symptoms, at all? So, for example, let's, let's focus first on your bowels. Are your bowels working OK?"
+  },
+  {
+   "id": "T19",
+   "speaker": "patient",
+   "text": "Yeah, I had a bit of constipation, but that's better, now. That was like, since last week."
+  },
+  {
+   "id": "T20",
+   "speaker": "doctor",
+   "text": "OK. So you've got no other symptoms, like diarrhea or loose stools?"
+  },
+  {
+   "id": "T21",
+   "speaker": "patient",
+   "text": "No, I'm , I'm, my bowel movements are normal now."
+  },
+  {
+   "id": "T22",
+   "speaker": "doctor",
+   "text": "No."
+  },
+  {
+   "id": "T23",
+   "speaker": "doctor",
+   "text": "OK. And, what about your waterworks? Are you passing urine OK?"
+  },
+  {
+   "id": "T24",
+   "speaker": "patient",
+   "text": "Yeah, I'm fine, that's fine, that's. I did notice that I was a little, the urine was a little pink, in colour. But I haven't like, it hasn't really been burning, specifically or hurting when I pee and uh."
+  },
+  {
+   "id": "T25",
+   "speaker": "patient",
+   "text": "And I did notice I was going to the, I was peeing more, regularly, but I have been drinking lots of fluids. So I wasn't sure, um, I wasn't sure, um, like you know, if that was related to the pain."
+  },
+  {
+   "id": "T26",
+   "speaker": "doctor",
+   "text": "Mm."
+  },
+  {
+   "id": "T27",
+   "speaker": "doctor",
+   "text": "And when you mentioned pink urine, do you, was there any blood at all in your urine? Or was it difficult to say?"
+  },
+  {
+   "id": "T28",
+   "speaker": "patient",
+   "text": "I can't say, I mean maybe."
+  },
+  {
+   "id": "T29",
+   "speaker": "doctor",
+   "text": "OK, alright. But otherwise, it doesn't hurt, uh, or or or sting, when you pass urine?"
+  },
+  {
+   "id": "T30",
+   "speaker": "patient",
+   "text": "And I haven't noticed that it really burns or anything like that. Um, just that I'm, peeing more than , more regularly."
+  },
+  {
+   "id": "T31",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T32",
+   "speaker": "doctor",
+   "text": "OK. Um, OK. And um, moving on to other symptoms, have you noticed any vomiting, or feeling nauseous at all?"
+  },
+  {
+   "id": "T33",
+   "speaker": "patient",
+   "text": "Just a little nauseous, um, but no vomiting."
+  },
+  {
+   "id": "T34",
+   "speaker": "doctor",
+   "text": "No vomiting. Any temperatures or fevers?"
+  },
+  {
+   "id": "T35",
+   "speaker": "patient",
+   "text": "I haven't , I felt a bit hot and sweaty, but I haven't really measured it, so I can't really say."
+  },
+  {
+   "id": "T36",
+   "speaker": "doctor",
+   "text": "OK, fine. Um, uh, uh, and Kim, have to ask um, uh all all all patients. This this question is about your cycle, if you don't mind me asking. Um, are you currently um, are you currently sexually active?"
+  },
+  {
+   "id": "T37",
+   "speaker": "patient",
+   "text": "Yes."
+  },
+  {
+   "id": "T38",
+   "speaker": "patient",
+   "text": "Uh, yeah I've, I have had the same partner, I am, we were last sexually active about four days ago. Um, my last STD screen was normal, which was about six months ago."
+  },
+  {
+   "id": "T39",
+   "speaker": "doctor",
+   "text": "OK. So you've had no other partner since then."
+  },
+  {
+   "id": "T40",
+   "speaker": "patient",
+   "text": "No, the ."
+  },
+  {
+   "id": "T41",
+   "speaker": "doctor",
+   "text": "OK. Um, uh, and do you use any contraception at all?"
+  },
+  {
+   "id": "T42",
+   "speaker": "patient",
+   "text": "Uh, I'm, on the Implanon. I had the Implanon inserted about a year ago."
+  },
+  {
+   "id": "T43",
+   "speaker": "doctor",
+   "text": "At the moment, OK, fine. Um, are you still having periods?"
+  },
+  {
+   "id": "T44",
+   "speaker": "patient",
+   "text": "Yes."
+  },
+  {
+   "id": "T45",
+   "speaker": "doctor",
+   "text": "When was your last period?"
+  },
+  {
+   "id": "T46",
+   "speaker": "patient",
+   "text": "Uh, my last period was about, three weeks ago. I mean, two weeks ago."
+  },
+  {
+   "id": "T47",
+   "speaker": "doctor",
+   "text": "Two week scare, OK. So, is there any chance you could be pregnant? I know you've got an implement in there, but is there any chance you could potentially be pregnant? It's something for us to think about"
+  },
+  {
+   "id": "T48",
+   "speaker": "patient",
+   "text": "Well, we don't use any other barrier, method so, we just use the , I just have the Implanon and the same partner. Um."
+  },
+  {
+   "id": "T49",
+   "speaker": "patient",
+   "text": "Theoretically, if the Implanon, hasn't been working then I could be pregnant, but I don't suspect ."
+  },
+  {
+   "id": "T50",
+   "speaker": "doctor",
+   "text": "Yeah, OK. Well it's something for us to think about. Um, uh, maybe worth taking a pregnancy test later on, just to confirm that. Um"
+  },
+  {
+   "id": "T51",
+   "speaker": "doctor",
+   "text": "OK. And, and so, just to summarize so far, if you don't mind, it's really for the last couple of days, it's tummy pain that's really affected you, mainly lower down towards your belly button. It's quite burning, you said. It's getting worse. Um, you noticed some pink urine."
+  },
+  {
+   "id": "T52",
+   "speaker": "doctor",
+   "text": "Um, but no burning or stinging pain when you pass urine. Your bowels are working OK."
+  },
+  {
+   "id": "T53",
+   "speaker": "doctor",
+   "text": "You've felt a little bit nauseous, um, and feeling hot and sweaty. Have I got that all right?"
+  },
+  {
+   "id": "T54",
+   "speaker": "patient",
+   "text": "Yeah, that sounds, very accurate."
+  },
+  {
+   "id": "T55",
+   "speaker": "doctor",
+   "text": "Is there anything else, perhaps, that you feel like you should share with me at this stage, anything that might be important?"
+  },
+  {
+   "id": "T56",
+   "speaker": "patient",
+   "text": "I don't think so, I think I've, you , we've covered everything that's really bothering me."
+  },
+  {
+   "id": "T57",
+   "speaker": "doctor",
+   "text": "Yeah, OK. Um, tell me, tell me a bit more about your um, medical history otherwise. Are you normally fit and well?"
+  },
+  {
+   "id": "T58",
+   "speaker": "patient",
+   "text": "Yeah, , well, I haven't had any, surgical, I don't have any surgical history."
+  },
+  {
+   "id": "T59",
+   "speaker": "patient",
+   "text": "I don't have any previous, I haven't had any operations before, or, and I'm not on any other medication, I just have the Implanon."
+  },
+  {
+   "id": "T60",
+   "speaker": "doctor",
+   "text": "OK. Um, have you had anything like this before in the past? Any similar symptoms?"
+  },
+  {
+   "id": "T61",
+   "speaker": "patient",
+   "text": "I've never , I've never had these symptoms before."
+  },
+  {
+   "id": "T62",
+   "speaker": "doctor",
+   "text": "No, OK. Um"
+  },
+  {
+   "id": "T63",
+   "speaker": "doctor",
+   "text": "Fine. Um, any other family history I should be aware of? Anything relevant, family, uh related to bowels, maybe related to history?"
+  },
+  {
+   "id": "T64",
+   "speaker": "patient",
+   "text": "No, not that , not that I'm aware of, no."
+  },
+  {
+   "id": "T65",
+   "speaker": "doctor",
+   "text": "OK. Alright. Um, and socially, just tell me a bit more about your home situation. Who's at home with you?"
+  },
+  {
+   "id": "T66",
+   "speaker": "patient",
+   "text": "Uh, I live in a share house, and with two other, two other room-mates."
+  },
+  {
+   "id": "T67",
+   "speaker": "doctor",
+   "text": "OK. Um, and uh, are you currently working?"
+  },
+  {
+   "id": "T68",
+   "speaker": "patient",
+   "text": "Yeah, I currently, I am currently ."
+  },
+  {
+   "id": "T69",
+   "speaker": "doctor",
+   "text": "What do you do for work?"
+  },
+  {
+   "id": "T70",
+   "speaker": "patient",
+   "text": "I am an accountant."
+  },
+  {
+   "id": "T71",
+   "speaker": "doctor",
+   "text": "OK. Um"
+  },
+  {
+   "id": "T72",
+   "speaker": "doctor",
+   "text": "OK. Um, Do you smoke at all, Kim?"
+  },
+  {
+   "id": "T73",
+   "speaker": "patient",
+   "text": "No."
+  },
+  {
+   "id": "T74",
+   "speaker": "doctor",
+   "text": "No. And do you drink much in the way of alcohol?"
+  },
+  {
+   "id": "T75",
+   "speaker": "patient",
+   "text": "Uh , socially I drink, but uh, I don't think more, more than normal. ."
+  },
+  {
+   "id": "T76",
+   "speaker": "doctor",
+   "text": "No, OK."
+  },
+  {
+   "id": "T77",
+   "speaker": "doctor",
+   "text": "OK. Um, just before I go to the examination, I just want to go through just some few screening questions if that's OK, yes or no."
+  },
+  {
+   "id": "T78",
+   "speaker": "doctor",
+   "text": "Uh, we've, we've covered the majority of them already. Uh, but I just want to make sure I'm not missing anything else."
+  },
+  {
+   "id": "T79",
+   "speaker": "patient",
+   "text": "All right."
+  },
+  {
+   "id": "T80",
+   "speaker": "doctor",
+   "text": "Um, how's your, how's your chest? How's your breathing? Um, any"
+  },
+  {
+   "id": "T81",
+   "speaker": "patient",
+   "text": "I don't feel short of breath uh, or, I'm not having any problems, or I don't have a cough or anything that's , worrying me."
+  },
+  {
+   "id": "T82",
+   "speaker": "doctor",
+   "text": "OK. Any uh, funny heartbeats or rhythms, palpitations?"
+  },
+  {
+   "id": "T83",
+   "speaker": "patient",
+   "text": "Not that it, no."
+  },
+  {
+   "id": "T84",
+   "speaker": "doctor",
+   "text": "OK. Any headaches? Any problems with your vision?"
+  },
+  {
+   "id": "T85",
+   "speaker": "patient",
+   "text": "No."
+  },
+  {
+   "id": "T86",
+   "speaker": "doctor",
+   "text": "No, OK. Alright. Um,"
+  },
+  {
+   "id": "T87",
+   "speaker": "doctor",
+   "text": "Fine, OK. Um, So really just uh, moving on, um,"
+  },
+  {
+   "id": "T88",
+   "speaker": "doctor",
+   "text": "And so based, based on your story really, uh, uh Kim it's, it's it's difficult. it's it's um, you know you've got some tummy pain. You don't exactly know what's causing it. It could be a few different things that could be causing your pain."
+  },
+  {
+   "id": "T89",
+   "speaker": "doctor",
+   "text": "Could just be a, you know, could just be a urine infection, for example. Could just be something related to your gut. Um, could just be something related to your, you know, a pregnancy-related cause. Um, and so it's probably worth doing some tests initially."
+  },
+  {
+   "id": "T90",
+   "speaker": "doctor",
+   "text": "to try and rule out um, what's going on here. Um, which I can organize for you today."
+  },
+  {
+   "id": "T91",
+   "speaker": "patient",
+   "text": "OK."
+  },
+  {
+   "id": "T92",
+   "speaker": "doctor",
+   "text": "Um, and basically those tests, we, we'll have a better idea in terms of how we should proceed. But certainly, it if it's been going on for the last couple of days, um,"
+  },
+  {
+   "id": "T93",
+   "speaker": "doctor",
+   "text": "Uh, you know, it's probably maybe worth empirically treating you for a maybe urine infection. And, so it's an"
+  },
+  {
+   "id": "T94",
+   "speaker": "patient",
+   "text": ". Yeah, I , can we do that instead of me, going for tests, and then seeing how that goes?"
+  },
+  {
+   "id": "T95",
+   "speaker": "doctor",
+   "text": "Yeah, absolutely. So, um I think it's certainly worth, you know covering you with some antibiotics today."
+  },
+  {
+   "id": "T96",
+   "speaker": "doctor",
+   "text": "Uh, but i still want you to bear in mind, you know, have a pregnancy test done to make sure we're not missing anything else here."
+  },
+  {
+   "id": "T97",
+   "speaker": "doctor",
+   "text": "And, um, and I want you to kind of really come back and see me in a few days time, if your symptoms are not getting any better, or indeed if they're getting worse."
+  },
+  {
+   "id": "T98",
+   "speaker": "doctor",
+   "text": "So, things to look out for would be, you know, worsening tummy pain, um, if you're feeling really hot or sweaty, your temperature's not coming down um, vomiting et cetera. Does that make sense?"
+  },
+  {
+   "id": "T99",
+   "speaker": "patient",
+   "text": "Yeah, I think I'm happy with that plan."
+  },
+  {
+   "id": "T100",
+   "speaker": "doctor",
+   "text": "OK. Um, you can try just regular painkillers, uh, Paracetamol would be advisable. Um, make sure you drink plenty of fluids."
+  },
+  {
+   "id": "T101",
+   "speaker": "doctor",
+   "text": "You can try some cranberry juice as well, which uh, can sometimes help with your urine symptoms."
+  },
+  {
+   "id": "T102",
+   "speaker": "doctor",
+   "text": "Um, take the antibiotics, uh, and give me a call, you know, if you are worried about anything else."
+  },
+  {
+   "id": "T103",
+   "speaker": "patient",
+   "text": "Uh, sure. That sounds great. Thank you very much. Um, should I just collect the script at my pharmacy?"
+  },
+  {
+   "id": "T104",
+   "speaker": "doctor",
+   "text": "Yeah, if I send it straight to your pharmacy, start the antibiotics today, something called Trimethoprim. Um, you can take two tablets, uh, one tablet twice a day for three days."
+  },
+  {
+   "id": "T105",
+   "speaker": "patient",
+   "text": "OK."
+  },
+  {
+   "id": "T106",
+   "speaker": "patient",
+   "text": "OK, , that sounds great."
+  },
+  {
+   "id": "T107",
+   "speaker": "doctor",
+   "text": "Uh, , let's see how you get on."
+  },
+  {
+   "id": "T108",
+   "speaker": "patient",
+   "text": "OK. Thank you very much."
+  },
+  {
+   "id": "T109",
+   "speaker": "doctor",
+   "text": "Great. All the best!"
+  },
+  {
+   "id": "T110",
+   "speaker": "patient",
+   "text": "Bye."
+  },
+  {
+   "id": "T111",
+   "speaker": "doctor",
+   "text": "Bye bye."
+  }
+ ],
+ "claims": [
+  {
+   "id": "C1",
+   "section": "subjective",
+   "text": "Patient reports lower abdominal pain, burning, constant, worsening over 2 days, gradual onset.",
+   "status": "supported",
+   "analysis": "The patient reports lower tummy pain (T4), burning (T13), constant (T17), worsening (T11), gradual onset (T11), and starting about two days ago (T7). All elements of the claim are explicitly stated in the transcript.",
+   "evidence_turns": [
+    "T4",
+    "T7",
+    "T11",
+    "T13",
+    "T17"
+   ],
+   "quote": "lower part of my tummy ... burning pain ... pretty constant ... getting worse ... more gradual ... About two days ago",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C2",
+   "section": "subjective",
+   "text": "Patient reports pain is sore when pressed below the belly button.",
+   "status": "supported",
+   "analysis": "In response to the doctor asking where the pain is, the patient states it is \"below my belly button\" and \"quite, sore when I press on it\" (T9). This directly supports the claim.",
+   "evidence_turns": [
+    "T8",
+    "T9"
+   ],
+   "quote": "below my belly button, it's like quite, sore when I press on it",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C3",
+   "section": "subjective",
+   "text": "Patient reports constipation last week, now normal.",
+   "status": "supported",
+   "analysis": "The patient states, \"I had a bit of constipation, but that's better, now. That was like, since last week\" (T19). This matches the claim of constipation last week and now being normal/better.",
+   "evidence_turns": [
+    "T18",
+    "T19"
+   ],
+   "quote": "I had a bit of constipation, but that's better, now. That was like, since last week",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C4",
+   "section": "subjective",
+   "text": "Patient reports pink urine",
+   "status": "supported",
+   "analysis": "The patient explicitly states, \"I did notice that I was a little, the urine was a little pink, in colour\" (T24). This directly supports the claim.",
+   "evidence_turns": [
+    "T23",
+    "T24"
+   ],
+   "quote": "the urine was a little pink, in colour",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C5",
+   "section": "subjective",
+   "text": "Patient reports increased frequency",
+   "status": "supported",
+   "analysis": "The patient states, \"I did notice I was going to the, I was peeing more, regularly\" (T25). This supports the report of increased frequency.",
+   "evidence_turns": [
+    "T23",
+    "T25"
+   ],
+   "quote": "I was peeing more, regularly",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C6",
+   "section": "subjective",
+   "text": "Patient reports no burning during urination",
+   "status": "supported",
+   "analysis": "The patient states, \"it hasn't really been burning, specifically\" (T24) and \"I haven't noticed that it really burns\" (T30). This supports the claim of no burning.",
+   "evidence_turns": [
+    "T24",
+    "T30"
+   ],
+   "quote": "it hasn't really been burning ... I haven't noticed that it really burns",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C7",
+   "section": "subjective",
+   "text": "Patient reports no pain during urination",
+   "status": "supported",
+   "analysis": "The patient states, \"it hasn't really been burning, specifically or hurting when I pee\" (T24). The phrase \"or hurting\" directly supports the claim of no pain during urination.",
+   "evidence_turns": [
+    "T24"
+   ],
+   "quote": "it hasn't really been burning, specifically or hurting when I pee",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C8",
+   "section": "subjective",
+   "text": "Patient reports nausea",
+   "status": "supported",
+   "analysis": "In response to the question about vomiting or nausea, the patient says, \"Just a little nauseous\" (T33). This supports the report of nausea.",
+   "evidence_turns": [
+    "T32",
+    "T33"
+   ],
+   "quote": "Just a little nauseous",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C9",
+   "section": "subjective",
+   "text": "Patient reports feeling hot and sweaty",
+   "status": "supported",
+   "analysis": "The patient states, \"I've just been feeling, quite, hot and sweaty\" (T4). This directly supports the claim.",
+   "evidence_turns": [
+    "T4"
+   ],
+   "quote": "feeling, quite, hot and sweaty",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C10",
+   "section": "subjective",
+   "text": "Patient reports no fever measured",
+   "status": "supported",
+   "analysis": "The patient states, \"I haven't really measured it, so I can't really say\" (T35) in response to the question about temperatures/fevers. This supports the claim that no fever was measured.",
+   "evidence_turns": [
+    "T34",
+    "T35"
+   ],
+   "quote": "I haven't really measured it",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C11",
+   "section": "subjective",
+   "text": "Patient reports no vomiting.",
+   "status": "supported",
+   "analysis": "In T32, the doctor asks about vomiting or nausea. In T33, the patient explicitly states, \"Just a little nauseous, um, but no vomiting.\" This directly supports the claim.",
+   "evidence_turns": [
+    "T32",
+    "T33"
+   ],
+   "quote": "Just a little nauseous, um, but no vomiting.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C12",
+   "section": "subjective",
+   "text": "Patient reports last sexual activity 4 days ago with same partner",
+   "status": "supported",
+   "analysis": "In T36, the doctor asks about sexual activity. In T38, the patient confirms having the same partner and states, \"we were last sexually active about four days ago.\" This matches the claim.",
+   "evidence_turns": [
+    "T36",
+    "T38"
+   ],
+   "quote": "I have had the same partner... we were last sexually active about four days ago.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C13",
+   "section": "subjective",
+   "text": "Patient reports Implanon inserted 1 year ago",
+   "status": "supported",
+   "analysis": "In T41, the doctor asks about contraception. In T42, the patient states, \"I had the Implanon inserted about a year ago.\" This directly supports the claim.",
+   "evidence_turns": [
+    "T41",
+    "T42"
+   ],
+   "quote": "I had the Implanon inserted about a year ago.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C14",
+   "section": "subjective",
+   "text": "Patient reports last period 2 weeks ago",
+   "status": "supported",
+   "analysis": "In T45, the doctor asks when the last period was. In T46, the patient initially says \"three weeks ago\" but immediately corrects to \"I mean, two weeks ago.\" The doctor confirms \"Two week scare\" in T47. The final reported value is 2 weeks.",
+   "evidence_turns": [
+    "T45",
+    "T46"
+   ],
+   "quote": "I mean, two weeks ago.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C15",
+   "section": "subjective",
+   "text": "Patient reports no other medications except Implanon.",
+   "status": "supported",
+   "analysis": "In T57, the doctor asks about medical history/medications. In T59, the patient states, \"I'm not on any other medication, I just have the Implanon.\" This supports the claim that Implanon is the only medication.",
+   "evidence_turns": [
+    "T57",
+    "T59"
+   ],
+   "quote": "I'm not on any other medication, I just have the Implanon.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C16",
+   "section": "subjective",
+   "text": "Patient reports no surgical history.",
+   "status": "supported",
+   "analysis": "In T57, the doctor asks if the patient is normally fit and well. In T58, the patient states, \"I don't have any surgical history.\" This directly supports the claim.",
+   "evidence_turns": [
+    "T57",
+    "T58"
+   ],
+   "quote": "I don't have any surgical history.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C17",
+   "section": "subjective",
+   "text": "Patient reports no family history of bowel disease.",
+   "status": "supported",
+   "analysis": "In T63, the doctor asks about family history related to bowels. In T64, the patient responds, \"No, not that I'm aware of, no.\" This supports the claim of no relevant family history.",
+   "evidence_turns": [
+    "T63",
+    "T64"
+   ],
+   "quote": "No, not that I'm aware of, no.",
+   "quote_valid": false,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C18",
+   "section": "subjective",
+   "text": "Patient reports living in share house with two roommates.",
+   "status": "supported",
+   "analysis": "In T65, the doctor asks who lives with the patient. In T66, the patient states, \"I live in a share house, and with two other... room-mates.\" This matches the claim.",
+   "evidence_turns": [
+    "T65",
+    "T66"
+   ],
+   "quote": "I live in a share house, and with two other... room-mates.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C19",
+   "section": "subjective",
+   "text": "Patient reports working as accountant.",
+   "status": "supported",
+   "analysis": "In T69, the doctor asks what the patient does for work. In T70, the patient replies, \"I am an accountant.\" This directly supports the claim.",
+   "evidence_turns": [
+    "T69",
+    "T70"
+   ],
+   "quote": "I am an accountant.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C20",
+   "section": "subjective",
+   "text": "Patient reports no smoking",
+   "status": "supported",
+   "analysis": "In T72, the doctor asks if the patient smokes. In T73, the patient replies, \"No.\" This directly supports the claim of no smoking.",
+   "evidence_turns": [
+    "T72",
+    "T73"
+   ],
+   "quote": "No.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C21",
+   "section": "subjective",
+   "text": "Patient reports drinks socially",
+   "status": "supported",
+   "analysis": "In T75, the patient states, \"socially I drink,\" in response to the doctor's question about alcohol consumption. This directly supports the claim that the patient reports drinking socially.",
+   "evidence_turns": [
+    "T74",
+    "T75"
+   ],
+   "quote": "socially I drink",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C22",
+   "section": "subjective",
+   "text": "Patient reports no chest pain",
+   "status": "uncertain",
+   "analysis": "The doctor asked about chest and breathing (T80). The patient reported no shortness of breath, no problems, and no cough (T81), but did not explicitly state 'no chest pain'. The absence of a complaint is not the same as an explicit report of no pain.",
+   "evidence_turns": [
+    "T80",
+    "T81"
+   ],
+   "quote": "I don't feel short of breath uh, or, I'm not having any problems, or I don't have a cough",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "over_interpretation"
+   }
+  },
+  {
+   "id": "C23",
+   "section": "subjective",
+   "text": "Patient reports shortness of breath",
+   "status": "contradicted",
+   "analysis": "In T81, the patient explicitly states, \"I don't feel short of breath,\" directly contradicting the claim that the patient reports shortness of breath.",
+   "evidence_turns": [
+    "T80",
+    "T81"
+   ],
+   "quote": "I don't feel short of breath",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "contradicted",
+    "error_type": "decomposition_error"
+   }
+  },
+  {
+   "id": "C24",
+   "section": "subjective",
+   "text": "Patient reports cough",
+   "status": "contradicted",
+   "analysis": "In T81, the patient explicitly states, \"I don't have a cough,\" directly contradicting the claim that the patient reports a cough.",
+   "evidence_turns": [
+    "T80",
+    "T81"
+   ],
+   "quote": "I don't have a cough",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "contradicted",
+    "error_type": "decomposition_error"
+   }
+  },
+  {
+   "id": "C25",
+   "section": "subjective",
+   "text": "Patient reports palpitations",
+   "status": "contradicted",
+   "analysis": "In T82, the doctor asks about palpitations. In T83, the patient responds, \"Not that it, no,\" which is a clear denial of palpitations. This contradicts the claim that the patient reports palpitations.",
+   "evidence_turns": [
+    "T82",
+    "T83"
+   ],
+   "quote": "Not that it, no.",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "contradicted",
+    "error_type": "decomposition_error"
+   }
+  },
+  {
+   "id": "C26",
+   "section": "subjective",
+   "text": "Patient reports headaches",
+   "status": "contradicted",
+   "analysis": "In T84, the doctor asks about headaches. In T85, the patient responds, \"No,\" which is a clear denial of headaches. This contradicts the claim that the patient reports headaches.",
+   "evidence_turns": [
+    "T84",
+    "T85"
+   ],
+   "quote": "No.",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "contradicted",
+    "error_type": "decomposition_error"
+   }
+  },
+  {
+   "id": "C27",
+   "section": "subjective",
+   "text": "Patient reports vision problems",
+   "status": "contradicted",
+   "analysis": "In T84, the doctor asks about vision problems. In T85, the patient responds, \"No,\" which is a clear denial of vision problems. This contradicts the claim that the patient reports vision problems.",
+   "evidence_turns": [
+    "T84",
+    "T85"
+   ],
+   "quote": "No.",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "contradicted",
+    "error_type": "decomposition_error"
+   }
+  },
+  {
+   "id": "C28",
+   "section": "objective",
+   "text": "Not documented",
+   "status": "supported",
+   "analysis": "The transcript contains no examination findings, measurements, or observations by the clinician. The doctor mentions moving to examination in T87 but the transcript ends with the plan. No objective data is recorded.",
+   "evidence_turns": [],
+   "quote": "",
+   "quote_valid": null,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C29",
+   "section": "assessment",
+   "text": "Clinician considers possible urinary tract infection",
+   "status": "supported",
+   "analysis": "In T89, the doctor states, \"Could just be a, you know, could just be a urine infection, for example.\" This directly supports the assessment that the clinician considers a possible urinary tract infection.",
+   "evidence_turns": [
+    "T89"
+   ],
+   "quote": "could just be a urine infection",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C30",
+   "section": "assessment",
+   "text": "Clinician considers possible gastrointestinal cause",
+   "status": "supported",
+   "analysis": "In T89, the doctor states, \"Could just be something related to your gut.\" This directly supports the assessment that the clinician considers a possible gastrointestinal cause.",
+   "evidence_turns": [
+    "T89"
+   ],
+   "quote": "Could just be something related to your gut",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C31",
+   "section": "assessment",
+   "text": "Clinician considers possible pregnancy-related cause",
+   "status": "supported",
+   "analysis": "In T89, the doctor explicitly states, \"could just be something related to your, you know, a pregnancy-related cause,\" directly supporting the assessment that pregnancy is a considered differential diagnosis.",
+   "evidence_turns": [
+    "T89"
+   ],
+   "quote": "could just be something related to your, you know, a pregnancy-related cause",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C32",
+   "section": "plan",
+   "text": "Prescribe Trimethoprim 2 tablets, one tablet twice daily for 3 days.",
+   "status": "supported",
+   "analysis": "In T104, the doctor prescribes Trimethoprim and specifies the dosage: \"two tablets, uh, one tablet twice a day for three days,\" which matches the claim exactly.",
+   "evidence_turns": [
+    "T104"
+   ],
+   "quote": "start the antibiotics today, something called Trimethoprim. Um, you can take two tablets, uh, one tablet twice a day for three days",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C33",
+   "section": "plan",
+   "text": "Advise patient to take paracetamol for pain relief.",
+   "status": "supported",
+   "analysis": "In T100, the doctor advises, \"you can try just regular painkillers, uh, Paracetamol would be advisable,\" which supports the claim that the patient was advised to take paracetamol.",
+   "evidence_turns": [
+    "T100"
+   ],
+   "quote": "you can try just regular painkillers, uh, Paracetamol would be advisable",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C34",
+   "section": "plan",
+   "text": "Advise patient to drink plenty of fluids",
+   "status": "supported",
+   "analysis": "In T100, the doctor explicitly instructs, \"make sure you drink plenty of fluids,\" directly supporting the claim.",
+   "evidence_turns": [
+    "T100"
+   ],
+   "quote": "make sure you drink plenty of fluids",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C35",
+   "section": "plan",
+   "text": "Advise patient to consume cranberry juice",
+   "status": "supported",
+   "analysis": "In T101, the doctor states, \"You can try some cranberry juice as well,\" which supports the advice to consume cranberry juice.",
+   "evidence_turns": [
+    "T101"
+   ],
+   "quote": "You can try some cranberry juice as well",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C36",
+   "section": "plan",
+   "text": "Advise patient to obtain a pregnancy test.",
+   "status": "supported",
+   "analysis": "In T96, the doctor says, \"i still want you to bear in mind, you know, have a pregnancy test done,\" which is a direct advice to obtain a pregnancy test.",
+   "evidence_turns": [
+    "T96"
+   ],
+   "quote": "i still want you to bear in mind, you know, have a pregnancy test done",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C37",
+   "section": "plan",
+   "text": "Advise patient to return in a few days if symptoms do not improve or worsen.",
+   "status": "supported",
+   "analysis": "In T97, the doctor advises, \"come back and see me in a few days time, if your symptoms are not getting any better, or indeed if they're getting worse,\" matching the claim.",
+   "evidence_turns": [
+    "T97"
+   ],
+   "quote": "come back and see me in a few days time, if your symptoms are not getting any better, or indeed if they're getting worse",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C38",
+   "section": "plan",
+   "text": "Advise patient to monitor for worsening abdominal pain",
+   "status": "supported",
+   "analysis": "In T98, the doctor lists \"worsening tummy pain\" as a thing to look out for, supporting the advice to monitor for this specific symptom.",
+   "evidence_turns": [
+    "T98"
+   ],
+   "quote": "things to look out for would be, you know, worsening tummy pain",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C39",
+   "section": "plan",
+   "text": "Advise patient to monitor for persistent hot and sweaty feeling",
+   "status": "supported",
+   "analysis": "In T98, the doctor lists \"if you're feeling really hot or sweaty\" as a symptom to monitor, supporting the claim.",
+   "evidence_turns": [
+    "T98"
+   ],
+   "quote": "if you're feeling really hot or sweaty",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C40",
+   "section": "plan",
+   "text": "Advise patient to monitor for vomiting",
+   "status": "supported",
+   "analysis": "In T98, the doctor lists \"vomiting\" as a symptom to look out for, supporting the advice to monitor for it.",
+   "evidence_turns": [
+    "T98"
+   ],
+   "quote": "vomiting et cetera",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C41",
+   "section": "plan",
+   "text": "Advise patient to call if concerned.",
+   "status": "supported",
+   "analysis": "In T102, the doctor explicitly instructs the patient to \"give me a call... if you are worried about anything else,\" which directly supports the claim that the patient was advised to call if concerned.",
+   "evidence_turns": [
+    "T102"
+   ],
+   "quote": "give me a call, you know, if you are worried about anything else",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C42",
+   "section": "subjective",
+   "text": "Patient reports no shortness of breath",
+   "status": "supported",
+   "analysis": "In response to the doctor's question about breathing in T80, the patient states in T81, \"I don't feel short of breath,\" directly supporting the claim.",
+   "evidence_turns": [
+    "T80",
+    "T81"
+   ],
+   "quote": "I don't feel short of breath",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C43",
+   "section": "subjective",
+   "text": "Patient reports no cough",
+   "status": "supported",
+   "analysis": "In T81, while answering the doctor's question about chest and breathing, the patient explicitly states, \"I don't have a cough,\" directly supporting the claim.",
+   "evidence_turns": [
+    "T80",
+    "T81"
+   ],
+   "quote": "I don't have a cough",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C44",
+   "section": "subjective",
+   "text": "Patient reports no palpitations",
+   "status": "supported",
+   "analysis": "In response to the doctor's question about palpitations in T82, the patient answers \"Not that it, no\" in T83, which is a clear negative response supporting the claim.",
+   "evidence_turns": [
+    "T82",
+    "T83"
+   ],
+   "quote": "Not that it, no.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C45",
+   "section": "subjective",
+   "text": "Patient reports no headaches",
+   "status": "supported",
+   "analysis": "In response to the doctor's question about headaches in T84, the patient answers \"No\" in T85, directly supporting the claim of no headaches.",
+   "evidence_turns": [
+    "T84",
+    "T85"
+   ],
+   "quote": "No.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C46",
+   "section": "subjective",
+   "text": "Patient reports no vision problems",
+   "status": "supported",
+   "analysis": "In T84, the doctor asks about headaches and vision problems. The patient answers \"No\" in T85. This single negative response covers both questions asked in the preceding turn, supporting the claim of no vision problems.",
+   "evidence_turns": [
+    "T84",
+    "T85"
+   ],
+   "quote": "No.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  }
+ ]
+}

@@ -105,3 +105,8 @@ Remaining verifier mistakes in v1.1, from `score_v1.1.txt`:
 ## Data
 - PriMock57: github.com/babylonhealth/primock57 (57 consultations)
 - ACI-Bench: github.com/wyim/aci-bench + figshare doi 10.6084/m9.figshare.22494601
+
+## Deploy (Render)
+Web service, Python 3, build `uv sync --frozen && uv cache prune --ci`, start
+`uv run -- uvicorn api.main:app --host 0.0.0.0 --port $PORT`. No API keys needed: the dashboard
+serves the committed `web/demo/` data. Refresh it with `uv run python -m pipeline.export_demo`.

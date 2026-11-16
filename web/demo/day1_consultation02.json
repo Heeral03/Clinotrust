@@ -1,0 +1,1467 @@
+{
+ "id": "day1_consultation02",
+ "turns": [
+  {
+   "id": "T1",
+   "speaker": "doctor",
+   "text": "Hello?"
+  },
+  {
+   "id": "T2",
+   "speaker": "patient",
+   "text": "Hello. Can you hear me well?"
+  },
+  {
+   "id": "T3",
+   "speaker": "doctor",
+   "text": "Uh uh yes. I think. It's a bit better. It's a bit, it's a bit, it's not very clear. But let's continue anyway."
+  },
+  {
+   "id": "T4",
+   "speaker": "patient",
+   "text": "OK."
+  },
+  {
+   "id": "T5",
+   "speaker": "doctor",
+   "text": "Uh, OK. Let's start again. So how can I help you sir?"
+  },
+  {
+   "id": "T6",
+   "speaker": "patient",
+   "text": "Yes. So, it's been a few days now. I have like a sore, and a red skin. It's kind of, it's really itchy, and it's like super annoying. So I'd like to find something quick to solve it."
+  },
+  {
+   "id": "T7",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T8",
+   "speaker": "doctor",
+   "text": "No, no problem. I'm happy to help. Um whereabouts in your skin is it affected?"
+  },
+  {
+   "id": "T9",
+   "speaker": "patient",
+   "text": "Uh, mostly like my chest, my, my hands, my arms. Like, like really, it's it's super annoying. Like it's itching a lot, like all the time. And"
+  },
+  {
+   "id": "T10",
+   "speaker": "patient",
+   "text": "I can't even sleep at night. I really need something quickly to, to solve it. Because even at work I, I can, when I'm in a meeting and I have to, like uh think about my work, I can't focus, I can't actually focus on my work. It's really annoying because I can't actually think about, uh, what I have to say. I'm always like, uh, disturbed by this disease."
+  },
+  {
+   "id": "T11",
+   "speaker": "doctor",
+   "text": "Yeah."
+  },
+  {
+   "id": "T12",
+   "speaker": "doctor",
+   "text": "No no, OK. I'm certain this is obviously affecting you. And uh we'll try our very best to get get this sorted out for you. Um, have you had anything like this before in the past?"
+  },
+  {
+   "id": "T13",
+   "speaker": "patient",
+   "text": "Um so yes. Uh earlier I was like prescribed for my eczema."
+  },
+  {
+   "id": "T14",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T15",
+   "speaker": "patient",
+   "text": "And they gave me like some cream, and something to, uh when I like shower, when I was in the shower, had to put something. But um"
+  },
+  {
+   "id": "T16",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T17",
+   "speaker": "doctor",
+   "text": "Did it help?"
+  },
+  {
+   "id": "T18",
+   "speaker": "patient",
+   "text": "Um I mean, at that time yes. That's, those symptoms, like these symptoms appear like, when the symptoms appeared again, I tried those and it didn't work."
+  },
+  {
+   "id": "T19",
+   "speaker": "patient",
+   "text": "I've tried a few things. Like I bought a, a steroid cream at the pharmacy last night. But it apparently didn't help, because it's still itching a lot today. Uh, yeah."
+  },
+  {
+   "id": "T20",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T21",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T22",
+   "speaker": "doctor",
+   "text": "Do you remember the name of the cream you bought?"
+  },
+  {
+   "id": "T23",
+   "speaker": "patient",
+   "text": "A steroid cream."
+  },
+  {
+   "id": "T24",
+   "speaker": "doctor",
+   "text": "OK, steroid, OK. um would you say these symptoms are very similar to your eczema symptoms, or different?"
+  },
+  {
+   "id": "T25",
+   "speaker": "patient",
+   "text": "Um"
+  },
+  {
+   "id": "T26",
+   "speaker": "patient",
+   "text": "it's much more like itchy. And my eczema was more like only in the arm. But now it's also on the chest. And in the on the, on the hands as well."
+  },
+  {
+   "id": "T27",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T28",
+   "speaker": "patient",
+   "text": "Like pretty, yeah when, like I like, for instance hiking, during the weekend. And"
+  },
+  {
+   "id": "T29",
+   "speaker": "patient",
+   "text": "I am, I can't really do it anymore, because it's like very like I wanted to do that last weekend. And because super painful, and I I have to take like showers every day to be able to, cannot uh ease this itching part, which is very very annoying."
+  },
+  {
+   "id": "T30",
+   "speaker": "doctor",
+   "text": "Yes."
+  },
+  {
+   "id": "T31",
+   "speaker": "doctor",
+   "text": "No. Well OK. That's so you mentioned the itchiness. Um you also mentioned it's been quite sore."
+  },
+  {
+   "id": "T32",
+   "speaker": "patient",
+   "text": "Yeah."
+  },
+  {
+   "id": "T33",
+   "speaker": "doctor",
+   "text": "Um have you, have you noticed any uh bleeding or discharge from your skins?"
+  },
+  {
+   "id": "T34",
+   "speaker": "patient",
+   "text": ". OK."
+  },
+  {
+   "id": "T35",
+   "speaker": "patient",
+   "text": "No. Um so my skin is a bit cracked in some parts, like kind of cracked, if you see what I mean. But uh, yeah."
+  },
+  {
+   "id": "T36",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T37",
+   "speaker": "doctor",
+   "text": "You've not, haven't uh seen any other uh pus or blood, coming out of your skin."
+  },
+  {
+   "id": "T38",
+   "speaker": "patient",
+   "text": "No."
+  },
+  {
+   "id": "T39",
+   "speaker": "doctor",
+   "text": "No. And you mentioned it all started three days ago."
+  },
+  {
+   "id": "T40",
+   "speaker": "doctor",
+   "text": "Are you, four days ago. Are you aware of any triggers, or anything that you may have done, that may have caused your symptoms to start?"
+  },
+  {
+   "id": "T41",
+   "speaker": "patient",
+   "text": "Four days ago."
+  },
+  {
+   "id": "T42",
+   "speaker": "doctor",
+   "text": "So for example, have you changed your uh shower gel, any clothing?"
+  },
+  {
+   "id": "T43",
+   "speaker": "doctor",
+   "text": "Have you been around anyone else?"
+  },
+  {
+   "id": "T44",
+   "speaker": "patient",
+   "text": "No I . It's actually like, it's really annoying, because I'm thinking about, maybe I should change something. Because I I haven't, and I don't understand I cannot, um afraid of asking people around me because it's cannot you know um, I don't feel really comfortable asking about these questions. It's kind of intimate that. So I your help now."
+  },
+  {
+   "id": "T45",
+   "speaker": "doctor",
+   "text": "Mm."
+  },
+  {
+   "id": "T46",
+   "speaker": "doctor",
+   "text": "Mm. No no, OK. That's OK. Um"
+  },
+  {
+   "id": "T47",
+   "speaker": "doctor",
+   "text": "Fine, so just to resummarize. For the last four days, you've had very itchy skin, very sore skin all over your body, mainly your chest. And did you also mention your arms and legs as well?"
+  },
+  {
+   "id": "T48",
+   "speaker": "patient",
+   "text": "Yeah."
+  },
+  {
+   "id": "T49",
+   "speaker": "patient",
+   "text": "Uh, no. Just the chest, hands and like, like inside the elbows. Yeah."
+  },
+  {
+   "id": "T50",
+   "speaker": "doctor",
+   "text": "OK. anything on your face at all?"
+  },
+  {
+   "id": "T51",
+   "speaker": "patient",
+   "text": "Am I what?"
+  },
+  {
+   "id": "T52",
+   "speaker": "doctor",
+   "text": "On your face?"
+  },
+  {
+   "id": "T53",
+   "speaker": "patient",
+   "text": "On my face? No."
+  },
+  {
+   "id": "T54",
+   "speaker": "doctor",
+   "text": "No, OK. And apart from this, any other symptoms have you noticed? For example, have you noticed any temperature or fevers?"
+  },
+  {
+   "id": "T55",
+   "speaker": "patient",
+   "text": "No. just very itchy. Nothing else."
+  },
+  {
+   "id": "T56",
+   "speaker": "doctor",
+   "text": "Itchy. OK. So your, your bowels are working OK?"
+  },
+  {
+   "id": "T57",
+   "speaker": "doctor",
+   "text": "Your chest is OK? No cough, no breathing difficulties?"
+  },
+  {
+   "id": "T58",
+   "speaker": "patient",
+   "text": "No."
+  },
+  {
+   "id": "T59",
+   "speaker": "doctor",
+   "text": "You're passing urine OK."
+  },
+  {
+   "id": "T60",
+   "speaker": "patient",
+   "text": "I I think so."
+  },
+  {
+   "id": "T61",
+   "speaker": "doctor",
+   "text": "OK, alright. Um"
+  },
+  {
+   "id": "T62",
+   "speaker": "doctor",
+   "text": "It's always good to know. So, I mean, do you have any ideas as to what could be causing your symptoms?"
+  },
+  {
+   "id": "T63",
+   "speaker": "patient",
+   "text": "Any what?"
+  },
+  {
+   "id": "T64",
+   "speaker": "doctor",
+   "text": "Any ideas, as to what could be causing your symptoms?"
+  },
+  {
+   "id": "T65",
+   "speaker": "patient",
+   "text": "Um so I had eczema before. So maybe it's disease, but it seems like more uh, like uh my eczema was only on the arms. So, I'm I'm not sure. I I really have no idea."
+  },
+  {
+   "id": "T66",
+   "speaker": "doctor",
+   "text": "OK. That's OK. So um, normally at this stage I like to examine you. Um"
+  },
+  {
+   "id": "T67",
+   "speaker": "doctor",
+   "text": "To see the rash itself, to see exactly what type of rash it is. But from what you've told me, you mentioned it's, you've got some dry skin and some, uh cracked skin as well."
+  },
+  {
+   "id": "T68",
+   "speaker": "doctor",
+   "text": "Uh and has been very itchy. And so would your um"
+  },
+  {
+   "id": "T69",
+   "speaker": "patient",
+   "text": "Yeah."
+  },
+  {
+   "id": "T70",
+   "speaker": "doctor",
+   "text": "Uh your your background of eczema. Um"
+  },
+  {
+   "id": "T71",
+   "speaker": "doctor",
+   "text": "So"
+  },
+  {
+   "id": "T72",
+   "speaker": "doctor",
+   "text": "Sorry to say, there's a couple of questions I wanted to ask you, which I completely forgot, my apologies. Um, apart from the eczema, do you have any other medical problems I should be aware of?"
+  },
+  {
+   "id": "T73",
+   "speaker": "patient",
+   "text": "Uh, no. I just had asthma in the past. But not anymore."
+  },
+  {
+   "id": "T74",
+   "speaker": "doctor",
+   "text": "OK. Not anymore, OK. And do you take any regular medications at the moment?"
+  },
+  {
+   "id": "T75",
+   "speaker": "patient",
+   "text": "Uh no."
+  },
+  {
+   "id": "T76",
+   "speaker": "doctor",
+   "text": "No, OK. Do you have any allergies to anything?"
+  },
+  {
+   "id": "T77",
+   "speaker": "patient",
+   "text": "I like some , sorry? Yeah?"
+  },
+  {
+   "id": "T78",
+   "speaker": "doctor",
+   "text": "sorry I said do you have any allergies to anything?"
+  },
+  {
+   "id": "T79",
+   "speaker": "doctor",
+   "text": "Hello?"
+  },
+  {
+   "id": "T80",
+   "speaker": "patient",
+   "text": "Hello? Yes."
+  },
+  {
+   "id": "T81",
+   "speaker": "doctor",
+   "text": "can you hear me? That's alright I think it . Uh do you have any allergies at all?"
+  },
+  {
+   "id": "T82",
+   "speaker": "patient",
+   "text": "Ohh, allergies. Uh, no."
+  },
+  {
+   "id": "T83",
+   "speaker": "doctor",
+   "text": "No, OK. Um and tell me about your um uh your situation at home. Who do you live with?"
+  },
+  {
+   "id": "T84",
+   "speaker": "patient",
+   "text": "Uh so, I live with a few flatmates. I'm a, so you know I'm thirty one. Uh I, yeah I'm I have a full time job. And so I'm living with a few people to save money."
+  },
+  {
+   "id": "T85",
+   "speaker": "doctor",
+   "text": "OK. And what do you do for work?"
+  },
+  {
+   "id": "T86",
+   "speaker": "patient",
+   "text": "Uh I work uh at a pharmaceutical company."
+  },
+  {
+   "id": "T87",
+   "speaker": "patient",
+   "text": "So it's been a, it's been a few years now. Uh it's uh, it's kind of interesting. We're working I'm a, like a kind of project manager. Uh I mean, do you want to, to know more about it?"
+  },
+  {
+   "id": "T88",
+   "speaker": "doctor",
+   "text": "OK. Uh no no no that's , that's absolutely fine. Um just a couple of questions I want to ask you, which can sometimes affect your symptoms, is, do you smoke at all?"
+  },
+  {
+   "id": "T89",
+   "speaker": "patient",
+   "text": "No."
+  },
+  {
+   "id": "T90",
+   "speaker": "doctor",
+   "text": "No. And do you drink much in the way of alcohol?"
+  },
+  {
+   "id": "T91",
+   "speaker": "patient",
+   "text": "Uh you know, once in a while I can, I like hanging out with people once in a while. So yeah I'd say a few, a few beers per week. Something like this. Nothing, nothing crazy. I used to drink a lot more when I was younger. But it's been, it's been a while."
+  },
+  {
+   "id": "T92",
+   "speaker": "doctor",
+   "text": "OK. OK. OK I've got to say, at this stage I've got to say this sound quality is not uh great. But I will continue because we've come this far. Um"
+  },
+  {
+   "id": "T93",
+   "speaker": "doctor",
+   "text": "So um, based on everything you mentioned Sarah , I do wonder whether this is a flare-up of your eczema. Um"
+  },
+  {
+   "id": "T94",
+   "speaker": "doctor",
+   "text": "The reason being that you said it was quite itchy. Um it's mainly affecting your chest and your back."
+  },
+  {
+   "id": "T95",
+   "speaker": "doctor",
+   "text": "Um and uh, having looked at your skin, uh the the the rash does appear quite familiar. Um you mentioned using steroid creams, yesterday."
+  },
+  {
+   "id": "T96",
+   "speaker": "doctor",
+   "text": "Um from the pharmacy. I wonder whether giving you a stronger prescription of a of a steroid may be beneficial."
+  },
+  {
+   "id": "T97",
+   "speaker": "doctor",
+   "text": "Uh, which I'm happy to prescribe to you today. As well as, I'm going to give you something, some emollients, which helps to moisturize the skin."
+  },
+  {
+   "id": "T98",
+   "speaker": "patient",
+   "text": "OK."
+  },
+  {
+   "id": "T99",
+   "speaker": "patient",
+   "text": "OK."
+  },
+  {
+   "id": "T100",
+   "speaker": "doctor",
+   "text": "Um which use in the bath and shower. And it's definitely worth um using that for the first seven to ten days."
+  },
+  {
+   "id": "T101",
+   "speaker": "patient",
+   "text": "OK."
+  },
+  {
+   "id": "T102",
+   "speaker": "doctor",
+   "text": "Uh before we make the decision on whether it's working or not."
+  },
+  {
+   "id": "T103",
+   "speaker": "patient",
+   "text": "OK."
+  },
+  {
+   "id": "T104",
+   "speaker": "doctor",
+   "text": "Um it's also worth um using antihistamines, which you can sometimes buy over counter."
+  },
+  {
+   "id": "T105",
+   "speaker": "doctor",
+   "text": "Things like Loratadine or Piriton, which can help the itchiness of your skin."
+  },
+  {
+   "id": "T106",
+   "speaker": "patient",
+   "text": "OK."
+  },
+  {
+   "id": "T107",
+   "speaker": "doctor",
+   "text": "And uh, um it's also worth keeping a diary of any triggers which are affecting your symptoms, anything you wear or anything you use, in terms of shower gels or soap."
+  },
+  {
+   "id": "T108",
+   "speaker": "doctor",
+   "text": "Because if that's causing your symptoms, then we need to have a discussion about an eczema CU."
+  },
+  {
+   "id": "T109",
+   "speaker": "patient",
+   "text": "OK. Yes, I have tried antihistamines, uh lately, but it didn't really help."
+  },
+  {
+   "id": "T110",
+   "speaker": "doctor",
+   "text": "Ohh, could you say that again, sorry?"
+  },
+  {
+   "id": "T111",
+   "speaker": "patient",
+   "text": "I have tried uh antihistamines, but uh but it didn't really help."
+  },
+  {
+   "id": "T112",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T113",
+   "speaker": "doctor",
+   "text": "OK. So it's something for you to think about. you can get different types of antihistamines. I can give you something a little bit stronger today as well."
+  },
+  {
+   "id": "T114",
+   "speaker": "doctor",
+   "text": "Um, something like Fexofenadine, which I can give to you today. It's definitely worth trying, and it's not going to do you any harm."
+  },
+  {
+   "id": "T115",
+   "speaker": "patient",
+   "text": "OK."
+  },
+  {
+   "id": "T116",
+   "speaker": "doctor",
+   "text": "Um but I think using the steroids and the emollients, um on a regular basis"
+  },
+  {
+   "id": "T117",
+   "speaker": "doctor",
+   "text": "Uh over the next week to ten days, should hopefully control your symptoms. But do come back and see me next week, if things don't get better."
+  },
+  {
+   "id": "T118",
+   "speaker": "patient",
+   "text": "That sounds good."
+  },
+  {
+   "id": "T119",
+   "speaker": "doctor",
+   "text": "OK? Um do you have any questions for me?"
+  },
+  {
+   "id": "T120",
+   "speaker": "patient",
+   "text": "Uh, no that's it. Thank you very much. Bye. Thank you as well. Bye."
+  },
+  {
+   "id": "T121",
+   "speaker": "doctor",
+   "text": "OK. Well I wish you all the best."
+  },
+  {
+   "id": "T122",
+   "speaker": "doctor",
+   "text": "Thank you. Have a good day."
+  }
+ ],
+ "claims": [
+  {
+   "id": "C1",
+   "section": "subjective",
+   "text": "Patient reports itchy skin started 4 days ago",
+   "status": "supported",
+   "analysis": "The doctor summarizes the history in T47 as 'For the last four days, you've had very itchy skin'. The patient confirms this summary in T48 with 'Yeah'. This directly supports the claim that the patient reports itchy skin starting 4 days ago.",
+   "evidence_turns": [
+    "T47",
+    "T48"
+   ],
+   "quote": "For the last four days, you've had very itchy skin ... Yeah.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C2",
+   "section": "subjective",
+   "text": "Patient reports sore skin started 4 days ago",
+   "status": "supported",
+   "analysis": "The doctor summarizes the history in T47 as 'For the last four days, you've had ... very sore skin'. The patient confirms this summary in T48 with 'Yeah'. This directly supports the claim that the patient reports sore skin starting 4 days ago.",
+   "evidence_turns": [
+    "T47",
+    "T48"
+   ],
+   "quote": "For the last four days, you've had ... very sore skin ... Yeah.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C3",
+   "section": "subjective",
+   "text": "Patient reports red skin started 4 days ago",
+   "status": "supported",
+   "analysis": "The patient initially stated 'a few days' (T6). The doctor later summarized 'all started three days ago' (T39), then corrected to 'four days ago' (T40). The patient explicitly confirmed 'Four days ago' in T41. Thus, the 4-day duration is supported by the patient's confirmation.",
+   "evidence_turns": [
+    "T39",
+    "T40",
+    "T41"
+   ],
+   "quote": "And you mentioned it all started three days ago. ... four days ago. ... Four days ago.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C4",
+   "section": "subjective",
+   "text": "Patient reports skin involvement on chest",
+   "status": "supported",
+   "analysis": "In T9, the patient states the affected areas are 'mostly like my chest'. In T49, the patient confirms the location as 'Just the chest, hands and like, like inside the elbows'. This directly supports the claim.",
+   "evidence_turns": [
+    "T9",
+    "T49"
+   ],
+   "quote": "mostly like my chest ... Just the chest",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C5",
+   "section": "subjective",
+   "text": "Patient reports skin involvement on hands",
+   "status": "supported",
+   "analysis": "In T9, the patient states the affected areas include 'my hands'. In T49, the patient confirms the location as 'Just the chest, hands and like, like inside the elbows'. This directly supports the claim.",
+   "evidence_turns": [
+    "T9",
+    "T49"
+   ],
+   "quote": "my hands ... Just the chest, hands",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C6",
+   "section": "subjective",
+   "text": "Patient reports skin involvement on arms",
+   "status": "supported",
+   "analysis": "The patient explicitly states in T9 that the affected areas include 'my arms'. Later, in T49, the patient confirms involvement of 'arms' (specifically 'inside the elbows') when summarizing locations. This directly supports the claim.",
+   "evidence_turns": [
+    "T9",
+    "T49"
+   ],
+   "quote": "mostly like my chest, my, my hands, my arms ... Just the chest, hands and like, like inside the elbows.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C7",
+   "section": "subjective",
+   "text": "Patient reports skin involvement on inside elbows",
+   "status": "supported",
+   "analysis": "In T49, the patient explicitly lists the affected areas as 'Just the chest, hands and like, like inside the elbows'. This directly supports the claim of skin involvement on the inside elbows.",
+   "evidence_turns": [
+    "T49"
+   ],
+   "quote": "Just the chest, hands and like, like inside the elbows.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C8",
+   "section": "subjective",
+   "text": "Patient reports difficulty sleeping due to itching.",
+   "status": "supported",
+   "analysis": "In T10, the patient states, 'I can't even sleep at night' in the context of the itching being 'super annoying' and 'itching a lot'. This directly supports the claim of difficulty sleeping due to itching.",
+   "evidence_turns": [
+    "T10"
+   ],
+   "quote": "I can't even sleep at night.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C9",
+   "section": "subjective",
+   "text": "Patient reports difficulty focusing at work due to itching.",
+   "status": "supported",
+   "analysis": "In T10, the patient states, 'even at work I... can't focus, I can't actually focus on my work' due to the itching. This directly supports the claim of difficulty focusing at work due to itching.",
+   "evidence_turns": [
+    "T10"
+   ],
+   "quote": "even at work I... can't focus, I can't actually focus on my work.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C10",
+   "section": "subjective",
+   "text": "Patient reports using a steroid cream from pharmacy last night with no relief.",
+   "status": "supported",
+   "analysis": "In T19, the patient states, 'I bought a, a steroid cream at the pharmacy last night. But it apparently didn't help, because it's still itching a lot today.' This directly supports the claim of using a steroid cream from the pharmacy last night with no relief.",
+   "evidence_turns": [
+    "T19"
+   ],
+   "quote": "I bought a, a steroid cream at the pharmacy last night. But it apparently didn't help",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C11",
+   "section": "subjective",
+   "text": "Patient reports prior eczema treated with cream.",
+   "status": "supported",
+   "analysis": "In T13, the patient confirms having eczema previously. In T15, the patient states they were given 'some cream' for it. This directly supports the claim of prior eczema treated with cream.",
+   "evidence_turns": [
+    "T13",
+    "T15"
+   ],
+   "quote": "earlier I was like prescribed for my eczema. ... And they gave me like some cream",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C12",
+   "section": "subjective",
+   "text": "Patient reports no fever",
+   "status": "supported",
+   "analysis": "In T54, the doctor asks if the patient has noticed any temperature or fevers. In T55, the patient answers 'No', directly supporting the claim.",
+   "evidence_turns": [
+    "T54",
+    "T55"
+   ],
+   "quote": "have you noticed any temperature or fevers? ... No.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C13",
+   "section": "subjective",
+   "text": "Patient reports no cough",
+   "status": "supported",
+   "analysis": "In T57, the doctor asks 'No cough, no breathing difficulties?'. In T58, the patient answers 'No'. This single 'No' answers the compound question, confirming the absence of cough.",
+   "evidence_turns": [
+    "T57",
+    "T58"
+   ],
+   "quote": "No cough, no breathing difficulties? ... No.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C14",
+   "section": "subjective",
+   "text": "Patient reports no breathing difficulties",
+   "status": "supported",
+   "analysis": "In T57, the doctor asks 'No cough, no breathing difficulties?'. In T58, the patient answers 'No'. This single 'No' answers the compound question, confirming the absence of breathing difficulties.",
+   "evidence_turns": [
+    "T57",
+    "T58"
+   ],
+   "quote": "No cough, no breathing difficulties? ... No.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C15",
+   "section": "subjective",
+   "text": "Patient reports no urinary issues",
+   "status": "uncertain",
+   "analysis": "In T59, the doctor asks 'You're passing urine OK.' (a statement/question). In T60, the patient responds 'I I think so.' This is a hedged response, not a clear confirmation of 'no issues' or a definitive 'yes'.",
+   "evidence_turns": [
+    "T59",
+    "T60"
+   ],
+   "quote": "You're passing urine OK. ... I I think so.",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C16",
+   "section": "subjective",
+   "text": "Patient reports no bowel issues",
+   "status": "uncertain",
+   "analysis": "In T56, the doctor asks 'So your, your bowels are working OK?'. In T57, the doctor immediately asks about the chest. The patient's next turn (T58) is 'No', which answers the last question (chest/cough). There is no direct answer to the bowel question.",
+   "evidence_turns": [
+    "T56",
+    "T57"
+   ],
+   "quote": "So your, your bowels are working OK? ... Your chest is OK?",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "overstated"
+   }
+  },
+  {
+   "id": "C17",
+   "section": "subjective",
+   "text": "Patient reports no bleeding or discharge from skin",
+   "status": "supported",
+   "analysis": "In T33, the doctor asks about bleeding or discharge. In T35, the patient says 'No' (regarding bleeding/discharge) but mentions cracked skin. In T37, the doctor asks about pus or blood, and in T38, the patient says 'No'. This supports the claim of no bleeding or discharge.",
+   "evidence_turns": [
+    "T33",
+    "T35",
+    "T37",
+    "T38"
+   ],
+   "quote": "have you noticed any uh bleeding or discharge... No. ... haven't uh seen any other uh pus or blood... No.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C18",
+   "section": "subjective",
+   "text": "Patient reports no face involvement.",
+   "status": "supported",
+   "analysis": "In T50, the doctor asks 'anything on your face at all?'. In T53, the patient answers 'No'. This directly supports the claim.",
+   "evidence_turns": [
+    "T50",
+    "T53"
+   ],
+   "quote": "anything on your face at all? ... On my face? No.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C19",
+   "section": "subjective",
+   "text": "Patient reports no other symptoms.",
+   "status": "supported",
+   "analysis": "In T54, the doctor asks about other symptoms like temperature. In T55, the patient says 'No. just very itchy. Nothing else.' This explicitly states there are no other symptoms.",
+   "evidence_turns": [
+    "T54",
+    "T55"
+   ],
+   "quote": "No. just very itchy. Nothing else.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C20",
+   "section": "subjective",
+   "text": "Patient reports no known allergies.",
+   "status": "supported",
+   "analysis": "In T81, the doctor asks 'do you have any allergies at all?'. In T82, the patient answers 'Ohh, allergies. Uh, no.' This is a clear negative response to the general allergy question.",
+   "evidence_turns": [
+    "T81",
+    "T82"
+   ],
+   "quote": "do you have any allergies at all? ... Ohh, allergies. Uh, no.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C21",
+   "section": "subjective",
+   "text": "Patient reports no regular medications.",
+   "status": "supported",
+   "analysis": "The doctor asked if the patient takes regular medications (T74), and the patient explicitly answered \"Uh no\" (T75). This directly supports the claim that the patient reports no regular medications.",
+   "evidence_turns": [
+    "T74",
+    "T75"
+   ],
+   "quote": "do you take any regular medications at the moment? ... Uh no.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C22",
+   "section": "subjective",
+   "text": "Patient reports past asthma",
+   "status": "supported",
+   "analysis": "In response to the question about other medical problems (T72), the patient stated, \"I just had asthma in the past\" (T73). This confirms a history of asthma.",
+   "evidence_turns": [
+    "T72",
+    "T73"
+   ],
+   "quote": "do you have any other medical problems... I just had asthma in the past.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C23",
+   "section": "subjective",
+   "text": "Patient reports no current asthma",
+   "status": "supported",
+   "analysis": "The patient stated, \"I just had asthma in the past. But not anymore\" (T73). The phrase \"not anymore\" explicitly indicates the condition is no longer present.",
+   "evidence_turns": [
+    "T73"
+   ],
+   "quote": "I just had asthma in the past. But not anymore.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C24",
+   "section": "subjective",
+   "text": "Patient reports no smoking.",
+   "status": "supported",
+   "analysis": "The doctor asked, \"do you smoke at all?\" (T88), and the patient answered \"No\" (T89). This directly supports the claim.",
+   "evidence_turns": [
+    "T88",
+    "T89"
+   ],
+   "quote": "do you smoke at all? ... No.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C25",
+   "section": "subjective",
+   "text": "Patient reports occasional alcohol consumption.",
+   "status": "supported",
+   "analysis": "When asked about alcohol (T90), the patient replied, \"once in a while... a few beers per week\" (T91). This describes occasional consumption.",
+   "evidence_turns": [
+    "T90",
+    "T91"
+   ],
+   "quote": "once in a while... a few beers per week.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C26",
+   "section": "subjective",
+   "text": "Patient reports living with flatmates.",
+   "status": "supported",
+   "analysis": "The doctor asked who the patient lives with (T83), and the patient stated, \"I live with a few flatmates\" (T84). This directly supports the claim.",
+   "evidence_turns": [
+    "T83",
+    "T84"
+   ],
+   "quote": "Who do you live with? ... I live with a few flatmates.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C27",
+   "section": "subjective",
+   "text": "Patient reports full-time job at pharmaceutical company.",
+   "status": "supported",
+   "analysis": "The patient stated, \"I have a full time job\" (T84) and \"I work uh at a pharmaceutical company\" (T86). Both parts of the claim are explicitly stated.",
+   "evidence_turns": [
+    "T84",
+    "T86"
+   ],
+   "quote": "I have a full time job... I work uh at a pharmaceutical company.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C28",
+   "section": "subjective",
+   "text": "Patient reports no identified triggers.",
+   "status": "supported",
+   "analysis": "The doctor asked about triggers (T40, T42, T43). The patient did not identify specific triggers but expressed uncertainty and discomfort asking others (T44). Later, the patient stated, 'I really have no idea' regarding the cause (T65). This supports the claim that no triggers were identified.",
+   "evidence_turns": [
+    "T40",
+    "T44",
+    "T65"
+   ],
+   "quote": "I really have no idea.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C29",
+   "section": "subjective",
+   "text": "Patient reports having tried antihistamines recently with no benefit.",
+   "status": "supported",
+   "analysis": "The patient stated, \"I have tried antihistamines, uh lately, but it didn't really help\" (T109, T111). This directly supports the claim of recent use with no benefit.",
+   "evidence_turns": [
+    "T109",
+    "T111"
+   ],
+   "quote": "I have tried antihistamines, uh lately, but it didn't really help.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C31",
+   "section": "objective",
+   "text": "Rash appears familiar to clinician.",
+   "status": "supported",
+   "analysis": "The doctor states in T95, \"having looked at your skin, uh the the the rash does appear quite familiar.\" This is a direct statement of a clinical observation/examination finding, supporting the Objective claim.",
+   "evidence_turns": [
+    "T95"
+   ],
+   "quote": "having looked at your skin, uh the the the rash does appear quite familiar",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C32",
+   "section": "objective",
+   "text": "No bleeding or discharge noted",
+   "status": "uncertain",
+   "analysis": "The claim is in the Objective section, requiring clinician-observed findings. The transcript shows the doctor asking the patient about bleeding/discharge (T33, T37) and the patient denying it (T35, T38). The doctor did not state an examination finding of no bleeding; they only reported the patient's denial.",
+   "evidence_turns": [
+    "T33",
+    "T35",
+    "T37",
+    "T38"
+   ],
+   "quote": "have you noticed any uh bleeding or discharge from your skins? ... No. Um so my skin is a bit cracked",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "wrong_section"
+   }
+  },
+  {
+   "id": "C33",
+   "section": "objective",
+   "text": "No fever observed.",
+   "status": "uncertain",
+   "analysis": "The doctor asked about temperature or fevers (T54), and the patient reported \"No\" (T55). This is a patient-reported symptom (Subjective), not a clinician-observed measurement or finding (Objective). Therefore, it does not support an Objective claim.",
+   "evidence_turns": [
+    "T54",
+    "T55"
+   ],
+   "quote": "have you noticed any temperature or fevers? ... No.",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "wrong_section"
+   }
+  },
+  {
+   "id": "C34",
+   "section": "objective",
+   "text": "No cough or breathing difficulties noted",
+   "status": "uncertain",
+   "analysis": "The doctor asked about chest issues, cough, or breathing difficulties (T57), and the patient answered \"No\" (T58). This is a patient-reported answer (Subjective), not a clinician-observed finding (Objective). Thus, it does not support an Objective claim.",
+   "evidence_turns": [
+    "T57",
+    "T58"
+   ],
+   "quote": "Your chest is OK? No cough, no breathing difficulties? ... No.",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "wrong_section"
+   }
+  },
+  {
+   "id": "C35",
+   "section": "objective",
+   "text": "No urinary issues noted.",
+   "status": "uncertain",
+   "analysis": "The doctor asked if the patient was passing urine OK (T59), and the patient replied \"I think so\" (T60). This is a patient-reported answer (Subjective), not a clinician-observed finding (Objective). Thus, it does not support an Objective claim.",
+   "evidence_turns": [
+    "T59",
+    "T60"
+   ],
+   "quote": "You're passing urine OK. ... I I think so.",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "wrong_section"
+   }
+  },
+  {
+   "id": "C36",
+   "section": "objective",
+   "text": "Bowel function normal.",
+   "status": "uncertain",
+   "analysis": "The doctor asked if bowels were working OK (T56). The next patient turn (T58) is a bare \"No\" which, per the rules, answers the last question asked (T57 about chest/cough). There is no clear patient answer to the bowel question. Furthermore, even if answered, it would be Subjective, not Objective.",
+   "evidence_turns": [
+    "T56",
+    "T57",
+    "T58"
+   ],
+   "quote": "So your, your bowels are working OK? ... Your chest is OK? No cough, no breathing difficulties? ... No.",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "wrong_section"
+   }
+  },
+  {
+   "id": "C37",
+   "section": "objective",
+   "text": "No face involvement noted.",
+   "status": "uncertain",
+   "analysis": "The doctor asked if there was anything on the face (T50, T52), and the patient said \"No\" (T53). This is a patient-reported answer (Subjective), not a clinician-observed finding (Objective). Thus, it does not support an Objective claim.",
+   "evidence_turns": [
+    "T50",
+    "T52",
+    "T53"
+   ],
+   "quote": "anything on your face at all? ... On my face? No.",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "wrong_section"
+   }
+  },
+  {
+   "id": "C38",
+   "section": "objective",
+   "text": "No other symptoms observed.",
+   "status": "uncertain",
+   "analysis": "The doctor asked about other symptoms (T54), and the patient said \"No. just very itchy. Nothing else\" (T55). This is a patient-reported answer (Subjective), not a clinician-observed finding (Objective). Thus, it does not support an Objective claim.",
+   "evidence_turns": [
+    "T54",
+    "T55"
+   ],
+   "quote": "any other symptoms have you noticed? ... No. just very itchy. Nothing else.",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "wrong_section"
+   }
+  },
+  {
+   "id": "C39",
+   "section": "assessment",
+   "text": "Clinician considers possible eczema flare-up.",
+   "status": "supported",
+   "analysis": "In T93, the doctor states, \"I do wonder whether this is a flare-up of your eczema.\" This is a direct statement of the clinician's impression/assessment.",
+   "evidence_turns": [
+    "T93"
+   ],
+   "quote": "I do wonder whether this is a flare-up of your eczema",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C40",
+   "section": "plan",
+   "text": "Prescribe stronger topical steroid.",
+   "status": "supported",
+   "analysis": "In T96, the doctor says, \"I wonder whether giving you a stronger prescription of a of a steroid may be beneficial. Uh, which I'm happy to prescribe to you today.\" This directly supports the plan to prescribe a stronger topical steroid.",
+   "evidence_turns": [
+    "T96"
+   ],
+   "quote": "giving you a stronger prescription of a of a steroid may be beneficial. Uh, which I'm happy to prescribe to you today",
+   "quote_valid": false,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C41",
+   "section": "plan",
+   "text": "Prescribe emollients for use in bath and shower for 7-10 days",
+   "status": "supported",
+   "analysis": "The doctor explicitly states in T97 that they will give emollients and in T100 specifies using them in the bath and shower for the first seven to ten days. This matches the claim exactly.",
+   "evidence_turns": [
+    "T97",
+    "T100"
+   ],
+   "quote": "give you something, some emollients... use in the bath and shower... first seven to ten days",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C42",
+   "section": "plan",
+   "text": "Advise use of over-the-counter antihistamines such as loratadine or piritone",
+   "status": "supported",
+   "analysis": "In T104 and T105, the doctor advises using antihistamines bought over the counter, specifically naming Loratadine or Piriton. This directly supports the claim.",
+   "evidence_turns": [
+    "T104",
+    "T105"
+   ],
+   "quote": "using antihistamines, which you can sometimes buy over counter. Things like Loratadine or Piriton",
+   "quote_valid": false,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C43",
+   "section": "plan",
+   "text": "Advise use of stronger antihistamine (fexofenadine) if needed.",
+   "status": "uncertain",
+   "analysis": "The doctor states in T113 and T114 that they can give Fexofenadine today and that it is 'definitely worth trying'. The claim adds the qualifier 'if needed', which is not present in the transcript; the doctor presents it as a recommendation to try, not a conditional backup.",
+   "evidence_turns": [
+    "T113",
+    "T114"
+   ],
+   "quote": "I can give you something a little bit stronger today as well... Fexofenadine... definitely worth trying",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "other"
+   }
+  },
+  {
+   "id": "C44",
+   "section": "plan",
+   "text": "Advise keeping a diary of triggers.",
+   "status": "supported",
+   "analysis": "In T107, the doctor explicitly advises the patient to keep a diary of any triggers affecting their symptoms. This matches the claim.",
+   "evidence_turns": [
+    "T107"
+   ],
+   "quote": "worth keeping a diary of any triggers which are affecting your symptoms",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C45",
+   "section": "plan",
+   "text": "Follow up in one week if symptoms do not improve.",
+   "status": "supported",
+   "analysis": "In T117, the doctor instructs the patient to 'come back and see me next week, if things don't get better.' This aligns with the claim to follow up in one week if symptoms do not improve.",
+   "evidence_turns": [
+    "T117"
+   ],
+   "quote": "come back and see me next week, if things don't get better",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C30",
+   "section": "objective",
+   "text": "Skin appears dry and cracked",
+   "status": "unsupported",
+   "analysis": "The transcript contains no examination findings or measurements. The doctor mentions dry and cracked skin in T67, but explicitly attributes this to what the patient told them ('from what you've told me'), not an objective observation.",
+   "evidence_turns": [],
+   "quote": "",
+   "quote_valid": null,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "wrong_section"
+   }
+  }
+ ]
+}

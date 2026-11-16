@@ -1,0 +1,1537 @@
+{
+ "id": "day1_consultation04",
+ "turns": [
+  {
+   "id": "T1",
+   "speaker": "doctor",
+   "text": "Alex. Ohh. Hello? Hi, can you hear me?"
+  },
+  {
+   "id": "T2",
+   "speaker": "patient",
+   "text": "Yeah."
+  },
+  {
+   "id": "T3",
+   "speaker": "doctor",
+   "text": "OK great. Um how can I help you this morning, sir?"
+  },
+  {
+   "id": "T4",
+   "speaker": "patient",
+   "text": "Alright, so I've been feeling, I've been feeling kind of uh under the weather for the past four days."
+  },
+  {
+   "id": "T5",
+   "speaker": "patient",
+   "text": "Um it started with the um, uh sore throat and runny nose, and"
+  },
+  {
+   "id": "T6",
+   "speaker": "patient",
+   "text": "It's sort of, um, it's sort of going into a cough now. Um, the sort throat is kind of going away, but, um, I'm starting to cough."
+  },
+  {
+   "id": "T7",
+   "speaker": "doctor",
+   "text": "Mm-hmm. OK."
+  },
+  {
+   "id": "T8",
+   "speaker": "patient",
+   "text": "And uh kind of uh bad and tired."
+  },
+  {
+   "id": "T9",
+   "speaker": "doctor",
+   "text": "Sorry to hear that ."
+  },
+  {
+   "id": "T10",
+   "speaker": "doctor",
+   "text": "Mm. OK. I'm sorry to hear that. Seems like there's a lot going on there. Um so let's start with your, your sore throat first. Um tell me a bit more about that, if you can."
+  },
+  {
+   "id": "T11",
+   "speaker": "patient",
+   "text": "Um ,so I, I , you know I think I, it all started with, uh, this colleague of mine, she just kept sneezing next to me, all the time. I think her kids are catching something from the"
+  },
+  {
+   "id": "T12",
+   "speaker": "patient",
+   "text": "uh from their kindergarten or something. And uh, you know the it it started as normal sore throat, and uh was quite painful for a couple days, but then it was past."
+  },
+  {
+   "id": "T13",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T14",
+   "speaker": "doctor",
+   "text": "OK. OK. And did you have any uh difficulty or pain on swallowing?"
+  },
+  {
+   "id": "T15",
+   "speaker": "patient",
+   "text": "Um yeah. Yeah it was uh, it was quite painful to swallow, for one or two days."
+  },
+  {
+   "id": "T16",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T17",
+   "speaker": "doctor",
+   "text": "You , did you manage to have a look at the back of your throat in the mirror?"
+  },
+  {
+   "id": "T18",
+   "speaker": "patient",
+   "text": "Um no, not really."
+  },
+  {
+   "id": "T19",
+   "speaker": "doctor",
+   "text": "No. OK you didn't, you didn't notice any abnormal white spots, redness at the back of your throat?"
+  },
+  {
+   "id": "T20",
+   "speaker": "patient",
+   "text": "Um"
+  },
+  {
+   "id": "T21",
+   "speaker": "patient",
+   "text": "No. Um I I didn't think about uh ."
+  },
+  {
+   "id": "T22",
+   "speaker": "doctor",
+   "text": "that's OK. That's OK. And you mentioned a runny nose. Um again what kind of discharge is coming out? Is it clear, or is it a bit more coloured?"
+  },
+  {
+   "id": "T23",
+   "speaker": "patient",
+   "text": "Yeah yeah, it's uh it's clearing up ."
+  },
+  {
+   "id": "T24",
+   "speaker": "patient",
+   "text": "Sort of um, sort of getting my nose stuffed all the time. It's very had to, uh to get it free."
+  },
+  {
+   "id": "T25",
+   "speaker": "doctor",
+   "text": "OK. You feel quite congested, do you?"
+  },
+  {
+   "id": "T26",
+   "speaker": "patient",
+   "text": "Yeah, quite congested."
+  },
+  {
+   "id": "T27",
+   "speaker": "doctor",
+   "text": "OK, fine. Um you also mentioned a cough as well. Can you tell me a bit more about that?"
+  },
+  {
+   "id": "T28",
+   "speaker": "patient",
+   "text": "Um yeah that started recently, like just uh um maybe yesterday. And um it's uh, it's dry for now, it's it's not very painful but it's sort of there, all the time."
+  },
+  {
+   "id": "T29",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T30",
+   "speaker": "doctor",
+   "text": "OK. And is it worse any particular time of the day?"
+  },
+  {
+   "id": "T31",
+   "speaker": "patient",
+   "text": "Sorry?"
+  },
+  {
+   "id": "T32",
+   "speaker": "doctor",
+   "text": "Is it, is it worse any particular time of the day? For example in the evenings, night time, mornings?"
+  },
+  {
+   "id": "T33",
+   "speaker": "patient",
+   "text": "Um"
+  },
+  {
+   "id": "T34",
+   "speaker": "doctor",
+   "text": "throughout the day."
+  },
+  {
+   "id": "T35",
+   "speaker": "patient",
+   "text": "No it's it's um, it's sort of, it's sort of constant. Um I forgot to mention, that um I'm also having uh night sweats."
+  },
+  {
+   "id": "T36",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T37",
+   "speaker": "doctor",
+   "text": "Night first, OK."
+  },
+  {
+   "id": "T38",
+   "speaker": "patient",
+   "text": "That's, that's very odd actually. makes me a bit tired, um makes my uneasy."
+  },
+  {
+   "id": "T39",
+   "speaker": "doctor",
+   "text": "Mm."
+  },
+  {
+   "id": "T40",
+   "speaker": "doctor",
+   "text": "I can imagine, yes. Uh and this has again, been going on for last uh three four days, has it?"
+  },
+  {
+   "id": "T41",
+   "speaker": "patient",
+   "text": "Yeah, yes."
+  },
+  {
+   "id": "T42",
+   "speaker": "doctor",
+   "text": "OK. Um right, OK. Have you noticed any fevers or temperatures at all?"
+  },
+  {
+   "id": "T43",
+   "speaker": "patient",
+   "text": "Um I I had some some fever in the beginning, but it's now sort of uh going down. I I've been taking some Paracetamol and Ibuprofen for that, and uh they, they help."
+  },
+  {
+   "id": "T44",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T45",
+   "speaker": "doctor",
+   "text": "That's very sensible. Um very good. Um in terms of your chest otherwise, have you any difficulty breathing, or any pain in your chest?"
+  },
+  {
+   "id": "T46",
+   "speaker": "patient",
+   "text": "Um so no pain in chest, but uh I noticed that I um um so I feel a bit winded on exertion. So if I I I haven't been going, going to the gym thus uh, because of that."
+  },
+  {
+   "id": "T47",
+   "speaker": "doctor",
+   "text": "When you say winded, do you feel, uh do you feel more short of breath would you say, on exertion? Is that when you, OK. Um and and that's mainly on exercise. But when you're resting, there's no problem."
+  },
+  {
+   "id": "T48",
+   "speaker": "patient",
+   "text": "yeah."
+  },
+  {
+   "id": "T49",
+   "speaker": "patient",
+   "text": "Yeah, yeah. When when when I'm resting it's OK. So I've been actually going to work, um sort of managing."
+  },
+  {
+   "id": "T50",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T51",
+   "speaker": "doctor",
+   "text": "OK, fine. Just a couple other questions , if you don't mind. Any pain in, in your ears at all?"
+  },
+  {
+   "id": "T52",
+   "speaker": "patient",
+   "text": "Um no."
+  },
+  {
+   "id": "T53",
+   "speaker": "doctor",
+   "text": "No, you don't feel blocked, or any discharge coming out of your ears?"
+  },
+  {
+   "id": "T54",
+   "speaker": "patient",
+   "text": "No, I don't think so."
+  },
+  {
+   "id": "T55",
+   "speaker": "doctor",
+   "text": "OK, fine. Um what I'm gonna do, I'm just gonna run through a few uh yes no questions, if you if you don't mind, just a review of your systems. Any, any headaches at all?"
+  },
+  {
+   "id": "T56",
+   "speaker": "patient",
+   "text": "Um, yeah, yeah. That that's still, that's still there."
+  },
+  {
+   "id": "T57",
+   "speaker": "doctor",
+   "text": "Whereabouts are the head, headaches?"
+  },
+  {
+   "id": "T58",
+   "speaker": "patient",
+   "text": "Um it's sort of general. Uh and uh they're not, they're not always there, but you know every now and then they will come and go."
+  },
+  {
+   "id": "T59",
+   "speaker": "doctor",
+   "text": "OK. And with those headaches have you had any problems with your, with your eyesight, your vision?"
+  },
+  {
+   "id": "T60",
+   "speaker": "patient",
+   "text": "Um no."
+  },
+  {
+   "id": "T61",
+   "speaker": "doctor",
+   "text": "Uh any difficulty with seeing bright lights?"
+  },
+  {
+   "id": "T62",
+   "speaker": "patient",
+   "text": "No, I don't think so."
+  },
+  {
+   "id": "T63",
+   "speaker": "doctor",
+   "text": "No, OK. Um and just moving down now, in terms of any, any feeling nausea or any vomiting?"
+  },
+  {
+   "id": "T64",
+   "speaker": "patient",
+   "text": "No, none of that."
+  },
+  {
+   "id": "T65",
+   "speaker": "doctor",
+   "text": "OK. Tell me about your bowels. Are your bowels working OK?"
+  },
+  {
+   "id": "T66",
+   "speaker": "patient",
+   "text": "Uh yeah, yeah. Think so."
+  },
+  {
+   "id": "T67",
+   "speaker": "doctor",
+   "text": "You're passing urine OK?"
+  },
+  {
+   "id": "T68",
+   "speaker": "patient",
+   "text": "Yeah, yeah."
+  },
+  {
+   "id": "T69",
+   "speaker": "doctor",
+   "text": "How's your appetite, sir?"
+  },
+  {
+   "id": "T70",
+   "speaker": "patient",
+   "text": "Yeah I've been, I've been drinking a lot more than the usual. But uh so other than that, so"
+  },
+  {
+   "id": "T71",
+   "speaker": "doctor",
+   "text": "OK. Um and you're eating and drinking, uh you're eating OK otherwise."
+  },
+  {
+   "id": "T72",
+   "speaker": "patient",
+   "text": "Um maybe a bit less than uh than what I, I would usually have."
+  },
+  {
+   "id": "T73",
+   "speaker": "doctor",
+   "text": "OK. Um have you noticed any, any funny rashes at all, on your skin?"
+  },
+  {
+   "id": "T74",
+   "speaker": "patient",
+   "text": "Um no, no."
+  },
+  {
+   "id": "T75",
+   "speaker": "doctor",
+   "text": "No. And any general muscle pain or aches, joint pain, ?"
+  },
+  {
+   "id": "T76",
+   "speaker": "patient",
+   "text": "Yeah, yeah. Yeah that's, that sort of started in the past couple days."
+  },
+  {
+   "id": "T77",
+   "speaker": "doctor",
+   "text": "Yeah, OK. Alright um and uh just having a look at the rest of your history, are you otherwise fit and well? Or do you have any other medical problems I should be aware of?"
+  },
+  {
+   "id": "T78",
+   "speaker": "patient",
+   "text": "Um, so otherwise that, uh, I'm I'm fine. There's um, there isn't anything that I'm taking or, I'm being treated for."
+  },
+  {
+   "id": "T79",
+   "speaker": "doctor",
+   "text": "OK. Um"
+  },
+  {
+   "id": "T80",
+   "speaker": "patient",
+   "text": "Um"
+  },
+  {
+   "id": "T81",
+   "speaker": "doctor",
+   "text": "So you are otherwise fit and well. Uh any, any allergies at all to any medications, I should be aware of?"
+  },
+  {
+   "id": "T82",
+   "speaker": "patient",
+   "text": "Um, no"
+  },
+  {
+   "id": "T83",
+   "speaker": "doctor",
+   "text": "No, OK. Um"
+  },
+  {
+   "id": "T84",
+   "speaker": "doctor",
+   "text": "Any family history at all? So anything relevant in the family that I should be aware of? Anything like diabetes, high blood pressure?"
+  },
+  {
+   "id": "T85",
+   "speaker": "patient",
+   "text": "Um, yeah my grandma has diabetes. Um, and, my grandma."
+  },
+  {
+   "id": "T86",
+   "speaker": "doctor",
+   "text": "Your brother?"
+  },
+  {
+   "id": "T87",
+   "speaker": "doctor",
+   "text": "you say grandma, sorry my apologies. Grandma, OK. Uh do you know what type of diabetes it is? Is it type one, type two?"
+  },
+  {
+   "id": "T88",
+   "speaker": "patient",
+   "text": "I think , I think it's type two."
+  },
+  {
+   "id": "T89",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T90",
+   "speaker": "doctor",
+   "text": "Um anything else which you think is significant?"
+  },
+  {
+   "id": "T91",
+   "speaker": "patient",
+   "text": "Yeah, I, I think um, one of my uh, great grandads had an eczema."
+  },
+  {
+   "id": "T92",
+   "speaker": "doctor",
+   "text": "Excellent, OK. OK. Um just moving on to what we social history, just to get to know you a bit more as a person. Tell me, who do you live with at home?"
+  },
+  {
+   "id": "T93",
+   "speaker": "patient",
+   "text": "Ohh um, I live alone."
+  },
+  {
+   "id": "T94",
+   "speaker": "doctor",
+   "text": "OK. And you said you're working at the moment?"
+  },
+  {
+   "id": "T95",
+   "speaker": "patient",
+   "text": "Yeah, yeah."
+  },
+  {
+   "id": "T96",
+   "speaker": "doctor",
+   "text": "What do you do for work?"
+  },
+  {
+   "id": "T97",
+   "speaker": "patient",
+   "text": "I'm an, I'm an accountant."
+  },
+  {
+   "id": "T98",
+   "speaker": "doctor",
+   "text": "OK, and how's your work going at the moment? Uh over the last, has it, has it been affecting your work?"
+  },
+  {
+   "id": "T99",
+   "speaker": "patient",
+   "text": "Um, a little bit. I've been a bit slower. And you know, it's uh, it's, it's a bit of a stressful period just around the um, end of the year. Right."
+  },
+  {
+   "id": "T100",
+   "speaker": "doctor",
+   "text": "Mm, OK. Is that stress, is that affecting your um, your mood at all any, in any way?"
+  },
+  {
+   "id": "T101",
+   "speaker": "patient",
+   "text": "Um, no I think I think it's, it's the, you know it's the good kind of stress. It's um, it's good work."
+  },
+  {
+   "id": "T102",
+   "speaker": "doctor",
+   "text": "OK."
+  },
+  {
+   "id": "T103",
+   "speaker": "doctor",
+   "text": "Well if there's anything you want to talk to me about, you can always come see me about your mood, um stress, anxiety. happy to help."
+  },
+  {
+   "id": "T104",
+   "speaker": "patient",
+   "text": "I don't know. I, I like my job. It's just you know, it's a bit more work than usual."
+  },
+  {
+   "id": "T105",
+   "speaker": "doctor",
+   "text": "OK. OK. And just very briefly, just in terms of smoking uh, do you smoke at all?"
+  },
+  {
+   "id": "T106",
+   "speaker": "patient",
+   "text": "Um, yeah occasionally, you know, cigars and things on company parties."
+  },
+  {
+   "id": "T107",
+   "speaker": "doctor",
+   "text": "OK so not, not regular. Um and what about alcohol?"
+  },
+  {
+   "id": "T108",
+   "speaker": "patient",
+   "text": "No."
+  },
+  {
+   "id": "T109",
+   "speaker": "patient",
+   "text": "Um, occasionally yeah I would have some. I'm, I'm not a very big drinker."
+  },
+  {
+   "id": "T110",
+   "speaker": "doctor",
+   "text": "socially with work."
+  },
+  {
+   "id": "T111",
+   "speaker": "patient",
+   "text": "Yeah."
+  },
+  {
+   "id": "T112",
+   "speaker": "doctor",
+   "text": "Um OK. Um so um"
+  },
+  {
+   "id": "T113",
+   "speaker": "doctor",
+   "text": "just having listened to your story, um uh really just to summarize you know since the last four days you've been feeling generally quite unwell, sore throat, runny nose, bit of a dry cough, bit of muscle pain, weakness."
+  },
+  {
+   "id": "T114",
+   "speaker": "doctor",
+   "text": "Um had initial fever, but now settled. Um I don't think there's a lot to worry about. I think you probably have, you know a bit of a viral, what we say viral illness, maybe a viral upper respiratory tract infection, or maybe early signs of a flu."
+  },
+  {
+   "id": "T115",
+   "speaker": "doctor",
+   "text": "Um these normally last about seven to days and just gets better really, um over time. But things you can do to really help yourself, um is get plenty of rest. I'd probably advise you taking a day or two off work if you can. Um"
+  },
+  {
+   "id": "T116",
+   "speaker": "doctor",
+   "text": "Making yourself, pushing fluids and make yourself well-hydrated. Continue with the regular Paracetamol, Ibuprofen. Um and and you should see how things go, really. Um if next week you're still not better, I'd like you to come back and see me."
+  },
+  {
+   "id": "T117",
+   "speaker": "doctor",
+   "text": "Um is that clear? Does that, does that make, does that make"
+  },
+  {
+   "id": "T118",
+   "speaker": "patient",
+   "text": "Yeah, yeah, that's that's , it makes sense. Uh, I think I'll take a couple days off, and see how it goes."
+  },
+  {
+   "id": "T119",
+   "speaker": "doctor",
+   "text": "Yeah, yeah."
+  },
+  {
+   "id": "T120",
+   "speaker": "doctor",
+   "text": "and things to look out for if you're really not getting better, if you if you have a high fever, or your breathing is becoming a bit more labored, or chest pain, I'd like you to come back and see me much sooner, give me a call. Um and we can help you out. OK?"
+  },
+  {
+   "id": "T121",
+   "speaker": "patient",
+   "text": "Yeah."
+  },
+  {
+   "id": "T122",
+   "speaker": "patient",
+   "text": "Yeah, yeah I understand. Uh, I'll uh, I'll take care."
+  },
+  {
+   "id": "T123",
+   "speaker": "doctor",
+   "text": "Great. Have a great day. Good luck with your work. Thank you. Bye bye. Bye bye."
+  },
+  {
+   "id": "T124",
+   "speaker": "patient",
+   "text": "Thank you. Thank you. You too. Bye bye."
+  }
+ ],
+ "claims": [
+  {
+   "id": "C1",
+   "section": "subjective",
+   "text": "Patient reports feeling under the weather for the past four days.",
+   "status": "supported",
+   "analysis": "In T4, the patient explicitly states, \"I've been feeling kind of uh under the weather for the past four days.\" This directly supports the claim regarding the duration and nature of the patient's feeling.",
+   "evidence_turns": [
+    "T4"
+   ],
+   "quote": "I've been feeling kind of uh under the weather for the past four days.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C2",
+   "section": "subjective",
+   "text": "Patient reports sore throat and runny nose at onset, now a dry cough; sore throat was painful for one or two days and has improved.",
+   "status": "supported",
+   "analysis": "T5 mentions onset with sore throat and runny nose. T6 notes the throat is \"going away\" and cough is starting. T12 states the throat was \"quite painful for a couple days, but then it was past.\" T28 describes the cough as \"dry.\" All elements are supported.",
+   "evidence_turns": [
+    "T5",
+    "T6",
+    "T12",
+    "T28"
+   ],
+   "quote": "started with the um, uh sore throat and runny nose ... quite painful for a couple days, but then it was past ... it's dry for now",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C3",
+   "section": "subjective",
+   "text": "Patient reports difficulty swallowing for one or two days",
+   "status": "supported",
+   "analysis": "In T14, the doctor asks about difficulty or pain on swallowing. In T15, the patient replies, \"Yeah it was uh, it was quite painful to swallow, for one or two days.\" This directly supports the claim.",
+   "evidence_turns": [
+    "T14",
+    "T15"
+   ],
+   "quote": "Yeah it was uh, it was quite painful to swallow, for one or two days.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "other"
+   }
+  },
+  {
+   "id": "C4",
+   "section": "subjective",
+   "text": "Patient reports nasal congestion",
+   "status": "supported",
+   "analysis": "In T25, the doctor asks, \"You feel quite congested, do you?\" In T26, the patient confirms, \"Yeah, quite congested.\" This directly supports the report of nasal congestion.",
+   "evidence_turns": [
+    "T25",
+    "T26"
+   ],
+   "quote": "You feel quite congested, do you? ... Yeah, quite congested.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C5",
+   "section": "subjective",
+   "text": "Patient reports stuffed nose",
+   "status": "supported",
+   "analysis": "In T24, the patient states, \"Sort of um, sort of getting my nose stuffed all the time.\" This directly supports the report of a stuffed nose.",
+   "evidence_turns": [
+    "T24"
+   ],
+   "quote": "sort of getting my nose stuffed all the time",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C6",
+   "section": "subjective",
+   "text": "Patient reports runny nose clearing up",
+   "status": "supported",
+   "analysis": "In T23, in response to the doctor's question about discharge, the patient says, \"Yeah yeah, it's uh it's clearing up.\" This directly supports the claim that the runny nose is clearing up.",
+   "evidence_turns": [
+    "T22",
+    "T23"
+   ],
+   "quote": "Yeah yeah, it's uh it's clearing up .",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "other"
+   }
+  },
+  {
+   "id": "C7",
+   "section": "subjective",
+   "text": "Patient reports dry cough started yesterday",
+   "status": "uncertain",
+   "analysis": "In T28, the patient states regarding the cough, \"that started recently, like just uh um maybe yesterday.\" The use of \"maybe\" indicates uncertainty about the exact timing, making the specific claim of \"started yesterday\" uncertain rather than fully supported.",
+   "evidence_turns": [
+    "T28"
+   ],
+   "quote": "that started recently, like just uh um maybe yesterday",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C8",
+   "section": "subjective",
+   "text": "Patient reports dry cough constant",
+   "status": "supported",
+   "analysis": "In T35, the patient describes the cough as \"sort of constant.\" This directly supports the claim that the cough is constant.",
+   "evidence_turns": [
+    "T35"
+   ],
+   "quote": "it's sort of constant",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C9",
+   "section": "subjective",
+   "text": "Patient reports dry cough not painful",
+   "status": "uncertain",
+   "analysis": "In T28, the patient states the cough is \"not very painful.\" The claim states it is \"not painful.\" The qualifier \"very\" in the transcript makes the claim stronger than the patient's report, so it is not fully supported.",
+   "evidence_turns": [
+    "T28"
+   ],
+   "quote": "it's it's not very painful",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "overstated"
+   }
+  },
+  {
+   "id": "C10",
+   "section": "subjective",
+   "text": "Patient reports night sweats for the last three to four days.",
+   "status": "supported",
+   "analysis": "In T35, the patient mentions night sweats. In T40, the doctor asks if this has been going on for the last three or four days, and in T41, the patient confirms, \"Yeah, yes.\" This supports the duration of the night sweats.",
+   "evidence_turns": [
+    "T35",
+    "T40",
+    "T41"
+   ],
+   "quote": "I'm also having uh night sweats ... this has again, been going on for last uh three four days, has it? ... Yeah, yes.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C11",
+   "section": "subjective",
+   "text": "Patient reports initial fever that has subsided",
+   "status": "supported",
+   "analysis": "In T43, the patient states, \"I had some some fever in the beginning, but it's now sort of uh going down.\" This directly supports the claim that the patient reports an initial fever that has subsided.",
+   "evidence_turns": [
+    "T43"
+   ],
+   "quote": "I had some some fever in the beginning, but it's now sort of uh going down.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C12",
+   "section": "subjective",
+   "text": "Patient reports taking paracetamol and ibuprofen with relief",
+   "status": "supported",
+   "analysis": "In T43, the patient states, \"I've been taking some Paracetamol and Ibuprofen for that, and uh they, they help.\" This confirms the use of both medications and that they provided relief.",
+   "evidence_turns": [
+    "T43"
+   ],
+   "quote": "I've been taking some Paracetamol and Ibuprofen for that, and uh they, they help.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C13",
+   "section": "subjective",
+   "text": "Patient reports feeling winded on exertion but not at rest",
+   "status": "supported",
+   "analysis": "In T46, the patient reports feeling \"winded on exertion.\" In T49, the patient confirms, \"When when when I'm resting it's OK.\" This supports the claim of exertional windedness without rest symptoms.",
+   "evidence_turns": [
+    "T46",
+    "T49"
+   ],
+   "quote": "I feel a bit winded on exertion ... When when when I'm resting it's OK.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C14",
+   "section": "subjective",
+   "text": "Patient reports no chest pain",
+   "status": "supported",
+   "analysis": "In T46, in response to the doctor's question about chest pain (T45), the patient explicitly states, \"so no pain in chest.\" This directly supports the claim.",
+   "evidence_turns": [
+    "T45",
+    "T46"
+   ],
+   "quote": "so no pain in chest",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C15",
+   "section": "subjective",
+   "text": "Patient reports no ear pain",
+   "status": "supported",
+   "analysis": "In T52, in response to the doctor's question about ear pain (T51), the patient answers, \"Um no.\" This directly supports the claim of no ear pain.",
+   "evidence_turns": [
+    "T51",
+    "T52"
+   ],
+   "quote": "Um no.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C16",
+   "section": "subjective",
+   "text": "Patient reports no ear blockage",
+   "status": "supported",
+   "analysis": "In T54, in response to the doctor's question about feeling blocked (T53), the patient answers, \"No, I don't think so.\" This supports the claim of no ear blockage.",
+   "evidence_turns": [
+    "T53",
+    "T54"
+   ],
+   "quote": "No, I don't think so.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C17",
+   "section": "subjective",
+   "text": "Patient reports no discharge",
+   "status": "supported",
+   "analysis": "In T54, the patient answers \"No, I don't think so\" to the doctor's compound question in T53: \"No, you don't feel blocked, or any discharge coming out of your ears?\" The negative answer covers both parts of the question, including discharge.",
+   "evidence_turns": [
+    "T53",
+    "T54"
+   ],
+   "quote": "No, I don't think so.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C18",
+   "section": "subjective",
+   "text": "Patient reports general intermittent headaches",
+   "status": "supported",
+   "analysis": "In T56, the patient confirms headaches are \"still there.\" In T58, the patient describes them as \"sort of general\" and notes \"they're not always there, but you know every now and then they will come and go,\" which matches \"general intermittent headaches.\"",
+   "evidence_turns": [
+    "T55",
+    "T56",
+    "T58"
+   ],
+   "quote": "it's sort of general ... they're not always there, but you know every now and then they will come and go",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C19",
+   "section": "subjective",
+   "text": "Patient reports no vision problems",
+   "status": "supported",
+   "analysis": "In T60, in response to the doctor's question about problems with eyesight or vision (T59), the patient answers, \"Um no.\" This directly supports the claim of no vision problems.",
+   "evidence_turns": [
+    "T59",
+    "T60"
+   ],
+   "quote": "Um no.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C20",
+   "section": "subjective",
+   "text": "Patient reports no photophobia",
+   "status": "supported",
+   "analysis": "In T62, in response to the doctor's question about difficulty seeing bright lights (T61), the patient answers, \"No, I don't think so.\" This supports the claim of no photophobia.",
+   "evidence_turns": [
+    "T61",
+    "T62"
+   ],
+   "quote": "No, I don't think so.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C21",
+   "section": "subjective",
+   "text": "Patient reports no nausea",
+   "status": "supported",
+   "analysis": "The doctor asked about nausea or vomiting (T63). The patient replied \"No, none of that\" (T64), which directly denies both nausea and vomiting.",
+   "evidence_turns": [
+    "T63",
+    "T64"
+   ],
+   "quote": "No, none of that.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C22",
+   "section": "subjective",
+   "text": "Patient reports no vomiting",
+   "status": "supported",
+   "analysis": "The doctor asked about nausea or vomiting (T63). The patient replied \"No, none of that\" (T64), which directly denies both nausea and vomiting.",
+   "evidence_turns": [
+    "T63",
+    "T64"
+   ],
+   "quote": "No, none of that.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C23",
+   "section": "subjective",
+   "text": "Patient reports no bowel changes",
+   "status": "supported",
+   "analysis": "The doctor asked if bowels were working OK (T65). The patient replied \"Uh yeah, yeah. Think so\" (T66), indicating normal function, which supports the claim of no bowel changes/issues.",
+   "evidence_turns": [
+    "T65",
+    "T66"
+   ],
+   "quote": "Uh yeah, yeah. Think so.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C24",
+   "section": "subjective",
+   "text": "Patient reports no urinary issues",
+   "status": "supported",
+   "analysis": "The doctor asked if the patient was passing urine OK (T67). The patient replied \"Yeah, yeah\" (T68), indicating normal function, which supports the claim of no urinary issues.",
+   "evidence_turns": [
+    "T67",
+    "T68"
+   ],
+   "quote": "Yeah, yeah.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C25",
+   "section": "subjective",
+   "text": "Patient reports increased fluid intake",
+   "status": "supported",
+   "analysis": "When asked about appetite (T69), the patient stated, \"I've been drinking a lot more than the usual\" (T70), which directly reports increased fluid intake.",
+   "evidence_turns": [
+    "T69",
+    "T70"
+   ],
+   "quote": "I've been drinking a lot more than the usual.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C26",
+   "section": "subjective",
+   "text": "Patient reports decreased appetite",
+   "status": "supported",
+   "analysis": "When asked about eating (T71), the patient stated, \"maybe a bit less than uh than what I, I would usually have\" (T72), which reports decreased appetite.",
+   "evidence_turns": [
+    "T71",
+    "T72"
+   ],
+   "quote": "maybe a bit less than uh than what I, I would usually have",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C27",
+   "section": "subjective",
+   "text": "Patient reports muscle aches started in the past couple days.",
+   "status": "supported",
+   "analysis": "The doctor asked about muscle pain or aches (T75). The patient confirmed \"Yeah... that sort of started in the past couple days\" (T76), matching the claim exactly.",
+   "evidence_turns": [
+    "T75",
+    "T76"
+   ],
+   "quote": "that sort of started in the past couple days",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C28",
+   "section": "subjective",
+   "text": "Patient reports no known medical problems",
+   "status": "supported",
+   "analysis": "The doctor asked about other medical problems (T77). The patient replied, \"I'm fine. There's... isn't anything that I'm taking or, I'm being treated for\" (T78), indicating no known medical problems.",
+   "evidence_turns": [
+    "T77",
+    "T78"
+   ],
+   "quote": "I'm fine. There's um, there isn't anything that I'm taking or, I'm being treated for.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C29",
+   "section": "subjective",
+   "text": "Patient reports no medications",
+   "status": "supported",
+   "analysis": "In response to the question about medical problems/treatment (T77), the patient stated, \"There's... isn't anything that I'm taking\" (T78), which reports no current medications.",
+   "evidence_turns": [
+    "T77",
+    "T78"
+   ],
+   "quote": "there isn't anything that I'm taking",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "overstated"
+   }
+  },
+  {
+   "id": "C30",
+   "section": "subjective",
+   "text": "Patient reports no allergies",
+   "status": "uncertain",
+   "analysis": "The doctor specifically asked about allergies to medications (T81), and the patient responded 'no' (T82). The claim states 'no allergies' without the medication qualifier, which is broader than the transcript's scope. Therefore, the claim is not fully supported.",
+   "evidence_turns": [
+    "T81",
+    "T82"
+   ],
+   "quote": "any allergies at all to any medications... Um, no",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "overstated"
+   }
+  },
+  {
+   "id": "C31",
+   "section": "subjective",
+   "text": "Patient reports family history of type 2 diabetes (grandma)",
+   "status": "supported",
+   "analysis": "The patient states their grandma has diabetes (T85) and, when asked by the doctor, specifies it is type two (T88). This directly supports the claim.",
+   "evidence_turns": [
+    "T85",
+    "T88"
+   ],
+   "quote": "my grandma has diabetes ... I think it's type two.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C32",
+   "section": "subjective",
+   "text": "Patient reports family history of eczema (great grandad)",
+   "status": "supported",
+   "analysis": "The patient explicitly states that one of their great grandads had eczema (T91), which directly supports the claim.",
+   "evidence_turns": [
+    "T91"
+   ],
+   "quote": "one of my uh, great grandads had an eczema.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C33",
+   "section": "subjective",
+   "text": "Patient reports living alone",
+   "status": "supported",
+   "analysis": "In response to the doctor asking who the patient lives with, the patient states, \"I live alone\" (T93), directly supporting the claim.",
+   "evidence_turns": [
+    "T93"
+   ],
+   "quote": "I live alone.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C34",
+   "section": "subjective",
+   "text": "Patient reports works as accountant",
+   "status": "supported",
+   "analysis": "In response to the doctor asking what the patient does for work, the patient states, \"I'm an accountant\" (T97), directly supporting the claim.",
+   "evidence_turns": [
+    "T97"
+   ],
+   "quote": "I'm an, I'm an accountant.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C35",
+   "section": "subjective",
+   "text": "Patient reports mild work-related stress",
+   "status": "uncertain",
+   "analysis": "The patient describes the work period as \"a bit of a stressful period\" (T99) but clarifies it is \"good kind of stress\" (T101). The claim uses the qualifier \"mild,\" which is not explicitly stated in the transcript, making it uncertain.",
+   "evidence_turns": [
+    "T99",
+    "T101"
+   ],
+   "quote": "a bit of a stressful period ... it's the good kind of stress.",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C36",
+   "section": "subjective",
+   "text": "Patient reports occasional cigar use at parties",
+   "status": "supported",
+   "analysis": "The patient states they smoke \"occasionally\" and specifies \"cigars and things on company parties\" (T106), which directly supports the claim.",
+   "evidence_turns": [
+    "T106"
+   ],
+   "quote": "occasionally, you know, cigars and things on company parties.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C37",
+   "section": "subjective",
+   "text": "Patient reports no regular smoking",
+   "status": "supported",
+   "analysis": "The doctor asked if the patient smokes (T105). The patient replied 'yeah occasionally' regarding cigars at parties (T106). The doctor summarized this as 'not regular' (T106). The claim accurately reflects the patient's report of occasional, non-regular smoking.",
+   "evidence_turns": [
+    "T105",
+    "T106"
+   ],
+   "quote": "do you smoke at all? ... yeah occasionally, you know, cigars and things on company parties.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C38",
+   "section": "subjective",
+   "text": "Patient reports occasional alcohol consumption",
+   "status": "supported",
+   "analysis": "The patient states, \"occasionally yeah I would have some\" (T109) in response to the alcohol question, directly supporting the claim of occasional consumption.",
+   "evidence_turns": [
+    "T109"
+   ],
+   "quote": "occasionally yeah I would have some.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C39",
+   "section": "subjective",
+   "text": "Patient reports not a heavy drinker",
+   "status": "supported",
+   "analysis": "The patient explicitly states, \"I'm not a very big drinker\" (T109), which directly supports the claim of not being a heavy drinker.",
+   "evidence_turns": [
+    "T109"
+   ],
+   "quote": "I'm not a very big drinker.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C40",
+   "section": "objective",
+   "text": "Not documented",
+   "status": "supported",
+   "analysis": "The transcript contains no examination findings, measurements, or observations by the clinician. The doctor only asks questions and summarizes the patient's history. Therefore, the Objective section is not documented.",
+   "evidence_turns": [],
+   "quote": "",
+   "quote_valid": null,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C41",
+   "section": "assessment",
+   "text": "Clinician considers possible viral upper respiratory tract infection or early flu",
+   "status": "supported",
+   "analysis": "In T114, the doctor explicitly states, \"I think you probably have... a viral upper respiratory tract infection, or maybe early signs of a flu.\" This directly supports the assessment claim.",
+   "evidence_turns": [
+    "T114"
+   ],
+   "quote": "viral upper respiratory tract infection, or maybe early signs of a flu",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C42",
+   "section": "plan",
+   "text": "Advise patient to get plenty of rest and take a day or two off work if possible.",
+   "status": "supported",
+   "analysis": "In T115, the doctor advises the patient to \"get plenty of rest\" and \"taking a day or two off work if you can.\" This matches the claim exactly.",
+   "evidence_turns": [
+    "T115"
+   ],
+   "quote": "get plenty of rest. I'd probably advise you taking a day or two off work if you can",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C43",
+   "section": "plan",
+   "text": "Advise patient to stay well-hydrated.",
+   "status": "supported",
+   "analysis": "In T115, the doctor advises \"pushing fluids and make yourself well-hydrated.\" This supports the claim to stay well-hydrated.",
+   "evidence_turns": [
+    "T116"
+   ],
+   "quote": "pushing fluids and make yourself well-hydrated",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C44",
+   "section": "plan",
+   "text": "Continue regular paracetamol and ibuprofen as needed",
+   "status": "uncertain",
+   "analysis": "In T116, the doctor says \"Continue with the regular Paracetamol, Ibuprofen.\" The claim adds \"as needed,\" which is not explicitly stated in the transcript, although the patient previously mentioned taking them for fever. The transcript does not specify the frequency or condition for continuation in the plan section.",
+   "evidence_turns": [
+    "T116"
+   ],
+   "quote": "Continue with the regular Paracetamol, Ibuprofen",
+   "quote_valid": true,
+   "needs_review": true,
+   "error": null,
+   "reviewer": {
+    "status": "uncertain",
+    "error_type": "other"
+   }
+  },
+  {
+   "id": "C45",
+   "section": "plan",
+   "text": "Advise patient to return next week if not better",
+   "status": "supported",
+   "analysis": "In T116, the doctor states, \"if next week you're still not better, I'd like you to come back and see me.\" This directly supports the claim.",
+   "evidence_turns": [
+    "T116"
+   ],
+   "quote": "if next week you're still not better, I'd like you to come back and see me",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C46",
+   "section": "plan",
+   "text": "Advise patient to return sooner if high fever",
+   "status": "supported",
+   "analysis": "In T120, the doctor lists warning signs to return sooner, including \"if you have a high fever.\" This supports the claim.",
+   "evidence_turns": [
+    "T120"
+   ],
+   "quote": "if you have a high fever",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C47",
+   "section": "plan",
+   "text": "Advise patient to return sooner if worsening breathing",
+   "status": "supported",
+   "analysis": "In T120, the doctor lists warning signs to return sooner, including \"your breathing is becoming a bit more labored.\" This supports the claim about worsening breathing.",
+   "evidence_turns": [
+    "T120"
+   ],
+   "quote": "your breathing is becoming a bit more labored",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C48",
+   "section": "plan",
+   "text": "Advise patient to return sooner if chest pain",
+   "status": "supported",
+   "analysis": "In T120, the doctor lists warning signs to return sooner, including \"or chest pain.\" This supports the claim.",
+   "evidence_turns": [
+    "T120"
+   ],
+   "quote": "or chest pain",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  },
+  {
+   "id": "C49",
+   "section": "plan",
+   "text": "Patient will take a couple days off work.",
+   "status": "supported",
+   "analysis": "The claim is supported by the patient's explicit statement in T118, where they say, 'I think I'll take a couple days off, and see how it goes,' directly following the doctor's advice to take time off.",
+   "evidence_turns": [
+    "T118"
+   ],
+   "quote": "I think I'll take a couple days off, and see how it goes.",
+   "quote_valid": true,
+   "needs_review": false,
+   "error": null,
+   "reviewer": {
+    "status": "supported",
+    "error_type": "none"
+   }
+  }
+ ]
+}

@@ -14,6 +14,7 @@ def test_pages_and_encounter_endpoints():
     assert c.get("/api/encounters/..%2Fetc").status_code == 404
     assert c.get("/api/encounters/day9_consultation99").status_code == 404
     listing = c.get("/api/encounters").json()
-    if listing:  # verdict files are gitignored, so only check when present
+    assert listing, "web/demo is empty: run python -m pipeline.export_demo"
+    if listing:
         d = c.get(f"/api/encounters/{listing[0]['id']}").json()
         assert d["turns"] and d["claims"] and "reference_note" not in d
