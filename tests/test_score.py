@@ -411,3 +411,36 @@ def test_cli_prints_the_v0_vs_v1_section(tmp_path, capsys):
         ]
     )
     assert "v0-vs-v1 comparison skipped" in capsys.readouterr().out
+
+
+def test_extra_block_counts_missing_both_ways_and_is_all_rows_only():
+    gold = [g("C1", "contradicted"), g("C2", "contradicted"), g("C3", "supported"),
+            g("C4", "supported"), g("C5", "contradicted")]  # fmt: skip
+    verd = dict([vd("C1", "contradicted"), vd("C2", "supported"), vd("C3", "supported")])
+    key, rec = vd("C5", "contradicted")
+    rec["verdict"], rec["error"] = None, "invalid"  # errored: no usable verdict
+    verd[key] = rec  # C4 absent altogether
+    s = score(gold, verd)
+    assert (s.missing_pos, s.missing_neg) == (1, 1)
+    out = render(s, "T", all_rows=True)
+    assert "(a) as missed errors" in out and "precision=1.000  recall=0.500" in out
+    # (b): TP=1+1, FP=0+1, FN=1 -> precision 2/3, recall 2/3
+    assert "(b) as flagged for human review" in out and "precision=0.667  recall=0.667" in out
+    assert "recall by section" in out and "subjective" in out
+    assert "no-verdict handling" not in render(s, "T")  # not printed unless all_rows
+
+
+def test_extra_block_counts_truncated_and_recall_by_section():
+    gold = [g("C1", "contradicted"), g("C2", "contradicted")]
+    gold[1]["section"] = "plan"
+    k1, r1 = vd("C1", "contradicted")
+    k2, r2 = vd("C2", "supported")
+    r1["analysis_truncated"] = True
+    s = score(gold, {k1: r1, k2: r2})
+    assert s.truncated == 1
+    assert s.per_section == {
+        "subjective": {"n_pos": 1, "flagged": 1},
+        "plan": {"n_pos": 1, "flagged": 0},
+    }
+    out = render(s, "T", all_rows=True)
+    assert "analysis_truncated=True (scored claims): 1" in out and "plan         0/1 = 0.000" in out

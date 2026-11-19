@@ -336,3 +336,22 @@ def test_v1_default_folders_are_separate_from_v0():
 
     assert V1_BATCH_VERDICTS_DIR.as_posix() == "outputs/verdicts/verifier-v1-batched"
     assert len({VERDICTS_DIR, BATCH_VERDICTS_DIR, V1_VERDICTS_DIR, V1_BATCH_VERDICTS_DIR}) == 4
+
+
+def test_failed_claim_keeps_last_raw_reply_and_error_and_old_files_still_load():
+    from pipeline.verify import RAW_OUTPUT_MAX, VerdictRecord
+
+    junk = "not json " + "x" * 5000
+    rec = verify_claim(ENC, CLAIM, Fake(reply(analysis=""), junk), spec=V1)
+    assert rec.verdict is None and rec.error.startswith("invalid verifier output")
+    assert rec.raw_output == junk[:RAW_OUTPUT_MAX] and len(rec.raw_output) == RAW_OUTPUT_MAX
+    ok = verify_claim(ENC, CLAIM, Fake(reply()), spec=V1)
+    assert ok.raw_output is None  # nothing stored on success
+    old = {
+        "encounter_id": "e",
+        "claim_id": "C1",
+        "section": "plan",
+        "claim_text": "t",
+        "error": "x",
+    }
+    assert VerdictRecord.model_validate(old).raw_output is None  # files written before still load

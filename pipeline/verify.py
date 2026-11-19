@@ -40,6 +40,7 @@ V1_1_BATCH_PROMPT_VERSION = "verify-prompt-v1.1-batch"
 V1_1_VERDICTS_DIR = Path("outputs/verdicts/verifier-v1.1")
 V1_1_BATCH_VERDICTS_DIR = Path("outputs/verdicts/verifier-v1.1-batched")
 ANALYSIS_MAX_WORDS = 50
+RAW_OUTPUT_MAX = 4000  # characters of the last raw reply kept on a failed claim
 BATCH_SIZE = 10
 LEDGER = Path("outputs/verdicts/token_ledger.jsonl")
 DAILY_TOKEN_CAP = 200_000  # Groq tokens-per-day limit for the verifier model
@@ -202,6 +203,7 @@ class VerdictRecord(BaseModel):
     cited_turns_original: list[str] = Field(default_factory=list)  # model's ids when corrected
     needs_review: bool | None = None  # status != supported, or quote_valid is False
     analysis_truncated: bool = False  # v1/v1.1: analysis was cut to ANALYSIS_MAX_WORDS in code
+    raw_output: str | None = None  # only on failure: last raw model reply, cut to RAW_OUTPUT_MAX
 
 
 class VerdictFile(BaseModel):
@@ -445,17 +447,22 @@ def verify_claim(
     """One LLM call (+ at most `retries` more if the answer is invalid), then the code quote check."""
     user = build_user_prompt(enc, claim)
     base = {k: getattr(claim, k) for k in _NEEDED}
-    last = ""
+    last, last_raw = "", ""
     for _ in range(retries + 1):
+        raw = ""
         try:
-            v = Verdict.model_validate(extract_json(client.complete(spec.single_system, user)))
+            raw = client.complete(spec.single_system, user)
+            last_raw = raw
+            v = Verdict.model_validate(extract_json(raw))
             spec.check(v)
             _check_supported_evidence(claim, v)
         except (ValueError, ValidationError) as e:  # JSONDecodeError is a ValueError
             last = str(e)[:200]
             continue
         return _finish(enc, claim, v, spec, "single")
-    return VerdictRecord(**base, error=f"invalid verifier output: {last}")
+    return VerdictRecord(
+        **base, error=f"invalid verifier output: {last}", raw_output=last_raw[:RAW_OUTPUT_MAX]
+    )
 
 
 # ---------------------------------------------------------------- Groq client with pacing

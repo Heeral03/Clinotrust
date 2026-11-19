@@ -72,6 +72,12 @@ class Score:
     tn_r: int = 0
     # error_type -> {"n", "gold_not_supported", "flagged_status", "flagged_review"}
     per_error: dict[str, dict[str, int]] = field(default_factory=dict)
+    # claims with no usable verdict, split by gold label (for the "no verdict = flagged" policy)
+    missing_pos: int = 0
+    missing_neg: int = 0
+    truncated: int = 0  # scored verdicts whose analysis was cut to 50 words
+    # section -> {"n_pos": gold not-supported claims, "flagged": of those, flagged by status}
+    per_section: dict[str, dict[str, int]] = field(default_factory=dict)
 
     @property
     def precision_r(self) -> float | None:
@@ -122,6 +128,10 @@ def score(
         rec = verdicts.get(key)
         if rec is None or rec["verdict"] is None:
             s.missing.append(key)
+            if g["status"] in POSITIVE:
+                s.missing_pos += 1
+            else:
+                s.missing_neg += 1
             continue
         if rec["claim_text"] != g["claim_text"]:
             s.text_mismatch.append(key)
@@ -138,6 +148,10 @@ def score(
             s.fn += 1
         else:
             s.tn += 1
+        s.truncated += rec.get("analysis_truncated") is True
+        sec = s.per_section.setdefault(g["section"], {"n_pos": 0, "flagged": 0})
+        sec["n_pos"] += gold_pos
+        sec["flagged"] += gold_pos and pred_pos
         review = needs_review_of(v["status"], rec["quote_valid"])
         if gold_pos and review:
             s.tp_r += 1
@@ -334,7 +348,33 @@ def fmt(x: float | None) -> str:
     return "n/a" if x is None else f"{x:.3f}"
 
 
-def render(s: Score, title: str, show_disagreements: bool = True) -> str:
+def render_extra(s: Score) -> str:
+    """ALL ROWS only: no-verdict policies, truncation count, recall by section."""
+    tp_b, fp_b = s.tp + s.missing_pos, s.fp + s.missing_neg
+    head = (
+        f"\nno-verdict handling (claims with no usable verdict: {len(s.missing)} = "
+        f"{s.missing_pos} gold not-supported + {s.missing_neg} gold supported)"
+    )
+    out = [head]
+    out.append(
+        f"  (a) as missed errors  [main numbers above]  precision={fmt(s.precision)}  "
+        f"recall={fmt(s.recall)}   (on {s.n} scored claims; missing ones left out)"
+    )
+    out.append(
+        f"  (b) as flagged for human review (safety policy)  precision={fmt(ratio(tp_b, tp_b + fp_b))}  "
+        f"recall={fmt(ratio(tp_b, tp_b + s.fn))}   (TP={tp_b} FP={fp_b} FN={s.fn})"
+    )
+    out.append(f"\nverdicts with analysis_truncated=True (scored claims): {s.truncated}")
+    out.append("\nrecall by section (gold not-supported claims flagged by status)")
+    for sec in ("subjective", "objective", "assessment", "plan"):
+        e = s.per_section.get(sec, {"n_pos": 0, "flagged": 0})
+        out.append(
+            f"  {sec:<12} {e['flagged']}/{e['n_pos']} = {fmt(ratio(e['flagged'], e['n_pos']))}"
+        )
+    return "\n".join(out)
+
+
+def render(s: Score, title: str, show_disagreements: bool = True, all_rows: bool = False) -> str:
     out = [f"\n{'=' * 78}\n{title}\n{'=' * 78}"]
     out.append(
         f"gold-labeled claims: {s.n_gold}   scored: {s.n}   no verdict: {len(s.missing)}   text mismatch: {len(s.text_mismatch)}"
@@ -384,6 +424,8 @@ def render(s: Score, title: str, show_disagreements: bool = True) -> str:
             f"status {e['flagged_status']}/{e['n']} = {fmt(s.error_recall(et))}   "
             f"needs_review {e['flagged_review']}/{e['n']} = {fmt(s.error_recall(et, 'review'))}"
         )
+    if all_rows:
+        out.append(render_extra(s))
     if show_disagreements:
         out.append(f"\ndisagreements (4-class): {len(s.disagreements)}")
         for d in s.disagreements:
@@ -458,6 +500,7 @@ def main(argv: list[str] | None = None) -> None:
                 report,
                 f"{title}   [{vdir}]",
                 show_disagreements=not excl and not a.no_disagreements,
+                all_rows=not excl,
             )
         )
     sdir, bdir = Path(a.single_verdicts), Path(a.batched_verdicts)
