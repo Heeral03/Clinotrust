@@ -10,3 +10,6 @@ day1_consultation04,C23,severity,minor,none,hedge rule chosen by Heeral: a clear
 day1_consultation04,C29,status,supported,uncertain,scope rule chosen by Heeral: a claim broader than what was asked or true is flagged. Patient was taking paracetamol and ibuprofen (T43); same logic as 04 C30.,yes
 day1_consultation04,C29,error_type,none,overstated,same scope rule as 04 C30,yes
 day1_consultation04,C29,severity,none,minor,same as 04 C30,yes
+day1_consultation01,C11,status,contradicted,supported,'only' is loose but soups and smoothies are light foods (T36); reviewer decision after seeing v1.1 output.,yes
+day1_consultation01,C11,error_type,decomposition_error,none,'only' is loose but soups and smoothies are light foods (T36); reviewer decision after seeing v1.1 output.,yes
+day1_consultation01,C11,severity,minor,none,'only' is loose but soups and smoothies are light foods (T36); reviewer decision after seeing v1.1 output.,yes
