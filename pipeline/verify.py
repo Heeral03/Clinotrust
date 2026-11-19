@@ -14,7 +14,14 @@ from datetime import UTC, datetime, timedelta
 from pathlib import Path
 from typing import Literal, Protocol
 
-from pydantic import BaseModel, Field, ValidationError, field_validator, model_validator
+from pydantic import (
+    BaseModel,
+    Field,
+    PrivateAttr,
+    ValidationError,
+    field_validator,
+    model_validator,
+)
 
 from config import settings
 from data.schemas import Encounter
@@ -148,6 +155,7 @@ class Verdict(BaseModel):
     evidence_turns: list[str] = Field(default_factory=list)
     evidence_quote: str = ""
     reason: str = ""  # v0: one sentence
+    _analysis_truncated: bool = PrivateAttr(default=False)  # set in code only, never by the model
 
     @field_validator("evidence_turns")
     @classmethod
@@ -193,6 +201,7 @@ class VerdictRecord(BaseModel):
     turn_corrected: bool | None = None  # v1: quote lived in another turn, so the turn id was fixed
     cited_turns_original: list[str] = Field(default_factory=list)  # model's ids when corrected
     needs_review: bool | None = None  # status != supported, or quote_valid is False
+    analysis_truncated: bool = False  # v1/v1.1: analysis was cut to ANALYSIS_MAX_WORDS in code
 
 
 class VerdictFile(BaseModel):
@@ -350,11 +359,12 @@ BATCH_SYSTEM_PROMPT_V1_1 = (
 
 
 def _check_v1(v: Verdict) -> None:
-    n = len(v.analysis.split())
-    if n == 0:
+    words = v.analysis.split()
+    if not words:
         raise ValueError("missing analysis")
-    if n > ANALYSIS_MAX_WORDS:
-        raise ValueError(f"analysis has {n} words (max {ANALYSIS_MAX_WORDS})")
+    if len(words) > ANALYSIS_MAX_WORDS:  # cap in code; status, turns and quote are untouched
+        v.analysis = " ".join(words[:ANALYSIS_MAX_WORDS])
+        v._analysis_truncated = True
 
 
 @dataclass(frozen=True)
@@ -425,6 +435,7 @@ def _finish(
         turn_corrected=corrected,
         cited_turns_original=original,
         needs_review=needs_review_of(v.status, quote_valid),
+        analysis_truncated=v._analysis_truncated,
     )
 
 

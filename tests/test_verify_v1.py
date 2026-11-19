@@ -120,23 +120,39 @@ def test_verdict_serialises_analysis_before_status():
 
 
 # ------------------------------------------------------------------ analysis limit
-def test_analysis_is_required_and_capped_at_50_words_for_v1():
+def test_truncation_sets_flag_and_leaves_verdict_and_quote_check_alone():
+    long_ = " ".join(["word"] * (ANALYSIS_MAX_WORDS + 30))
+    rec = verify_claim(ENC, CLAIM, Fake(reply(analysis=long_)), spec=V1)
+    assert rec.analysis_truncated is True
+    ref = verify_claim(ENC, CLAIM, Fake(reply(analysis="short")), spec=V1)
+    assert ref.analysis_truncated is False
+    for f in ("status", "evidence_turns", "evidence_quote"):
+        assert getattr(rec.verdict, f) == getattr(ref.verdict, f)
+    assert (rec.quote_valid, rec.turns_valid) == (ref.quote_valid, ref.turns_valid)
+    # a model cannot set the flag itself
+    sneaky = reply(analysis="short", analysis_truncated=True)
+    assert verify_claim(ENC, CLAIM, Fake(sneaky), spec=V1).analysis_truncated is False
+
+
+def test_analysis_is_required_and_truncated_to_50_words_for_v1():
     ok = " ".join(["word"] * ANALYSIS_MAX_WORDS)
     assert verify_claim(ENC, CLAIM, Fake(reply(analysis=ok)), spec=V1).verdict is not None
     too_long = " ".join(["word"] * (ANALYSIS_MAX_WORDS + 1))
-    fake = Fake(reply(analysis=too_long), reply(analysis=too_long))
-    rec = verify_claim(ENC, CLAIM, fake, spec=V1)
-    assert rec.verdict is None and "analysis has 51 words" in rec.error and len(fake.calls) == 2
+    fake = Fake(reply(analysis=too_long))
+    rec = verify_claim(ENC, CLAIM, fake, spec=V1)  # too long: truncated, verdict kept, no retry
+    assert rec.verdict is not None and len(rec.verdict.analysis.split()) == ANALYSIS_MAX_WORDS
+    assert len(fake.calls) == 1
     assert (
         verify_claim(ENC, CLAIM, Fake(reply(analysis=""), reply(analysis="")), spec=V1).verdict
         is None
     )
 
 
-def test_overlong_analysis_gets_one_retry_then_recovers():
+def test_overlong_analysis_is_truncated_without_a_retry():
     fake = Fake(reply(analysis=" ".join(["w"] * 80)), reply())
     rec = verify_claim(ENC, CLAIM, fake, spec=V1)
-    assert rec.verdict.status == "supported" and len(fake.calls) == 2
+    assert rec.verdict.status == "supported" and len(fake.calls) == 1
+    assert rec.analysis_truncated is True
     assert fake.calls[0][0] == SYSTEM_PROMPT_V1
 
 
