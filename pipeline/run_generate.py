@@ -1,7 +1,7 @@
 """Generate SOAP notes for the first N PriMock57 transcripts.
 
 Writes to outputs/generated/ - never touches data/raw/.
-Usage: uv run python -m pipeline.run_generate [--n 5]
+Usage: uv run python -m pipeline.run_generate [--n 5 | --ids ID ...] [--out DIR]
 """
 
 import argparse
@@ -18,12 +18,22 @@ OUT = Path("outputs/generated")
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=5)
+    ap.add_argument("--ids", nargs="+", metavar="ID", help="only these encounters (skips existing)")
+    ap.add_argument("--out", default=str(OUT), help="output folder")
     a = ap.parse_args()
-    OUT.mkdir(parents=True, exist_ok=True)
+    out_dir = Path(a.out)
+    out_dir.mkdir(parents=True, exist_ok=True)
     client = GroqClient()
-    for enc in load_primock57()[: a.n]:
+    encs = load_primock57()
+    encs = [e for e in encs if e.id in a.ids] if a.ids else encs[: a.n]
+    if a.ids and {e.id for e in encs} != set(a.ids):
+        raise SystemExit(f"unknown ids: {set(a.ids) - {e.id for e in encs}}")
+    for enc in encs:
+        if a.ids and (out_dir / f"{enc.id}.json").exists():
+            print(f"{enc.id}: already generated - skipped")
+            continue
         note = generate_soap(enc, client)
-        (OUT / f"{enc.id}.json").write_text(
+        (out_dir / f"{enc.id}.json").write_text(
             json.dumps(
                 {
                     "id": enc.id,

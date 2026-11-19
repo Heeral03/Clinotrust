@@ -1,0 +1,31 @@
+{
+  "id": "day3_consultation08",
+  "model": "openai/gpt-oss-20b",
+  "prompt_version": "gen-prompt-v1",
+  "loader_version": "loader-v2",
+  "merged_same_speaker": false,
+  "soap": {
+    "subjective": [
+      "Patient reports cough, cold, runny nose, muscle aches, occasional headache, chills for about five days.",
+      "Patient describes cough as dry, hacking.",
+      "Patient denies shortness of breath, wheeze, blood in sputum, chest pain, fever.",
+      "Patient reports taking paracetamol for pain.",
+      "Patient takes metformin for diabetes and lisinopril for blood pressure.",
+      "Patient has diabetes for five to six years; monitors blood sugars at home with normal readings.",
+      "Patient's last blood pressure reading was taken this morning and was within normal range."
+    ],
+    "objective": [
+      "Mild redness at the back of the throat.",
+      "No enlarged tonsils.",
+      "No palpable glands in the neck."
+    ],
+    "assessment": [
+      "Clinician considers a viral upper respiratory infection (cold) with no evidence of chest infection."
+    ],
+    "plan": [
+      "Patient advised to use over\u2011the\u2011counter symptomatic relief (Night Nurse, Day Nurse) which is compatible with current medications.",
+      "No prescription medication is required at this time.",
+      "Patient instructed to contact the service if shortness of breath, wheeze, or symptoms persist beyond three weeks or worsen."
+    ]
+  }
+}

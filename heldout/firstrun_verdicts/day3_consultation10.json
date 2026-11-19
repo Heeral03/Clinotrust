@@ -1,0 +1,639 @@
+{
+  "encounter_id": "day3_consultation10",
+  "model": "qwen/qwen3.8-27b",
+  "prompt_version": "verify-prompt-v1.1-batch",
+  "loader_version": "loader-v2",
+  "updated_at": "2026-11-19T17:03:31+00:00",
+  "mode": "batched",
+  "batch_size": 10,
+  "usage": {
+    "prompt": 47797,
+    "completion": 4939,
+    "calls": 11
+  },
+  "records": [
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C1",
+      "section": "subjective",
+      "claim_text": "Patient reports diarrhea for about three days",
+      "verdict": {
+        "analysis": "In T13, the patient states, \"it's been happening for about, three days now?\" This directly supports the claim that the patient reports diarrhea for about three days.",
+        "status": "supported",
+        "evidence_turns": [
+          "T13"
+        ],
+        "evidence_quote": "it's been happening for about, three days now?",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C3",
+      "section": "subjective",
+      "claim_text": "Patient says no recent diet changes",
+      "verdict": {
+        "analysis": "In T15, the patient states, \"nothing funky in my diet,\" which directly supports the claim that there have been no recent diet changes.",
+        "status": "supported",
+        "evidence_turns": [
+          "T15"
+        ],
+        "evidence_quote": "nothing funky in my diet",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C4",
+      "section": "subjective",
+      "claim_text": "Patient says no recent travel",
+      "verdict": {
+        "analysis": "In T15, the patient states, \"no travels recently,\" which directly supports the claim that there has been no recent travel.",
+        "status": "supported",
+        "evidence_turns": [
+          "T15"
+        ],
+        "evidence_quote": "no travels recently",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C5",
+      "section": "subjective",
+      "claim_text": "Patient reports one episode of vomiting",
+      "verdict": {
+        "analysis": "In T19, the patient states, \"I threw up once,\" and confirms this in T22. This directly supports the claim of one episode of vomiting.",
+        "status": "supported",
+        "evidence_turns": [
+          "T19",
+          "T22"
+        ],
+        "evidence_quote": "I threw up once",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C6",
+      "section": "subjective",
+      "claim_text": "Patient reports abdominal pain",
+      "verdict": {
+        "analysis": "In T19, the patient states, \"it's was like a little bit of abdominal pain.\" This confirms the presence of abdominal pain, supporting the general claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T19"
+        ],
+        "evidence_quote": "a little bit of abdominal pain",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C7",
+      "section": "subjective",
+      "claim_text": "Patient reports a little bit of abdominal pain",
+      "verdict": {
+        "analysis": "In T19, the patient explicitly describes the pain as \"a little bit of abdominal pain,\" which matches the claim's qualifier exactly.",
+        "status": "supported",
+        "evidence_turns": [
+          "T19"
+        ],
+        "evidence_quote": "a little bit of abdominal pain",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C8",
+      "section": "subjective",
+      "claim_text": "Patient reports appetite loss",
+      "verdict": {
+        "analysis": "In T43, the patient states, \"Appetite loss I guess worse than normal,\" which directly supports the claim that the patient reports appetite loss.",
+        "status": "supported",
+        "evidence_turns": [
+          "T43"
+        ],
+        "evidence_quote": "Appetite loss I guess worse than normal",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C10",
+      "section": "subjective",
+      "claim_text": "Patient reports no blood",
+      "verdict": {
+        "analysis": "In T32, the patient states, \"No blood,\" in response to the doctor's question about blood or mucus. This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T32"
+        ],
+        "evidence_quote": "No blood",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C11",
+      "section": "subjective",
+      "claim_text": "Patient reports no mucus",
+      "verdict": {
+        "analysis": "The doctor asked if there was any mucus in the stool (T31, T35). The patient explicitly answered \"No\" (T36). This directly supports the claim that the patient reports no mucus.",
+        "status": "supported",
+        "evidence_turns": [
+          "T31",
+          "T36"
+        ],
+        "evidence_quote": "is there any blood or mucus? ... No.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C12",
+      "section": "subjective",
+      "claim_text": "Patient reports maybe a little fever",
+      "verdict": {
+        "analysis": "The doctor asked about fever (T37). The patient responded \"Uh, maybe a little bit\" (T38). This matches the claim's qualifier \"maybe a little fever\".",
+        "status": "supported",
+        "evidence_turns": [
+          "T37",
+          "T38"
+        ],
+        "evidence_quote": "Any fever at all? ... Uh, maybe a little bit",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C13",
+      "section": "subjective",
+      "claim_text": "Patient reports still able to drink",
+      "verdict": {
+        "analysis": "The doctor asked if the patient is still able to eat and drink (T41). The patient replied \"Uh, a little bit of\" (T42), indicating they are still able to drink, though with reduced appetite. The claim is supported by the affirmative response to the ability to drink.",
+        "status": "supported",
+        "evidence_turns": [
+          "T41",
+          "T42"
+        ],
+        "evidence_quote": "Are you still able to eat, and drink? ... Uh, a little bit of.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C14",
+      "section": "subjective",
+      "claim_text": "Patient reports drinks plenty",
+      "verdict": {
+        "analysis": "The doctor asked \"you're still able to drink quite a bit yeah? You're drinking plenty.\" (T45). The patient affirmed with \"Yeah yeah yeah\" (T46). This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T45",
+          "T46"
+        ],
+        "evidence_quote": "You're drinking plenty. ... Yeah yeah yeah.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C15",
+      "section": "subjective",
+      "claim_text": "Patient reports asthma",
+      "verdict": {
+        "analysis": "The doctor asked about past medical history (T53). The patient stated \"Probably I I had asthma\" (T55) and \"I guess I still have it\" (T57). This supports the report of asthma.",
+        "status": "supported",
+        "evidence_turns": [
+          "T53",
+          "T55",
+          "T57"
+        ],
+        "evidence_quote": "Probably I I had asthma. ... I guess I still have it.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C16",
+      "section": "subjective",
+      "claim_text": "Patient reports uses Lexapro",
+      "verdict": {
+        "analysis": "The doctor asked about inhalers (T65). The patient said \"Yes\" (T66) and identified the medication as \"Lexapro\" (T68, T70). Although Lexapro is typically an antidepressant, the transcript records the patient reporting this specific name in response to the medication question.",
+        "status": "supported",
+        "evidence_turns": [
+          "T65",
+          "T66",
+          "T68"
+        ],
+        "evidence_quote": "are you using any inhalers at all? ... Yes. ... Lexapro.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C17",
+      "section": "subjective",
+      "claim_text": "Patient reports no other medication",
+      "verdict": {
+        "analysis": "The doctor asked about other medications (T76-T77). The patient did not provide a verbal answer to this specific question; the transcript shows the doctor immediately moving to the next topic (allergies) in T78. Therefore, the claim that the patient reported no other medication is not supported by the transcript.",
+        "status": "unsupported",
+        "evidence_turns": [],
+        "evidence_quote": "",
+        "reason": ""
+      },
+      "quote_valid": null,
+      "turns_valid": null,
+      "error": null,
+      "via": "single-retry",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C18",
+      "section": "subjective",
+      "claim_text": "Patient reports no allergies",
+      "verdict": {
+        "analysis": "The doctor asked \"Any allergies?\" (T78). The patient responded \"No\" (T79) and \"Nothing, yeah, nothing\" (T80). This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T78",
+          "T79",
+          "T80"
+        ],
+        "evidence_quote": "Any allergies? ... No. ... Nothing, yeah, nothing.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C19",
+      "section": "subjective",
+      "claim_text": "Patient reports father had hypertension",
+      "verdict": {
+        "analysis": "The doctor asked about other history (T58). The patient stated \"my dad had hypertension\" (T59). This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T58",
+          "T59"
+        ],
+        "evidence_quote": "anything else other than asthma? ... my dad had hypertension.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C20",
+      "section": "subjective",
+      "claim_text": "Patient reports father died of bowel cancer at 62",
+      "verdict": {
+        "analysis": "The patient stated his father \"died of bowel cancer ten years ago\" (T61). When asked how old he was, the patient said \"sixty-two\" (T64). This supports the claim that the father died of bowel cancer at 62.",
+        "status": "supported",
+        "evidence_turns": [
+          "T61",
+          "T63",
+          "T64"
+        ],
+        "evidence_quote": "died of bowel cancer ten years ago. ... how old was he when he died? ... sixty-two.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C21",
+      "section": "objective",
+      "claim_text": "Not documented",
+      "verdict": {
+        "analysis": "The transcript contains no examination findings, measurements, or objective observations by the clinician. The doctor only mentions the patient 'looks' not dehydrated, which is a visual observation but not a documented objective finding in the standard sense (like vitals or exam results).",
+        "status": "supported",
+        "evidence_turns": [],
+        "evidence_quote": "",
+        "reason": ""
+      },
+      "quote_valid": null,
+      "turns_valid": null,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C22",
+      "section": "assessment",
+      "claim_text": "Patient has diarrhea",
+      "verdict": {
+        "analysis": "The doctor states in T81, 'you just have diarrhea', which is a direct statement of the clinician's impression/assessment of the patient's condition.",
+        "status": "supported",
+        "evidence_turns": [
+          "T81"
+        ],
+        "evidence_quote": "you just have diarrhea",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C23",
+      "section": "plan",
+      "claim_text": "Recommend soft diet: avoid dairy, fish, meat, eggs; consume crackers, toast, jam, simple foods; after 48 hours if no diarrhea, may reintroduce meat, eggs, fish; consider yogurt for probiotics",
+      "verdict": {
+        "analysis": "The doctor advises a soft diet (T84, T87), specifies avoiding dairy, fish, meat, eggs (T84), suggests crackers/toast/jam (T87), and states that after 48 hours without diarrhea, meat/eggs/fish can be reintroduced (T88, T90). Yogurt is recommended for probiotics in T95.",
+        "status": "supported",
+        "evidence_turns": [
+          "T84",
+          "T87",
+          "T88",
+          "T90",
+          "T95"
+        ],
+        "evidence_quote": "avoid dairy, fish, meat, eggs... crackers, toast, jam... Forty-eight hours... yoghurts are a good idea",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C24",
+      "section": "plan",
+      "claim_text": "If diarrhea persists >1 week or if blood appears, obtain stool sample",
+      "verdict": {
+        "analysis": "In T98, the doctor states that if diarrhea doesn't go away in a week or if blood is passed, a stool sample is needed.",
+        "status": "supported",
+        "evidence_turns": [
+          "T98"
+        ],
+        "evidence_quote": "if your diarrhoea doesn't go away in a week's time, or if you're passing blood, we need a stool sample",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C25",
+      "section": "plan",
+      "claim_text": "If frequency >6-8 times/day, consider dehydration and possible hospital admission",
+      "verdict": {
+        "analysis": "In T100, the doctor states that if the patient is going about six to eight times a day, there is a high chance of dehydration and they might need to go into hospital.",
+        "status": "supported",
+        "evidence_turns": [
+          "T100"
+        ],
+        "evidence_quote": "if you're going about six to eight times a day... you are, having dehydration and you might need to go into hospital",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C26",
+      "section": "plan",
+      "claim_text": "Use Dioralyte over the counter to replenish salts",
+      "verdict": {
+        "analysis": "In T104, the doctor suggests getting Dioralyte over the counter to replenish salts lost through the toilet.",
+        "status": "supported",
+        "evidence_turns": [
+          "T104"
+        ],
+        "evidence_quote": "you could get something called Dioralyte over the counter. So, it helps to uh, replenish your, the salts",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C27",
+      "section": "plan",
+      "claim_text": "Maintain adequate hydration",
+      "verdict": {
+        "analysis": "In T82, the doctor advises, 'You still need to drink plenty of water because you're losing a lot of fluids.'",
+        "status": "supported",
+        "evidence_turns": [
+          "T82"
+        ],
+        "evidence_quote": "You still need to drink plenty of water",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C28",
+      "section": "plan",
+      "claim_text": "Follow up if symptoms worsen",
+      "verdict": {
+        "analysis": "In T100, the doctor instructs, 'If that happens you get in touch with us again,' referring to the scenario of high frequency/dehydration. This constitutes a follow-up instruction if symptoms worsen.",
+        "status": "supported",
+        "evidence_turns": [
+          "T100"
+        ],
+        "evidence_quote": "If that happens you get in touch with us again",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C2",
+      "section": "subjective",
+      "claim_text": "Patient says diarrhea started after eating certain types of food or traveling",
+      "verdict": null,
+      "quote_valid": null,
+      "turns_valid": null,
+      "error": "invalid verifier output: analysis has 54 words (max 50)",
+      "via": "single-retry",
+      "turn_corrected": null,
+      "cited_turns_original": [],
+      "needs_review": null
+    },
+    {
+      "encounter_id": "day3_consultation10",
+      "claim_id": "C9",
+      "section": "subjective",
+      "claim_text": "Patient reports stool is a mix of liquid and loose",
+      "verdict": {
+        "analysis": "In T30, the patient describes the stool consistency as depending on the time of day. In T31, the doctor summarizes this as \"Bit of both\" (referring to the previous question about water vs. loose/solid), and the patient does not correct this, implying a mix of liquid and loose stools.",
+        "status": "supported",
+        "evidence_turns": [
+          "T30",
+          "T31"
+        ],
+        "evidence_quote": "It probably depends on the time of day to be honest ... Bit of both",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    }
+  ]
+}

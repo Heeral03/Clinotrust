@@ -1,0 +1,752 @@
+{
+  "encounter_id": "day3_consultation03",
+  "model": "qwen/qwen3.8-27b",
+  "prompt_version": "verify-prompt-v1.1-batch",
+  "loader_version": "loader-v2",
+  "updated_at": "2026-11-19T17:01:27+00:00",
+  "mode": "batched",
+  "batch_size": 10,
+  "usage": {
+    "prompt": 56070,
+    "completion": 5376,
+    "calls": 10
+  },
+  "records": [
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C1",
+      "section": "subjective",
+      "claim_text": "Patient reports low appetite",
+      "verdict": {
+        "analysis": "The doctor explicitly states in T14 that the patient mentioned not having much appetite. The patient confirms this context in T34 by stating, 'I'm having a loss of appetite... I'm not eating very much.'",
+        "status": "supported",
+        "evidence_turns": [
+          "T14",
+          "T34"
+        ],
+        "evidence_quote": "you're not having much of an appetite ... I'm having a loss of appetite",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C2",
+      "section": "subjective",
+      "claim_text": "Patient reports low energy for several months",
+      "verdict": {
+        "analysis": "In T16, the patient states they have been 'feeling down and, and didn't really have yeah, energy' and that it 'Started long, long ago'. In T44, the patient specifies the duration as 'three and a half months ago', which qualifies as several months.",
+        "status": "supported",
+        "evidence_turns": [
+          "T16",
+          "T44"
+        ],
+        "evidence_quote": "didn't really have yeah, energy ... Three months ago, three and a half months ago",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C3",
+      "section": "subjective",
+      "claim_text": "Patient reports feeling down",
+      "verdict": {
+        "analysis": "In T16, the patient explicitly states, 'that have been feeling down'. This directly supports the claim that the patient reports feeling down.",
+        "status": "supported",
+        "evidence_turns": [
+          "T16"
+        ],
+        "evidence_quote": "that have been feeling down",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C4",
+      "section": "subjective",
+      "claim_text": "Patient reports feeling depressed",
+      "verdict": {
+        "analysis": "The doctor asked if the patient was depressed (T23). The patient did not confirm this; instead, they responded with a rhetorical question about the stigma of the word (T25) and discussed work stress (T27). The patient confirmed low mood (T22) but did not explicitly report feeling depressed.",
+        "status": "uncertain",
+        "evidence_turns": [
+          "T23",
+          "T25"
+        ],
+        "evidence_quote": "Are you, you never want to say that do you?",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "single-retry",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C5",
+      "section": "subjective",
+      "claim_text": "Patient reports shortness of breath when in a lift",
+      "verdict": {
+        "analysis": "In T78, the patient states, 'when I go into the lift... I can't really breath'. In T89, the patient confirms, 'short of breath when you're in the lift? Yeah... I feel like I can't breathe'.",
+        "status": "supported",
+        "evidence_turns": [
+          "T78",
+          "T89"
+        ],
+        "evidence_quote": "when I go into the lift... I can't really breath ... short of breath when you're in the lift? Yeah",
+        "reason": ""
+      },
+      "quote_valid": false,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C6",
+      "section": "subjective",
+      "claim_text": "Patient reports palpitations when in a lift",
+      "verdict": {
+        "analysis": "In T78, the patient says, 'my heart starts beating' when in the lift. In T91, the doctor describes this as 'palpitations' and asks if that is what the patient is feeling, to which the patient replies 'Yep' in T92.",
+        "status": "supported",
+        "evidence_turns": [
+          "T78",
+          "T91",
+          "T92"
+        ],
+        "evidence_quote": "my heart starts beating ... described them like palpitations to me, yeah? ... Yep",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C7",
+      "section": "subjective",
+      "claim_text": "Patient can walk a mile without SOB",
+      "verdict": {
+        "analysis": "In T86, the doctor states, 'you can walk about a mile and you don't feel short of breath at all.' The patient confirms this in T87 with 'That's right, yes.'",
+        "status": "supported",
+        "evidence_turns": [
+          "T86",
+          "T87"
+        ],
+        "evidence_quote": "you can walk about a mile and you don't feel short of breath at all. ... That's right, yes.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C8",
+      "section": "subjective",
+      "claim_text": "Patient reports occasional nausea with no specific trigger foods.",
+      "verdict": {
+        "analysis": "In T56, the patient reports feeling 'nauseous every now and again'. In T70, the doctor asks if specific foods trigger it, and in T72, the patient replies 'No, nothing.'",
+        "status": "supported",
+        "evidence_turns": [
+          "T56",
+          "T70",
+          "T72"
+        ],
+        "evidence_quote": "I feel nauseous every now and again ... Is there any particular foods that make you nauseous? ... No, nothing.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C9",
+      "section": "subjective",
+      "claim_text": "Patient reports headaches at work",
+      "verdict": {
+        "analysis": "In T27, the patient states, 'I have trouble at work sometimes, having headaches'. This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T27"
+        ],
+        "evidence_quote": "I have trouble at work sometimes, having headaches",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C10",
+      "section": "subjective",
+      "claim_text": "Patient reports nausea at work",
+      "verdict": {
+        "analysis": "In T27, the patient states, 'I have trouble at work sometimes, having headaches, feeling nauseous.' This links the nausea to the work context mentioned in the same sentence.",
+        "status": "supported",
+        "evidence_turns": [
+          "T27"
+        ],
+        "evidence_quote": "I have trouble at work sometimes, having headaches, feeling nauseous.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C11",
+      "section": "subjective",
+      "claim_text": "Patient reports weight loss of approximately one stone over about six months.",
+      "verdict": {
+        "analysis": "The patient states the weight loss started 'at least six months' ago (T49-T51) and estimates the amount as 'less than a stone' (T53). The doctor confirms 'about a stone' (T54). The claim matches the duration and approximate amount reported.",
+        "status": "supported",
+        "evidence_turns": [
+          "T49",
+          "T51",
+          "T53",
+          "T54"
+        ],
+        "evidence_quote": "at least six months... less than a storm... So about a stone",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C12",
+      "section": "subjective",
+      "claim_text": "Patient reports no chest pain",
+      "verdict": {
+        "analysis": "The doctor asks 'You get any chest pains with it?' (T93). The patient replies 'Not really, no' (T94) and later confirms 'No chest pain' (T98). This supports the claim that the patient reports no chest pain.",
+        "status": "supported",
+        "evidence_turns": [
+          "T93",
+          "T94",
+          "T98"
+        ],
+        "evidence_quote": "Not really, no... No chest pain.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C13",
+      "section": "subjective",
+      "claim_text": "Patient reports no cough",
+      "verdict": {
+        "analysis": "The doctor asks 'is there any cough?' (T75). The patient responds 'Um, no, not really' (T76). This is a clear negative response to the specific question about cough.",
+        "status": "supported",
+        "evidence_turns": [
+          "T75",
+          "T76"
+        ],
+        "evidence_quote": "is there any cough? ... Um, no, not really",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C14",
+      "section": "subjective",
+      "claim_text": "Patient reports no bowel changes",
+      "verdict": {
+        "analysis": "The doctor asks about bowels (T55) and later asks if there is blood or mucus (T65). The patient says bowels are 'OK' (T59) and 'no, no, nothing' regarding blood/mucus (T67). The doctor summarizes 'your bowels are fine' (T128). This supports the report of no significant bowel changes.",
+        "status": "supported",
+        "evidence_turns": [
+          "T55",
+          "T59",
+          "T65",
+          "T67"
+        ],
+        "evidence_quote": "That's OK, I would say... no, no, nothing.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C15",
+      "section": "subjective",
+      "claim_text": "Bowel movements are normal and painless",
+      "verdict": {
+        "analysis": "The patient states regarding the toilet: 'I don't really have problems when going to the toilet, it's just painless' (T59). This directly supports the claim that bowel movements are normal (no problems) and painless.",
+        "status": "supported",
+        "evidence_turns": [
+          "T59"
+        ],
+        "evidence_quote": "I don't really have problems when going to the toilet, it's just painless.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C16",
+      "section": "subjective",
+      "claim_text": "Patient reports a history of underactive thyroid",
+      "verdict": {
+        "analysis": "The patient states 'I had too little activity of my thyroid' (T100). The doctor confirms 'underactive thyroid' (T103). This supports the history of underactive thyroid.",
+        "status": "supported",
+        "evidence_turns": [
+          "T100",
+          "T103"
+        ],
+        "evidence_quote": "I had too little activity of my thyroid... underactive thyroid",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C17",
+      "section": "subjective",
+      "claim_text": "Patient was previously on thyroxine",
+      "verdict": {
+        "analysis": "The patient states 'In view of that, I took thyroxine' (T105). The doctor asks 'Are you using it every day?' (T106), implying previous use. The patient's statement confirms they took it.",
+        "status": "supported",
+        "evidence_turns": [
+          "T105"
+        ],
+        "evidence_quote": "In view of that, I took thyroxine.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C18",
+      "section": "subjective",
+      "claim_text": "Patient stopped taking thyroxine since changing doctor",
+      "verdict": {
+        "analysis": "The patient states 'I have not been taking it in the last, actually since I changed doctor' (T109). This directly supports the claim that they stopped taking it since changing doctors.",
+        "status": "supported",
+        "evidence_turns": [
+          "T109"
+        ],
+        "evidence_quote": "I have not been taking it in the last, actually since I changed doctor",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C19",
+      "section": "subjective",
+      "claim_text": "Patient reports no recent blood tests.",
+      "verdict": {
+        "analysis": "The doctor asks 'When was your last blood test?' (T113). The patient replies 'haven't taken one in a long time' (T114). The doctor confirms 'so you've not had a blood test' (T115). This supports the report of no recent blood tests.",
+        "status": "supported",
+        "evidence_turns": [
+          "T113",
+          "T114",
+          "T115"
+        ],
+        "evidence_quote": "haven't taken one in a long time... so you've not had a blood test.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C20",
+      "section": "objective",
+      "claim_text": "Not documented",
+      "verdict": {
+        "analysis": "The transcript contains no examination findings, measurements, or observations by the clinician. The doctor explicitly states they are not doing a physical examination at this point (T126). Therefore, the Objective section is not documented.",
+        "status": "supported",
+        "evidence_turns": [],
+        "evidence_quote": "",
+        "reason": ""
+      },
+      "quote_valid": null,
+      "turns_valid": null,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C21",
+      "section": "assessment",
+      "claim_text": "Not documented",
+      "verdict": {
+        "analysis": "The transcript contains the doctor's clinical impression in T117, where he states he is \"not quite clear on what picture we are having here\" and notes the symptoms are opposite to typical underactive thyroid. This constitutes a documented assessment.",
+        "status": "contradicted",
+        "evidence_turns": [
+          "T117"
+        ],
+        "evidence_quote": "I'm not quite clear on what picture we are having here",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C22",
+      "section": "plan",
+      "claim_text": "Order a general set of blood tests to evaluate thyroid function",
+      "verdict": {
+        "analysis": "The doctor orders a \"general set of bloods\" in T119 to check for anaemia, kidney/liver function, and vitamins. While thyroid issues are discussed, the specific plan for blood tests does not explicitly state the purpose is to evaluate thyroid function, but rather general health markers.",
+        "status": "unsupported",
+        "evidence_turns": [],
+        "evidence_quote": "",
+        "reason": ""
+      },
+      "quote_valid": null,
+      "turns_valid": null,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C23",
+      "section": "plan",
+      "claim_text": "Order a general set of blood tests to evaluate anemia",
+      "verdict": {
+        "analysis": "In T119, the doctor explicitly states that the general set of bloods will look at things like \"anaemia\".",
+        "status": "supported",
+        "evidence_turns": [
+          "T119"
+        ],
+        "evidence_quote": "we look at things like anaemia",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C24",
+      "section": "plan",
+      "claim_text": "Order a general set of blood tests to evaluate kidney and liver function",
+      "verdict": {
+        "analysis": "In T119, the doctor explicitly states that the general set of bloods will look at \"how your kidney functions are, your livers\".",
+        "status": "supported",
+        "evidence_turns": [
+          "T119"
+        ],
+        "evidence_quote": "how your kidney functions are, your livers",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C25",
+      "section": "plan",
+      "claim_text": "Order a general set of blood tests to evaluate vitamin levels",
+      "verdict": {
+        "analysis": "In T119, the doctor explicitly states that the general set of bloods will look at \"vitamin levels\".",
+        "status": "supported",
+        "evidence_turns": [
+          "T119"
+        ],
+        "evidence_quote": "with vitamin levels",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C26",
+      "section": "plan",
+      "claim_text": "Arrange for the blood test to be performed via the support service",
+      "verdict": {
+        "analysis": "In T136, the doctor instructs the patient to \"call support so that we can organise that blood test for you\".",
+        "status": "supported",
+        "evidence_turns": [
+          "T136"
+        ],
+        "evidence_quote": "call support so that we can organise that blood test",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C27",
+      "section": "plan",
+      "claim_text": "Patient to call the support number found in the app",
+      "verdict": {
+        "analysis": "In T140, the doctor tells the patient to \"open up your app there's the number on there\" and to \"call that number\".",
+        "status": "supported",
+        "evidence_turns": [
+          "T140"
+        ],
+        "evidence_quote": "open up your app there's the number on there... call that number",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C28",
+      "section": "plan",
+      "claim_text": "Patient advised to seek urgent care (A&E) if chest pain develops",
+      "verdict": {
+        "analysis": "In T128, the doctor states, \"Obviously with palpitations or chest pain... You need to go to A and E for that.\" This directly advises seeking urgent care for chest pain.",
+        "status": "supported",
+        "evidence_turns": [
+          "T128"
+        ],
+        "evidence_quote": "with palpitations or chest pain... You need to go to A and E",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C29",
+      "section": "plan",
+      "claim_text": "Patient advised to seek urgent care (A&E) if worsening palpitations develop",
+      "verdict": {
+        "analysis": "In T128, the doctor states, \"Obviously with palpitations or chest pain... You need to go to A and E for that.\" This directly advises seeking urgent care for palpitations.",
+        "status": "supported",
+        "evidence_turns": [
+          "T128"
+        ],
+        "evidence_quote": "with palpitations or chest pain... You need to go to A and E",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C31",
+      "section": "plan",
+      "claim_text": "Patient advised to contact the service if bowel habits change",
+      "verdict": {
+        "analysis": "In T128 and T133, the doctor explicitly instructs the patient to get in touch if their bowels change or if they start being sick, which directly supports the claim that the patient was advised to contact the service for changes in bowel habits.",
+        "status": "supported",
+        "evidence_turns": [
+          "T128",
+          "T133"
+        ],
+        "evidence_quote": "if your, you know, bowels change... you need to get in touch with us",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C32",
+      "section": "plan",
+      "claim_text": "Patient advised to contact the service if feeling poorly",
+      "verdict": {
+        "analysis": "In T136, the doctor states, \"If you're feeling poorly, don't wait for that. Just get in touch with us again,\" which directly supports the claim that the patient was advised to contact the service if feeling poorly.",
+        "status": "supported",
+        "evidence_turns": [
+          "T136"
+        ],
+        "evidence_quote": "If you're feeling poorly, don't wait for that. Just get in touch with us again",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C33",
+      "section": "plan",
+      "claim_text": "No physical examination required at this time.",
+      "verdict": {
+        "analysis": "In T126, the doctor states, \"there's nothing from what your history you've said that, that we urgently warrant a physical examination at this point in time,\" and suggests starting with blood tests. This supports the plan that no physical examination is required at this time.",
+        "status": "supported",
+        "evidence_turns": [
+          "T126"
+        ],
+        "evidence_quote": "nothing from what your history you've said that, that we urgently warrant a physical examination at this point in time",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation03",
+      "claim_id": "C30",
+      "section": "plan",
+      "claim_text": "Patient advised to seek urgent care (A&E) if other acute symptoms develop",
+      "verdict": null,
+      "quote_valid": null,
+      "turns_valid": null,
+      "error": "invalid verifier output: analysis has 84 words (max 50)",
+      "via": "single-retry",
+      "turn_corrected": null,
+      "cited_turns_original": [],
+      "needs_review": null
+    }
+  ]
+}

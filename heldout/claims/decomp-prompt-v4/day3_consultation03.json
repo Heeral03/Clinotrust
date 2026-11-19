@@ -1,0 +1,245 @@
+{
+  "encounter_id": "day3_consultation03",
+  "claims": [
+    {
+      "id": "C1",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports low appetite"
+    },
+    {
+      "id": "C2",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports low energy for several months"
+    },
+    {
+      "id": "C3",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 1,
+      "text": "Patient reports feeling down"
+    },
+    {
+      "id": "C4",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 1,
+      "text": "Patient reports feeling depressed"
+    },
+    {
+      "id": "C5",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 2,
+      "text": "Patient reports shortness of breath when in a lift"
+    },
+    {
+      "id": "C6",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 2,
+      "text": "Patient reports palpitations when in a lift"
+    },
+    {
+      "id": "C7",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 2,
+      "text": "Patient can walk a mile without SOB"
+    },
+    {
+      "id": "C8",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 3,
+      "text": "Patient reports occasional nausea with no specific trigger foods."
+    },
+    {
+      "id": "C9",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 4,
+      "text": "Patient reports headaches at work"
+    },
+    {
+      "id": "C10",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 4,
+      "text": "Patient reports nausea at work"
+    },
+    {
+      "id": "C11",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 5,
+      "text": "Patient reports weight loss of approximately one stone over about six months."
+    },
+    {
+      "id": "C12",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 6,
+      "text": "Patient reports no chest pain"
+    },
+    {
+      "id": "C13",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 6,
+      "text": "Patient reports no cough"
+    },
+    {
+      "id": "C14",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 6,
+      "text": "Patient reports no bowel changes"
+    },
+    {
+      "id": "C15",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 6,
+      "text": "Bowel movements are normal and painless"
+    },
+    {
+      "id": "C16",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 7,
+      "text": "Patient reports a history of underactive thyroid"
+    },
+    {
+      "id": "C17",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 7,
+      "text": "Patient was previously on thyroxine"
+    },
+    {
+      "id": "C18",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 7,
+      "text": "Patient stopped taking thyroxine since changing doctor"
+    },
+    {
+      "id": "C19",
+      "encounter_id": "day3_consultation03",
+      "section": "subjective",
+      "source_statement_index": 8,
+      "text": "Patient reports no recent blood tests."
+    },
+    {
+      "id": "C20",
+      "encounter_id": "day3_consultation03",
+      "section": "objective",
+      "source_statement_index": 0,
+      "text": "Not documented"
+    },
+    {
+      "id": "C21",
+      "encounter_id": "day3_consultation03",
+      "section": "assessment",
+      "source_statement_index": 0,
+      "text": "Not documented"
+    },
+    {
+      "id": "C22",
+      "encounter_id": "day3_consultation03",
+      "section": "plan",
+      "source_statement_index": 0,
+      "text": "Order a general set of blood tests to evaluate thyroid function"
+    },
+    {
+      "id": "C23",
+      "encounter_id": "day3_consultation03",
+      "section": "plan",
+      "source_statement_index": 0,
+      "text": "Order a general set of blood tests to evaluate anemia"
+    },
+    {
+      "id": "C24",
+      "encounter_id": "day3_consultation03",
+      "section": "plan",
+      "source_statement_index": 0,
+      "text": "Order a general set of blood tests to evaluate kidney and liver function"
+    },
+    {
+      "id": "C25",
+      "encounter_id": "day3_consultation03",
+      "section": "plan",
+      "source_statement_index": 0,
+      "text": "Order a general set of blood tests to evaluate vitamin levels"
+    },
+    {
+      "id": "C26",
+      "encounter_id": "day3_consultation03",
+      "section": "plan",
+      "source_statement_index": 1,
+      "text": "Arrange for the blood test to be performed via the support service"
+    },
+    {
+      "id": "C27",
+      "encounter_id": "day3_consultation03",
+      "section": "plan",
+      "source_statement_index": 1,
+      "text": "Patient to call the support number found in the app"
+    },
+    {
+      "id": "C28",
+      "encounter_id": "day3_consultation03",
+      "section": "plan",
+      "source_statement_index": 2,
+      "text": "Patient advised to seek urgent care (A&E) if chest pain develops"
+    },
+    {
+      "id": "C29",
+      "encounter_id": "day3_consultation03",
+      "section": "plan",
+      "source_statement_index": 2,
+      "text": "Patient advised to seek urgent care (A&E) if worsening palpitations develop"
+    },
+    {
+      "id": "C30",
+      "encounter_id": "day3_consultation03",
+      "section": "plan",
+      "source_statement_index": 2,
+      "text": "Patient advised to seek urgent care (A&E) if other acute symptoms develop"
+    },
+    {
+      "id": "C31",
+      "encounter_id": "day3_consultation03",
+      "section": "plan",
+      "source_statement_index": 3,
+      "text": "Patient advised to contact the service if bowel habits change"
+    },
+    {
+      "id": "C32",
+      "encounter_id": "day3_consultation03",
+      "section": "plan",
+      "source_statement_index": 3,
+      "text": "Patient advised to contact the service if feeling poorly"
+    },
+    {
+      "id": "C33",
+      "encounter_id": "day3_consultation03",
+      "section": "plan",
+      "source_statement_index": 4,
+      "text": "No physical examination required at this time."
+    }
+  ],
+  "decomposer_prompt_version": "decomp-prompt-v4",
+  "model": "openai/gpt-oss-20b",
+  "reasoning_effort": "low",
+  "generator_prompt_version": "gen-prompt-v1",
+  "loader_version": "loader-v2",
+  "n_statements": 16,
+  "n_passthrough": 6,
+  "n_llm": 10,
+  "fallbacks": []
+}

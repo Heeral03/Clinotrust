@@ -1,0 +1,736 @@
+{
+  "encounter_id": "day3_consultation04",
+  "model": "qwen/qwen3.8-27b",
+  "prompt_version": "verify-prompt-v1.1-batch",
+  "loader_version": "loader-v2",
+  "updated_at": "2026-11-19T16:15:20+00:00",
+  "mode": "batched",
+  "batch_size": 10,
+  "usage": {
+    "prompt": 19761,
+    "completion": 4010,
+    "calls": 5
+  },
+  "records": [
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C1",
+      "section": "subjective",
+      "claim_text": "Patient reports tightness for 2-3 days",
+      "verdict": {
+        "analysis": "The patient states in T12 that the symptoms started \"about two to three days ago\" while running. The doctor refers to \"tightness\" in T11, and the patient confirms the duration of these symptoms in T51 as \"last two to three days\".",
+        "status": "supported",
+        "evidence_turns": [
+          "T11",
+          "T12",
+          "T51"
+        ],
+        "evidence_quote": "you've got some tightness ... about two to three days ago ... just in the last two to three days",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C2",
+      "section": "subjective",
+      "claim_text": "Patient reports shortness of breath for 2-3 days",
+      "verdict": {
+        "analysis": "The patient reports being \"short of breath\" in T12, stating it started \"about two to three days ago\". This directly supports the claim of shortness of breath for that duration.",
+        "status": "supported",
+        "evidence_turns": [
+          "T12"
+        ],
+        "evidence_quote": "about two to three days ago ... I found myself actually short of breath",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C3",
+      "section": "subjective",
+      "claim_text": "Patient reports tightness worsened when running",
+      "verdict": {
+        "analysis": "In T12, the patient states, 'I was running with a friend... I found myself actually short of breath.' This directly supports the claim that tightness (shortness of breath) worsened during running.",
+        "status": "supported",
+        "evidence_turns": [
+          "T12"
+        ],
+        "evidence_quote": "I was running with a friend... I found myself actually short of breath.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "single-retry",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C4",
+      "section": "subjective",
+      "claim_text": "Patient reports tightness worsened when walking briskly",
+      "verdict": {
+        "analysis": "In T12, the patient states, \"but definitely um, if I'm walking briskly now,\" in the context of being short of breath. This confirms the symptom occurs/worsens when walking briskly.",
+        "status": "supported",
+        "evidence_turns": [
+          "T12"
+        ],
+        "evidence_quote": "but definitely um, if I'm walking briskly now",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C5",
+      "section": "subjective",
+      "claim_text": "Patient reports shortness of breath worsened when running",
+      "verdict": {
+        "analysis": "In T12, the patient explicitly states, \"I was running... I found myself actually short of breath.\" This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T12"
+        ],
+        "evidence_quote": "I was running ... I found myself actually short of breath",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C6",
+      "section": "subjective",
+      "claim_text": "Patient reports shortness of breath worsened when walking briskly",
+      "verdict": {
+        "analysis": "In T12, the patient states, \"but definitely um, if I'm walking briskly now,\" following the statement about being short of breath. This confirms shortness of breath when walking briskly.",
+        "status": "supported",
+        "evidence_turns": [
+          "T12"
+        ],
+        "evidence_quote": "I found myself actually short of breath ... but definitely um, if I'm walking briskly now",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C7",
+      "section": "subjective",
+      "claim_text": "Patient reports wheezing",
+      "verdict": {
+        "analysis": "In T14, the patient explicitly states, \"I'm just wheezing a bit\". This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T14"
+        ],
+        "evidence_quote": "I'm just wheezing a bit",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C8",
+      "section": "subjective",
+      "claim_text": "Patient reports coughing",
+      "verdict": {
+        "analysis": "In T14, the patient explicitly states, \"and coughing\". This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T14"
+        ],
+        "evidence_quote": "and coughing",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C9",
+      "section": "subjective",
+      "claim_text": "Patient reports general shortness of breath",
+      "verdict": {
+        "analysis": "In T14, the patient states, \"and just generally a bit short of breath\". This directly supports the claim of general shortness of breath.",
+        "status": "supported",
+        "evidence_turns": [
+          "T14"
+        ],
+        "evidence_quote": "and just generally a bit short of breath",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C10",
+      "section": "subjective",
+      "claim_text": "Patient reports using blue inhaler (Salbutamol) as needed",
+      "verdict": {
+        "analysis": "In T16, the patient states, \"I think I'm just using that as and when I have symptoms.\" In T32, the patient clarifies, \"the Salbutamol just like as and when\". This supports the claim that the blue inhaler (Salbutamol) is used as needed.",
+        "status": "supported",
+        "evidence_turns": [
+          "T16",
+          "T32"
+        ],
+        "evidence_quote": "using that as and when I have symptoms ... the Salbutamol just like as and when",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C11",
+      "section": "subjective",
+      "claim_text": "Patient reports no relief",
+      "verdict": {
+        "analysis": "In T12, the patient states regarding the blue inhaler, \"It hasn't really helped me,\" which directly supports the report of no relief.",
+        "status": "supported",
+        "evidence_turns": [
+          "T12"
+        ],
+        "evidence_quote": "It hasn't really helped me.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C12",
+      "section": "subjective",
+      "claim_text": "Patient reports using brown inhaler (Clenil) twice daily as preventer.",
+      "verdict": {
+        "analysis": "In T32, the patient states, \"I think I'm using that every day,\" referring to the preventer (identified as Clenil/brown inhaler in T77). T34 confirms \"twice a day\" in response to the doctor's question.",
+        "status": "supported",
+        "evidence_turns": [
+          "T32",
+          "T33",
+          "T34"
+        ],
+        "evidence_quote": "I think I'm using that every day ... yes",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C13",
+      "section": "subjective",
+      "claim_text": "Patient reports using blue inhaler up to every 2-4 hours.",
+      "verdict": {
+        "analysis": "The patient reports using the blue inhaler \"as and when\" (T16, T32). The frequency of \"every two to four hours\" is the doctor's instruction in T75, not a patient report of current usage.",
+        "status": "contradicted",
+        "evidence_turns": [
+          "T16",
+          "T75"
+        ],
+        "evidence_quote": "using that as and when ... maximum about every two to four",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C14",
+      "section": "subjective",
+      "claim_text": "Patient reports no sputum.",
+      "verdict": {
+        "analysis": "In T29, the patient answers \"no\" to the question about bringing up phlegm, stating \"I'm not covering up much\" (likely sputum), which the doctor confirms as \"no sputum\" in T30.",
+        "status": "supported",
+        "evidence_turns": [
+          "T28",
+          "T29"
+        ],
+        "evidence_quote": "no I don't, um, I'm not covering up much",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C15",
+      "section": "subjective",
+      "claim_text": "Patient reports history of eczema",
+      "verdict": {
+        "analysis": "In T27, the patient states, \"I've got a few issues, um, that I think could be eczema as well,\" which is a report of potential eczema, not a confirmed history.",
+        "status": "uncertain",
+        "evidence_turns": [
+          "T27"
+        ],
+        "evidence_quote": "I've got a few issues, um, that I think could be eczema as well.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C16",
+      "section": "subjective",
+      "claim_text": "Patient reports hay fever",
+      "verdict": {
+        "analysis": "In T66, the patient explicitly states, \"I have hay fever,\" in response to the doctor's question about allergies.",
+        "status": "supported",
+        "evidence_turns": [
+          "T63",
+          "T66"
+        ],
+        "evidence_quote": "I have hay fever.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C17",
+      "section": "subjective",
+      "claim_text": "Patient reports family history of asthma",
+      "verdict": {
+        "analysis": "In T27, the patient states, \"my brother is asthmatic,\" which directly reports a family history of asthma.",
+        "status": "supported",
+        "evidence_turns": [
+          "T27"
+        ],
+        "evidence_quote": "my brother is asthmatic",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C18",
+      "section": "subjective",
+      "claim_text": "Patient reports family history of eczema",
+      "verdict": {
+        "analysis": "In T27, the patient states, \"my sister has eczema,\" which directly reports a family history of eczema.",
+        "status": "supported",
+        "evidence_turns": [
+          "T27"
+        ],
+        "evidence_quote": "my sister has eczema",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C19",
+      "section": "subjective",
+      "claim_text": "Patient reports last asthma attack 3-4 years ago",
+      "verdict": {
+        "analysis": "In T40, the patient answers the question about the last asthma attack with \"about three to four years ago.\"",
+        "status": "supported",
+        "evidence_turns": [
+          "T39",
+          "T40"
+        ],
+        "evidence_quote": "about three to four years ago.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C20",
+      "section": "subjective",
+      "claim_text": "Patient reports last review 2 years ago",
+      "verdict": {
+        "analysis": "In T48, the patient answers the question about the last asthma review with \"about two years ago.\"",
+        "status": "supported",
+        "evidence_turns": [
+          "T47",
+          "T48"
+        ],
+        "evidence_quote": "about two years ago.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C21",
+      "section": "subjective",
+      "claim_text": "Patient reports no hospital admissions",
+      "verdict": {
+        "analysis": "The doctor asked if the patient had ever been admitted to hospital for asthma (T36). The patient explicitly replied, \"Um, no, I haven't\" (T37), directly supporting the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T36",
+          "T37"
+        ],
+        "evidence_quote": "have you ever been admitted in hospital... Um, no, I haven't.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C22",
+      "section": "subjective",
+      "claim_text": "Patient reports no oral steroids",
+      "verdict": {
+        "analysis": "The doctor asked if the patient had ever had oral steroids in the past (T45). The patient replied, \"Um, no\" (T46), directly supporting the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T45",
+          "T46"
+        ],
+        "evidence_quote": "have you ever had oral steroids in the past? ... Um, no.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C23",
+      "section": "subjective",
+      "claim_text": "Patient reports no antibiotics",
+      "verdict": {
+        "analysis": "The doctor asked if the patient had oral steroids or antibiotics during the last asthma attack (T43). The patient replied, \"Not that I can remember\" (T44). This is a hedged negative, not a clear \"no\", making the status uncertain.",
+        "status": "uncertain",
+        "evidence_turns": [
+          "T43",
+          "T44"
+        ],
+        "evidence_quote": "you didn't have any oral steroids or antibiotics? ... Not that I can remember.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C24",
+      "section": "subjective",
+      "claim_text": "Patient reports peak flow reading when good about 380.",
+      "verdict": {
+        "analysis": "The doctor asked for the normal peak flow reading (T55-T56). The patient hesitated (T57-T58), and the doctor suggested \"three eighty\" (T59), which the patient confirmed with \"Yeah\" (T60). The patient did not state the number; the doctor did. Thus, the patient did not report it.",
+        "status": "unsupported",
+        "evidence_turns": [],
+        "evidence_quote": "",
+        "reason": ""
+      },
+      "quote_valid": null,
+      "turns_valid": null,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C25",
+      "section": "subjective",
+      "claim_text": "Patient reports no allergies to medication.",
+      "verdict": {
+        "analysis": "The doctor asked specifically about allergies to medication (T67). The patient replied, \"Ohh no\" (T68), directly supporting the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T67",
+          "T68"
+        ],
+        "evidence_quote": "any allergies to medication? ... Ohh no",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C26",
+      "section": "objective",
+      "claim_text": "Peak flow reading when good: 380.",
+      "verdict": {
+        "analysis": "The transcript shows the doctor suggesting the value 380 and the patient agreeing. However, no actual measurement or examination finding is recorded in the transcript; it is a conversational confirmation of a reported value, not an objective clinical observation recorded by the clinician.",
+        "status": "uncertain",
+        "evidence_turns": [
+          "T59",
+          "T60"
+        ],
+        "evidence_quote": "it's about, um, three eighty, yeah? ... Yeah.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C27",
+      "section": "assessment",
+      "claim_text": "Clinician considers possible small exacerbation.",
+      "verdict": {
+        "analysis": "The doctor states, \"it looks like you can be having a small, small exacerbation\" (T71). This directly supports the assessment claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T71"
+        ],
+        "evidence_quote": "it looks like you can be having a small, small exacerbation.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C28",
+      "section": "plan",
+      "claim_text": "Patient to be seen by GP in next few days.",
+      "verdict": {
+        "analysis": "The doctor states, \"I would like you to be seen by one of our GP's in the next few days\" (T72). This directly supports the plan claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T72"
+        ],
+        "evidence_quote": "I would like you to be seen by one of our GP's in the next few days.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C29",
+      "section": "plan",
+      "claim_text": "Increase brown inhaler (Clenil) to 4 puffs twice daily.",
+      "verdict": {
+        "analysis": "The doctor instructs, \"you can increase it to four puffs twice a day\" regarding the brown inhaler/Clenil (T79). This directly supports the plan claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T79"
+        ],
+        "evidence_quote": "you can increase it to four puffs twice a day.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C30",
+      "section": "plan",
+      "claim_text": "Use blue inhaler (Salbutamol) as needed up to every 2-4 hours.",
+      "verdict": {
+        "analysis": "The doctor instructs, \"you can use your blue inhaler as and when... maximum about every two to four... hours\" (T74-T75). This directly supports the plan claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T74",
+          "T75"
+        ],
+        "evidence_quote": "use your blue inhaler as and when... maximum about every two to four, four hours",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C31",
+      "section": "plan",
+      "claim_text": "If breathing worsens, go to A&E.",
+      "verdict": {
+        "analysis": "The doctor explicitly instructs the patient in T84 and T94 that if their breathing gets worse, they should take themselves to A&E and not wait for the appointment.",
+        "status": "supported",
+        "evidence_turns": [
+          "T84",
+          "T94"
+        ],
+        "evidence_quote": "if your breathing is getting really worse, then you would need to take yourself to A and E",
+        "reason": ""
+      },
+      "quote_valid": false,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation04",
+      "claim_id": "C32",
+      "section": "plan",
+      "claim_text": "Book appointment with GP.",
+      "verdict": {
+        "analysis": "In T72, the doctor states, \"I would like you to be seen by one of our GP's in the next few days,\" and in T93, instructs to \"book an appointment to see... face to face.\"",
+        "status": "supported",
+        "evidence_turns": [
+          "T72",
+          "T93"
+        ],
+        "evidence_quote": "I would like you to be seen by one of our GP's in the next few days",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    }
+  ]
+}

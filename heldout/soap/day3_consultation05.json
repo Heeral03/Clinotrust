@@ -1,0 +1,34 @@
+{
+  "id": "day3_consultation05",
+  "model": "openai/gpt-oss-20b",
+  "prompt_version": "gen-prompt-v1",
+  "loader_version": "loader-v2",
+  "merged_same_speaker": false,
+  "soap": {
+    "subjective": [
+      "Patient reports dizziness, feeling the room spinning, and difficulty walking straight.",
+      "Patient reports buzzing in ears.",
+      "Patient reports feeling very sick.",
+      "Patient reports a similar episode about a month ago lasting 5-10 minutes.",
+      "Patient denies fever, viral illness, ear pain, ear discharge, hearing loss, weakness, headache, or nausea.",
+      "Patient reports no recent cold or cough.",
+      "Patient reports premature ovarian failure and has taken HRT.",
+      "Patient reports no current medications other than HRT.",
+      "Patient reports no allergies."
+    ],
+    "objective": [
+      "No weakness of arms and legs."
+    ],
+    "assessment": [
+      "Clinician considers possible labyrinthitis."
+    ],
+    "plan": [
+      "Prescribe medication: one tablet three times daily for ten days.",
+      "Arrange appointment with doctor for ear examination.",
+      "Measure blood pressure during appointment.",
+      "Advise patient to seek A&E if sudden weakness, headache, or violent sickness occurs.",
+      "Patient to call support to book appointment.",
+      "Medication can be taken with or without food."
+    ]
+  }
+}

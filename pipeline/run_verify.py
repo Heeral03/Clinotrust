@@ -46,6 +46,9 @@ def main() -> None:
     ap.add_argument("--batch-size", type=int, default=BATCH_SIZE)
     ap.add_argument("--prompt", choices=sorted(SPECS), default="v0", help="verifier prompt version")
     ap.add_argument("--out", help="default: outputs/verdicts/verifier-<prompt>[-batched]")
+    ap.add_argument(
+        "--resume", action="store_true", help="allow a custom --out that already exists"
+    )
     a = ap.parse_args()
     spec = SPECS[a.prompt]
     defaults = {
@@ -54,6 +57,10 @@ def main() -> None:
         ("v1.1", False): V1_1_VERDICTS_DIR, ("v1.1", True): V1_1_BATCH_VERDICTS_DIR,
     }  # fmt: skip
     out = Path(a.out or defaults[(a.prompt, a.batched)])
+    if a.out and out.exists() and not a.resume:
+        ap.error(
+            f"{out} already exists; refusing to overwrite. Pass --resume to continue that run."
+        )
     v0_dirs = {VERDICTS_DIR.resolve(), BATCH_VERDICTS_DIR.resolve()}
     if a.batched and out.resolve() == VERDICTS_DIR.resolve():
         ap.error("batched results must not go into the single-claim directory")

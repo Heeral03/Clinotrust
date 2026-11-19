@@ -1,0 +1,83 @@
+T1 [Patient] (1.3s): Hello.
+T2 [Doctor] (2.0s): Hello. Hi, I'm Doctor Jacob and welcome to Babylon. How are you doing?
+T3 [Patient] (6.8s): I'm OK, thank you. Um, not feeling that great actually.
+T4 [Doctor] (6.9s): Good.
+T5 [Doctor] (11.5s): Alright. I can't see your face properly , just, yeah that's it. That's good. Thank you. So, I'm sorry to hear that. But just before we start, is it alright if you could confirm your name for me please?
+T6 [Patient] (25.1s): I'm Mary Jane Grey, um.
+T7 [Doctor] (26.8s): Date of birth?
+T8 [Patient] (30.2s): Date of birth, um nineteen eighty.
+T9 [Doctor] (35.6s): OK. And your address for me please?
+T10 [Patient] (39.6s): Um, I live on SW four zero NG.
+T11 [Doctor] (43.4s): That's correct. And just to confirm that you're in a secure location, and we can have a confidential conversation.
+T12 [Patient] (49.6s): Yeah.
+T13 [Doctor] (50.1s): OK. So you've mentioned that you're feeling dizzy. , yes.
+T14 [Patient] (55.3s): Yeah.
+T15 [Patient] (57.2s): Yeah, I'm feeling I'm, I'm yeah, I'm feeling very sick. It's probably because i'm feeling dizzy, um the the room is sort of spinning, um.
+T16 [Patient] (66.3s): And I, I can't, I can't walk properly. Uh, well I can walk properly but not straight, um.
+T17 [Patient] (73.0s): and my ears are buzzing a bit. I'm just, they're feeling a bit off.
+T18 [Doctor] (75.4s): Mm-hmm.
+T19 [Doctor] (77.4s): OK, ear's buzzing. So when did it all start?
+T20 [Patient] (81.4s): Started probably about two hours ago maybe. but I, I, um, I had a a similar sort of thing about a month ago, um
+T21 [Patient] (89.6s): But I didn't really think anything of it, 'cause it it settled quite quickly. Um, but this has been going for a bit more now.
+T22 [Doctor] (95.5s): OK. So you said, you mentioned it started a few hours ago. So did it start? What were you doing?
+T23 [Patient] (103.1s): Um, I was just actually making my husband some breakfast, um.
+T24 [Patient] (109.2s): And I, yeah, I just suddenly felt very fuzzy and dizzy, um, and a bit shaky.
+T25 [Doctor] (115.7s): OK. So you mentioned, like the room spinning around?
+T26 [Patient] (120.5s): Yep.
+T27 [Doctor] (121.6s): OK. And is, how long does it last for? Or is it there now, continuously now?
+T28 [Patient] (128.0s): Yeah it's, it's there, the whole time.
+T29 [Doctor] (130.6s): So it's there now for the past two hours you'd say, yeah?
+T30 [Patient] (134.6s): Yep.
+T31 [Doctor] (135.0s): OK. Did you have any kind of viral illness in the recent past, past couple of weeks?
+T32 [Patient] (141.2s): No.
+T33 [Doctor] (141.9s): No cold, cough, nothing.
+T34 [Patient] (143.8s): No, I've been pretty healthy I think, um, yeah.
+T35 [Doctor] (147.5s): Yeah, OK. Um, you've mentioned that you have a, some ear buzzing kind of thing. Any kind of ear pain or ear discharge, anything like that?
+T36 [Patient] (156.8s): No, nothing.
+T37 [Doctor] (158.9s): OK. Do you have a temperature at all?
+T38 [Patient] (161.9s): I don't think so, um.
+T39 [Doctor] (164.3s): OK, right. You also mentioned that you can walk, but you're not walking straight. Why is that? Is it because
+T40 [Patient] (172.1s): I think just 'cause the room feels like it's moving a bit. Um
+T41 [Doctor] (175.5s): Feels like to move . That's why you're feeling like you're a bit unsteady, yeah?
+T42 [Patient] (176.0s): I'll look .
+T43 [Patient] (179.4s): My, my legs and arms and everything are working fine I just, I don't feel like I'm stable. My, the room is spinning.
+T44 [Doctor] (188.0s): So there's no weakness of your arms and legs. OK.
+T45 [Patient] (191.0s): No.
+T46 [Doctor] (191.4s): K. Right. Um, so you mentioned you had something like this a month ago. So how, how, how long did that episode last for?
+T47 [Patient] (202.7s): Probably only about five, ten minutes.
+T48 [Doctor] (205.0s): OK, right. And do you have any problems hearing at the moment? Like, is it muffled or something?
+T49 [Patient] (210.4s): No.
+T50 [Patient] (212.7s): It's just a bit of a buzzy noise in my ears, but otherwise I can hear everything.
+T51 [Doctor] (216.6s): OK. Righty-ho.
+T52 [Doctor] (219.8s): OK. So, have you been physically sick?
+T53 [Patient] (223.4s): No, but now I'm feeling very sick.
+T54 [Doctor] (225.5s): Nausea, OK.
+T55 [Doctor] (228.5s): Righty-ho. And, I don't have much information of your past medical history. So is there any medical conditions you'd like to tell me, surgical, medical conditions?
+T56 [Patient] (239.1s): Um, I've had premature ovarian failure, um, and I've taken HRT.
+T57 [Doctor] (244.6s): OK charting premature hearing failure. OK, and um any other medications at all?
+T58 [Patient] (252.1s): No.
+T59 [Doctor] (253.5s): OK, do you have any allergies at all?
+T60 [Patient] (256.2s): No.
+T61 [Doctor] (257.3s): OK. Right. OK so , talking to you today, um, in the , the most common um, you know, diagnosis we would you're suffering from at the moment is something called labyrinthitis. Yeah?
+T62 [Doctor] (272.2s): OK, that's when your middle ear...there is something um, some inflammation going on there, and there is some imbalances in the crystals there in your middle ear.
+T63 [Doctor] (283.2s): OK, so what the most important treatment is actually giving you some kind of middle ear stability so that you won't feel as if you're going around in a boat, kind of feeling.
+T64 [Doctor] (297.0s): OK? So that's what we need to . Because to actually make you function a bit more, we'll start you on certain medications.
+T65 [Doctor] (305.6s): I would still like you to be seen by one of our doctors to take a look inside your ears to just make sure. So this is like just symptomatic relief like you have a fever we just give paracetamol. So just to, you know, make you able to come and see one of the doctors and things like that.
+T66 [Doctor] (321.0s): while you're with the doctors, we'd like to do your blood pressure, just examine your, you know, you know, how your walking and everything is.
+T67 [Doctor] (329.4s): OK, while we're waiting, while you're waiting on seeing the doctor if you double up any weakness of your legs or arms or, or, you know, a sudden headache.
+T68 [Patient] (329.7s): OK.
+T69 [Doctor] (340.3s): Any of those symptoms, or you start being violently sick with it, then you know, you would need to take your to A and E.
+T70 [Patient] (348.5s): OK.
+T71 [Doctor] (349.4s): But if not, wait for the appointment for the doctor to examine you um and we'll take it from there.
+T72 [Doctor] (355.5s): So i'll, i'll send the a prescription at cross pharmacy looks like it's the Lloyd pharmacy on our system. Is that correct?
+T73 [Patient] (363.9s): Yeah.
+T74 [Doctor] (364.3s): Yeah. So we'll send you across that prescription. Um, it's called , yeah? It's one tablet three times a day. So I'll give you about ten days worth.
+T75 [Doctor] (375.0s): In the interim, obviously in the next few days, you'll get to see one of my doctors and we'll have to just take it from there.
+T76 [Patient] (380.8s): OK, thank you so much.
+T77 [Doctor] (381.3s): Any questions at all?
+T78 [Patient] (384.0s): Um, can you take, do you need to take those tablets with food? Or can you just take them any time?
+T79 [Doctor] (389.9s): It doesn't really matter, you can take it, because sometimes, you know, you get the symptoms as soon as you wake up, so probably you'll feel a bit sick to eat anything so might as well just take the tablets.
+T80 [Patient] (399.9s): OK, that's great. Thank you so much, that's so helpful.
+T81 [Doctor] (403.1s): Just make sure you call support to book that appointment, OK?
+T82 [Patient] (406.5s): I will, thank you very much.
+T83 [Doctor] (407.1s): Bye bye now. Bye

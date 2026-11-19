@@ -1,0 +1,37 @@
+{
+  "id": "day3_consultation10",
+  "model": "openai/gpt-oss-20b",
+  "prompt_version": "gen-prompt-v1",
+  "loader_version": "loader-v2",
+  "merged_same_speaker": false,
+  "soap": {
+    "subjective": [
+      "Patient reports diarrhea for about three days",
+      "Patient says diarrhea started after eating certain types of food or traveling, but no recent diet changes or travel",
+      "Patient reports one episode of vomiting",
+      "Patient reports abdominal pain, \"a little bit of abdominal pain\"",
+      "Patient reports appetite loss",
+      "Patient reports stool is a mix of liquid and loose; no blood; no mucus",
+      "Patient reports maybe a little fever",
+      "Patient reports still able to drink; drinks plenty",
+      "Patient reports asthma; uses Lexapro",
+      "Patient reports no other medication",
+      "Patient reports no allergies",
+      "Patient reports father had hypertension and died of bowel cancer at 62"
+    ],
+    "objective": [
+      "Not documented"
+    ],
+    "assessment": [
+      "Patient has diarrhea"
+    ],
+    "plan": [
+      "Recommend soft diet: avoid dairy, fish, meat, eggs; consume crackers, toast, jam, simple foods; after 48 hours if no diarrhea, may reintroduce meat, eggs, fish; consider yogurt for probiotics",
+      "If diarrhea persists >1 week or if blood appears, obtain stool sample",
+      "If frequency >6-8 times/day, consider dehydration and possible hospital admission",
+      "Use Dioralyte over the counter to replenish salts",
+      "Maintain adequate hydration",
+      "Follow up if symptoms worsen"
+    ]
+  }
+}

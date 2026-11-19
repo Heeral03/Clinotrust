@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-11-17T13:28:36+00:00",
+  "git_commit": "58852e7798f03833376da5552952bca21c823a65",
+  "git_dirty": true,
+  "encounters": [
+    "day3_consultation03",
+    "day3_consultation04",
+    "day3_consultation05",
+    "day3_consultation08",
+    "day3_consultation10"
+  ],
+  "soap": {
+    "model": "openai/gpt-oss-20b",
+    "prompt_version": "gen-prompt-v1",
+    "temperature": 0,
+    "loader_version": "loader-v2",
+    "models_in_saved_notes": [
+      "openai/gpt-oss-20b"
+    ]
+  },
+  "decomposer": {
+    "prompt_version": "decomp-prompt-v4",
+    "model": "openai/gpt-oss-20b",
+    "temperature": 0,
+    "reasoning_effort": "low",
+    "max_tokens": 8192
+  },
+  "groq_tokens_this_invocation": {
+    "prompt": 6339,
+    "completion": 1635,
+    "calls": 6,
+    "note": "counts only calls made in this run"
+  },
+  "claims_per_encounter": {
+    "day3_consultation03": 33,
+    "day3_consultation04": 32,
+    "day3_consultation05": 32,
+    "day3_consultation08": 27,
+    "day3_consultation10": 28
+  },
+  "fallbacks": [
+    "day3_consultation10 [plan#0] hedge/condition changed (dropped or added)"
+  ],
+  "verifier_run": false,
+  "labels_touched": false,
+  "notes": [
+    {
+      "date": "2026-11-19",
+      "change": "validation rule changed after the first held-out verifier run: analysis longer than 50 words is now truncated to 50 words (record field analysis_truncated=true) instead of rejecting the verdict.",
+      "reason": "claims 03 C30 (84 words) and 10 C2 (54 words) ended as ERROR after retry because the analysis exceeded the 50-word cap; status, evidence turns and quote are unchanged and the quote check still runs. The change uses no labels. Prompts, model and settings are unchanged."
+    }
+  ]
+}

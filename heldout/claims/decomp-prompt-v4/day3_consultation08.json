@@ -1,0 +1,203 @@
+{
+  "encounter_id": "day3_consultation08",
+  "claims": [
+    {
+      "id": "C1",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports cough"
+    },
+    {
+      "id": "C2",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports cold"
+    },
+    {
+      "id": "C3",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports runny nose"
+    },
+    {
+      "id": "C4",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports muscle aches"
+    },
+    {
+      "id": "C5",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports occasional headache"
+    },
+    {
+      "id": "C6",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports chills for about five days"
+    },
+    {
+      "id": "C7",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 1,
+      "text": "Patient describes cough as dry, hacking."
+    },
+    {
+      "id": "C8",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 2,
+      "text": "Patient denies shortness of breath"
+    },
+    {
+      "id": "C9",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 2,
+      "text": "Patient denies wheeze"
+    },
+    {
+      "id": "C10",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 2,
+      "text": "Patient denies blood in sputum"
+    },
+    {
+      "id": "C11",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 2,
+      "text": "Patient denies chest pain"
+    },
+    {
+      "id": "C12",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 2,
+      "text": "Patient denies fever"
+    },
+    {
+      "id": "C13",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 3,
+      "text": "Patient reports taking paracetamol for pain."
+    },
+    {
+      "id": "C14",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 4,
+      "text": "Patient takes metformin for diabetes"
+    },
+    {
+      "id": "C15",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 4,
+      "text": "Patient takes lisinopril for blood pressure"
+    },
+    {
+      "id": "C16",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 5,
+      "text": "Patient has diabetes for five to six years"
+    },
+    {
+      "id": "C17",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 5,
+      "text": "Patient monitors blood sugars at home with normal readings"
+    },
+    {
+      "id": "C18",
+      "encounter_id": "day3_consultation08",
+      "section": "subjective",
+      "source_statement_index": 6,
+      "text": "Patient's last blood pressure reading was taken this morning and was within normal range."
+    },
+    {
+      "id": "C19",
+      "encounter_id": "day3_consultation08",
+      "section": "objective",
+      "source_statement_index": 0,
+      "text": "Mild redness at the back of the throat."
+    },
+    {
+      "id": "C20",
+      "encounter_id": "day3_consultation08",
+      "section": "objective",
+      "source_statement_index": 1,
+      "text": "No enlarged tonsils."
+    },
+    {
+      "id": "C21",
+      "encounter_id": "day3_consultation08",
+      "section": "objective",
+      "source_statement_index": 2,
+      "text": "No palpable glands in the neck."
+    },
+    {
+      "id": "C22",
+      "encounter_id": "day3_consultation08",
+      "section": "assessment",
+      "source_statement_index": 0,
+      "text": "Clinician considers a viral upper respiratory infection (cold) with no evidence of chest infection."
+    },
+    {
+      "id": "C23",
+      "encounter_id": "day3_consultation08",
+      "section": "plan",
+      "source_statement_index": 0,
+      "text": "Patient advised to use over-the-counter symptomatic relief (Night Nurse, Day Nurse) which is compatible with current medications"
+    },
+    {
+      "id": "C24",
+      "encounter_id": "day3_consultation08",
+      "section": "plan",
+      "source_statement_index": 1,
+      "text": "No prescription medication is required at this time."
+    },
+    {
+      "id": "C25",
+      "encounter_id": "day3_consultation08",
+      "section": "plan",
+      "source_statement_index": 2,
+      "text": "Patient instructed to contact the service if shortness of breath"
+    },
+    {
+      "id": "C26",
+      "encounter_id": "day3_consultation08",
+      "section": "plan",
+      "source_statement_index": 2,
+      "text": "Patient instructed to contact the service if wheeze"
+    },
+    {
+      "id": "C27",
+      "encounter_id": "day3_consultation08",
+      "section": "plan",
+      "source_statement_index": 2,
+      "text": "Patient instructed to contact the service if symptoms persist beyond three weeks or worsen"
+    }
+  ],
+  "decomposer_prompt_version": "decomp-prompt-v4",
+  "model": "openai/gpt-oss-20b",
+  "reasoning_effort": "low",
+  "generator_prompt_version": "gen-prompt-v1",
+  "loader_version": "loader-v2",
+  "n_statements": 14,
+  "n_passthrough": 6,
+  "n_llm": 8,
+  "fallbacks": []
+}

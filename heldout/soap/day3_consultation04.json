@@ -1,0 +1,35 @@
+{
+  "id": "day3_consultation04",
+  "model": "openai/gpt-oss-20b",
+  "prompt_version": "gen-prompt-v1",
+  "loader_version": "loader-v2",
+  "merged_same_speaker": false,
+  "soap": {
+    "subjective": [
+      "Patient reports tightness and shortness of breath for 2-3 days, worsened when running and walking briskly.",
+      "Patient reports wheezing, coughing, and general shortness of breath.",
+      "Patient reports using blue inhaler (Salbutamol) as needed, no relief.",
+      "Patient reports using brown inhaler (Clenil) twice daily as preventer.",
+      "Patient reports using blue inhaler up to every 2-4 hours.",
+      "Patient reports no sputum.",
+      "Patient reports history of eczema, hay fever, family history of asthma and eczema.",
+      "Patient reports last asthma attack 3-4 years ago, last review 2 years ago.",
+      "Patient reports no hospital admissions, no oral steroids, no antibiotics.",
+      "Patient reports peak flow reading when good about 380.",
+      "Patient reports no allergies to medication."
+    ],
+    "objective": [
+      "Peak flow reading when good: 380."
+    ],
+    "assessment": [
+      "Clinician considers possible small exacerbation."
+    ],
+    "plan": [
+      "Patient to be seen by GP in next few days.",
+      "Increase brown inhaler (Clenil) to 4 puffs twice daily.",
+      "Use blue inhaler (Salbutamol) as needed up to every 2-4 hours.",
+      "If breathing worsens, go to A&E.",
+      "Book appointment with GP."
+    ]
+  }
+}

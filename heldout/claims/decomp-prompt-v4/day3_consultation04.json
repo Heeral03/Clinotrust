@@ -1,0 +1,238 @@
+{
+  "encounter_id": "day3_consultation04",
+  "claims": [
+    {
+      "id": "C1",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports tightness for 2-3 days"
+    },
+    {
+      "id": "C2",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports shortness of breath for 2-3 days"
+    },
+    {
+      "id": "C3",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports tightness worsened when running"
+    },
+    {
+      "id": "C4",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports tightness worsened when walking briskly"
+    },
+    {
+      "id": "C5",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports shortness of breath worsened when running"
+    },
+    {
+      "id": "C6",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports shortness of breath worsened when walking briskly"
+    },
+    {
+      "id": "C7",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 1,
+      "text": "Patient reports wheezing"
+    },
+    {
+      "id": "C8",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 1,
+      "text": "Patient reports coughing"
+    },
+    {
+      "id": "C9",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 1,
+      "text": "Patient reports general shortness of breath"
+    },
+    {
+      "id": "C10",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 2,
+      "text": "Patient reports using blue inhaler (Salbutamol) as needed"
+    },
+    {
+      "id": "C11",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 2,
+      "text": "Patient reports no relief"
+    },
+    {
+      "id": "C12",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 3,
+      "text": "Patient reports using brown inhaler (Clenil) twice daily as preventer."
+    },
+    {
+      "id": "C13",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 4,
+      "text": "Patient reports using blue inhaler up to every 2-4 hours."
+    },
+    {
+      "id": "C14",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 5,
+      "text": "Patient reports no sputum."
+    },
+    {
+      "id": "C15",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 6,
+      "text": "Patient reports history of eczema"
+    },
+    {
+      "id": "C16",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 6,
+      "text": "Patient reports hay fever"
+    },
+    {
+      "id": "C17",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 6,
+      "text": "Patient reports family history of asthma"
+    },
+    {
+      "id": "C18",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 6,
+      "text": "Patient reports family history of eczema"
+    },
+    {
+      "id": "C19",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 7,
+      "text": "Patient reports last asthma attack 3-4 years ago"
+    },
+    {
+      "id": "C20",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 7,
+      "text": "Patient reports last review 2 years ago"
+    },
+    {
+      "id": "C21",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 8,
+      "text": "Patient reports no hospital admissions"
+    },
+    {
+      "id": "C22",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 8,
+      "text": "Patient reports no oral steroids"
+    },
+    {
+      "id": "C23",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 8,
+      "text": "Patient reports no antibiotics"
+    },
+    {
+      "id": "C24",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 9,
+      "text": "Patient reports peak flow reading when good about 380."
+    },
+    {
+      "id": "C25",
+      "encounter_id": "day3_consultation04",
+      "section": "subjective",
+      "source_statement_index": 10,
+      "text": "Patient reports no allergies to medication."
+    },
+    {
+      "id": "C26",
+      "encounter_id": "day3_consultation04",
+      "section": "objective",
+      "source_statement_index": 0,
+      "text": "Peak flow reading when good: 380."
+    },
+    {
+      "id": "C27",
+      "encounter_id": "day3_consultation04",
+      "section": "assessment",
+      "source_statement_index": 0,
+      "text": "Clinician considers possible small exacerbation."
+    },
+    {
+      "id": "C28",
+      "encounter_id": "day3_consultation04",
+      "section": "plan",
+      "source_statement_index": 0,
+      "text": "Patient to be seen by GP in next few days."
+    },
+    {
+      "id": "C29",
+      "encounter_id": "day3_consultation04",
+      "section": "plan",
+      "source_statement_index": 1,
+      "text": "Increase brown inhaler (Clenil) to 4 puffs twice daily."
+    },
+    {
+      "id": "C30",
+      "encounter_id": "day3_consultation04",
+      "section": "plan",
+      "source_statement_index": 2,
+      "text": "Use blue inhaler (Salbutamol) as needed up to every 2-4 hours."
+    },
+    {
+      "id": "C31",
+      "encounter_id": "day3_consultation04",
+      "section": "plan",
+      "source_statement_index": 3,
+      "text": "If breathing worsens, go to A&E."
+    },
+    {
+      "id": "C32",
+      "encounter_id": "day3_consultation04",
+      "section": "plan",
+      "source_statement_index": 4,
+      "text": "Book appointment with GP."
+    }
+  ],
+  "decomposer_prompt_version": "decomp-prompt-v4",
+  "model": "openai/gpt-oss-20b",
+  "reasoning_effort": "low",
+  "generator_prompt_version": "gen-prompt-v1",
+  "loader_version": "loader-v2",
+  "n_statements": 18,
+  "n_passthrough": 11,
+  "n_llm": 7,
+  "fallbacks": []
+}

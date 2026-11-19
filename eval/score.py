@@ -419,7 +419,11 @@ def build_parser() -> argparse.ArgumentParser:
     ap.add_argument("--v1-verdicts", default=str(V1_BATCH_VERDICTS_DIR), metavar="DIR",
                     help="v1 folder for the v0-vs-v1 comparison (default: the batched v1 run)")  # fmt: skip
     ap.add_argument("--no-disagreements", action="store_true")
-    ap.add_argument("--only", nargs="+", help="score only these encounters (default: 01-05)")
+    ap.add_argument(
+        "--only",
+        nargs="+",
+        help="score only these encounters (default: dev 01-05, or all in a custom --labels file)",
+    )
     return ap
 
 
@@ -432,7 +436,13 @@ def _verdict_dir(path: str) -> Path:
 
 def main(argv: list[str] | None = None) -> None:
     a = build_parser().parse_args(argv)
-    enc = set(a.only) if a.only else {f"day1_consultation0{i}" for i in range(1, 6)}
+    if a.only:
+        enc = set(a.only)
+    elif a.labels == "labels/claims.csv":
+        enc = {f"day1_consultation0{i}" for i in range(1, 6)}  # dev set (unchanged default)
+    else:  # a custom label file: score every encounter in it
+        with open(a.labels, newline="", encoding="utf-8") as f:
+            enc = {r["encounter_id"] for r in csv.DictReader(f)}
     vdir = _verdict_dir(a.verdicts)
     gold = load_gold(Path(a.labels), enc)
     verdicts = load_verdicts(vdir)

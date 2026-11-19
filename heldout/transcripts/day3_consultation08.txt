@@ -1,0 +1,73 @@
+T1 [Doctor] (2.4s): Hello?
+T2 [Patient] (3.4s): Hi there!
+T3 [Doctor] (4.1s): Hi, hi, I'm doctor Jacob and welcome to Babylon. Hello.
+T4 [Patient] (8.8s): I, uh
+T5 [Doctor] (9.4s): Hi. So just before we start, is it alright if you could confirm your full name for me please?
+T6 [Patient] (15.7s): Uh, , that's, uh, John Jones.
+T7 [Doctor] (19.2s): And your date of birth.
+T8 [Patient] (21.8s): Uh, that's, uh, the, twenty ninth of September, nineteen eighty.
+T9 [Doctor] (28.5s): K. And your email address for me please?
+T10 [Patient] (32.1s): Uh, that's, uh, John Jones, at, John Jones dot net.
+T11 [Doctor] (37.1s): OK. And just to confirm that you're in a secure location, and we can have a confidential conversation.
+T12 [Patient] (43.2s): Yep. That's absolutely fine.
+T13 [Doctor] (44.5s): OK. So, you've mentioned on our notes that you're having a bit of a cough and a cold. Is that correct?
+T14 [Patient] (50.5s): Yeah, yeah, it's just it's been going on for, like a few days now. Um, sort of like, coughing, and like, general runny nose, and stuff, and, like
+T15 [Doctor] (60.4s): is it two to three days, or longer?
+T16 [Patient] (64.6s): Little bit, uh about like five days around that, uh, yeah it started like, what day is it today? Uh, yeah the week, it started with the start of the weekend, so.
+T17 [Doctor] (67.2s): Fine.
+T18 [Doctor] (73.8s): OK. So, so it started off with a cold, did it?
+T19 [Patient] (77.6s): Yeah just like coughing, and like running nose, and like kind of muscles aching and stuff, like occasional feeling like headache, cold, chills, and things like that.
+T20 [Doctor] (88.8s): OK.
+T21 [Doctor] (90.0s): Important cold, yeah?
+T22 [Doctor] (92.0s): And, so about your cough, are you bringing up any phlegm at all?
+T23 [Patient] (92.3s): Yeah.
+T24 [Patient] (96.9s): No, no, it's like a, it's like a dry cough Sort of like like, almost hacking, hacking kind of like .
+T25 [Doctor] (100.9s): OK.
+T26 [Doctor] (102.1s): You're not bringing up any blood, are you?
+T27 [Doctor] (105.2s): OK. Are you feeling short of breath at all?
+T28 [Patient] (109.8s): No, no, no shortness , like yeah, I'm breathing fine.
+T29 [Doctor] (113.2s): Yeah. So you're not wheezy or rattly noises in your chest.
+T30 [Patient] (117.1s): No.
+T31 [Doctor] (118.0s): OK. Um, right. So what have you taken so far?
+T32 [Patient] (124.5s): Uh, so, uh, just like pain killers and such. I mean that I, I, um, in addition to like my normal medication and such. Um, but like
+T33 [Doctor] (133.9s): Well you mentioned, uh, you've come to your normal medications but you've mentioned you've taken some painkillers like, would you tell me the names please?
+T34 [Patient] (141.6s): I'll just like pass it along.
+T35 [Doctor] (143.1s): Paracetamol, OK. Any Ibuprofen at all?
+T36 [Patient] (146.2s): No
+T37 [Doctor] (146.8s): No, OK. And also um you mentioned some regular medication. Unfortunately I don't have your medical, complete medical history. So if you could tell me what your medications are, and what you use them for?
+T38 [Patient] (161.6s): Yeah, so I take, um, uh, what's it called, it's like metformin. I'm a diabetic, so. And, um, I also, like have, uh, lisinopril .
+T39 [Doctor] (171.9s): Lisonopril, OK.
+T40 [Patient] (173.4s): Yeah, but the like slight blood pressure.
+T41 [Doctor] (175.8s): Yeah, OK. And, how long have you been a diabetic for?
+T42 [Patient] (180.7s): Um, like a, a few years, maybe five or six years.
+T43 [Doctor] (185.2s): Five six years, OK.
+T44 [Doctor] (187.8s): OK. Do you monitor your blood sugars at home?
+T45 [Patient] (192.4s): Yes.
+T46 [Doctor] (193.0s): OK. And how have they been doing at the moment?
+T47 [Patient] (196.2s): Uh, no issues nothing like out of the ordinary there.
+T48 [Doctor] (199.8s): OK. So there's no problems with your blood pressure control at the moment, even though you're not, OK so that's fine. That's absolutely fine. And when was the last time you took your blood pressure?
+T49 [Patient] (210.4s): Uh, I've been this morning.
+T50 [Doctor] (212.7s): This morning. And what was it? What was the readings like?
+T51 [Patient] (215.7s): I can't remember off the top of my head, but it was within the normal range.
+T52 [Doctor] (219.2s): Cool, 'cause there's nothing alarming yeah? No more. OK. That's fine. OK. So that seems all right.
+T53 [Doctor] (227.8s): OK. So, um, can I, hypothetically, look into your mouth here?
+T54 [Patient] (234.4s): Sure.
+T55 [Doctor] (235.0s): Yeah?
+T56 [Doctor] (236.7s): Yeah, so, uh, looking into your mouth
+T57 [Doctor] (241.8s): Um, you know, there's just a bit mild redness at the back of your throat. Um, there's no enlarged tonsils. Can you feel any glands around your neck, at all?
+T58 [Doctor] (253.0s): No. No.
+T59 [Patient] (253.2s): No, I haven't had anything like that.
+T60 [Doctor] (256.1s): OK. So, it looks like, it's just a viral infection. Um, because it's just a cold and a cough. There's nothing there.
+T61 [Doctor] (265.1s): And generally if you have things like a chest infection, you would have a bit like a wheeze or shortness of breath.
+T62 [Doctor] (272.8s): So, um, things that we would recommend is you can use the, you know, Night Nurse, Day Nurse. It's still OK with your medications, yeah. So I'm, I'm sure that you are a bit wary to use them. But it's still OK with your current medication. You can still use that. Might be able to make you feel a bit more better quickly.
+T63 [Patient] (283.3s): OK.
+T64 [Doctor] (292.6s): If there's any change, like you're feeling short of breath or be your symptoms are lasting more than three weeks or something
+T65 [Doctor] (300.9s): Or you're becoming poorly, uh, things like that, then you need to get in touch with us, then probably we might need to examine you and especially your chest. But I don't think so, that's necessary at this point in time
+T66 [Patient] (314.2s): OK, that sounds good.
+T67 [Doctor] (315.5s): OK. Any questions at all ?
+T68 [Patient] (318.0s): Uh, no, I I think that's been very helpful thank you.
+T69 [Doctor] (322.2s): OK. So just to round up, just use the night, Night Nurse, Day Nurse, if any change in your symptoms, like shortness of breath, wheezy, or symptoms are lasting more than three weeks, then get in touch with us.
+T70 [Patient] (335.3s): OK, so I don't need any prescription, or anything like that.
+T71 [Doctor] (337.2s): No, no you don't need anything at the moment. OK. Take care, then. Bye. Bye bye.
+T72 [Patient] (339.8s): OK.
+T73 [Patient] (341.9s): Thank you very much, bye!

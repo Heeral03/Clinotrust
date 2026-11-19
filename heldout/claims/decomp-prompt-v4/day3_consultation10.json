@@ -1,0 +1,217 @@
+{
+  "encounter_id": "day3_consultation10",
+  "claims": [
+    {
+      "id": "C1",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 0,
+      "text": "Patient reports diarrhea for about three days"
+    },
+    {
+      "id": "C2",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 1,
+      "text": "Patient says diarrhea started after eating certain types of food or traveling"
+    },
+    {
+      "id": "C3",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 1,
+      "text": "Patient says no recent diet changes"
+    },
+    {
+      "id": "C4",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 1,
+      "text": "Patient says no recent travel"
+    },
+    {
+      "id": "C5",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 2,
+      "text": "Patient reports one episode of vomiting"
+    },
+    {
+      "id": "C6",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 3,
+      "text": "Patient reports abdominal pain"
+    },
+    {
+      "id": "C7",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 3,
+      "text": "Patient reports a little bit of abdominal pain"
+    },
+    {
+      "id": "C8",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 4,
+      "text": "Patient reports appetite loss"
+    },
+    {
+      "id": "C9",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 5,
+      "text": "Patient reports stool is a mix of liquid and loose"
+    },
+    {
+      "id": "C10",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 5,
+      "text": "Patient reports no blood"
+    },
+    {
+      "id": "C11",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 5,
+      "text": "Patient reports no mucus"
+    },
+    {
+      "id": "C12",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 6,
+      "text": "Patient reports maybe a little fever"
+    },
+    {
+      "id": "C13",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 7,
+      "text": "Patient reports still able to drink"
+    },
+    {
+      "id": "C14",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 7,
+      "text": "Patient reports drinks plenty"
+    },
+    {
+      "id": "C15",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 8,
+      "text": "Patient reports asthma"
+    },
+    {
+      "id": "C16",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 8,
+      "text": "Patient reports uses Lexapro"
+    },
+    {
+      "id": "C17",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 9,
+      "text": "Patient reports no other medication"
+    },
+    {
+      "id": "C18",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 10,
+      "text": "Patient reports no allergies"
+    },
+    {
+      "id": "C19",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 11,
+      "text": "Patient reports father had hypertension"
+    },
+    {
+      "id": "C20",
+      "encounter_id": "day3_consultation10",
+      "section": "subjective",
+      "source_statement_index": 11,
+      "text": "Patient reports father died of bowel cancer at 62"
+    },
+    {
+      "id": "C21",
+      "encounter_id": "day3_consultation10",
+      "section": "objective",
+      "source_statement_index": 0,
+      "text": "Not documented"
+    },
+    {
+      "id": "C22",
+      "encounter_id": "day3_consultation10",
+      "section": "assessment",
+      "source_statement_index": 0,
+      "text": "Patient has diarrhea"
+    },
+    {
+      "id": "C23",
+      "encounter_id": "day3_consultation10",
+      "section": "plan",
+      "source_statement_index": 0,
+      "text": "Recommend soft diet: avoid dairy, fish, meat, eggs; consume crackers, toast, jam, simple foods; after 48 hours if no diarrhea, may reintroduce meat, eggs, fish; consider yogurt for probiotics"
+    },
+    {
+      "id": "C24",
+      "encounter_id": "day3_consultation10",
+      "section": "plan",
+      "source_statement_index": 1,
+      "text": "If diarrhea persists >1 week or if blood appears, obtain stool sample"
+    },
+    {
+      "id": "C25",
+      "encounter_id": "day3_consultation10",
+      "section": "plan",
+      "source_statement_index": 2,
+      "text": "If frequency >6-8 times/day, consider dehydration and possible hospital admission"
+    },
+    {
+      "id": "C26",
+      "encounter_id": "day3_consultation10",
+      "section": "plan",
+      "source_statement_index": 3,
+      "text": "Use Dioralyte over the counter to replenish salts"
+    },
+    {
+      "id": "C27",
+      "encounter_id": "day3_consultation10",
+      "section": "plan",
+      "source_statement_index": 4,
+      "text": "Maintain adequate hydration"
+    },
+    {
+      "id": "C28",
+      "encounter_id": "day3_consultation10",
+      "section": "plan",
+      "source_statement_index": 5,
+      "text": "Follow up if symptoms worsen"
+    }
+  ],
+  "decomposer_prompt_version": "decomp-prompt-v4",
+  "model": "openai/gpt-oss-20b",
+  "reasoning_effort": "low",
+  "generator_prompt_version": "gen-prompt-v1",
+  "loader_version": "loader-v2",
+  "n_statements": 20,
+  "n_passthrough": 11,
+  "n_llm": 9,
+  "fallbacks": [
+    {
+      "section": "plan",
+      "index": 0,
+      "statement": "Recommend soft diet: avoid dairy, fish, meat, eggs; consume crackers, toast, jam, simple foods; after 48 hours if no diarrhea, may reintroduce meat, eggs, fish; consider yogurt for probiotics",
+      "reason": "hedge/condition changed (dropped or added)"
+    }
+  ]
+}

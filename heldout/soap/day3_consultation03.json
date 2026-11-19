@@ -1,0 +1,33 @@
+{
+  "id": "day3_consultation03",
+  "model": "openai/gpt-oss-20b",
+  "prompt_version": "gen-prompt-v1",
+  "loader_version": "loader-v2",
+  "merged_same_speaker": false,
+  "soap": {
+    "subjective": [
+      "Patient reports low appetite and low energy for several months.",
+      "Patient reports feeling down and depressed.",
+      "Patient reports shortness of breath and palpitations when in a lift, but can walk a mile without SOB.",
+      "Patient reports occasional nausea with no specific trigger foods.",
+      "Patient reports headaches and nausea at work.",
+      "Patient reports weight loss of approximately one stone over about six months.",
+      "Patient reports no chest pain, cough, or bowel changes; bowel movements are normal and painless.",
+      "Patient reports a history of underactive thyroid, previously on thyroxine, stopped taking it since changing doctor.",
+      "Patient reports no recent blood tests."
+    ],
+    "objective": [
+      "Not documented"
+    ],
+    "assessment": [
+      "Not documented"
+    ],
+    "plan": [
+      "Order a general set of blood tests to evaluate thyroid function, anemia, kidney and liver function, and vitamin levels.",
+      "Arrange for the blood test to be performed via the support service; patient to call the support number found in the app.",
+      "Patient advised to seek urgent care (A&E) if chest pain, worsening palpitations, or other acute symptoms develop.",
+      "Patient advised to contact the service if bowel habits change or if feeling poorly.",
+      "No physical examination required at this time."
+    ]
+  }
+}

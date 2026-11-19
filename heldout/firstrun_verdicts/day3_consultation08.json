@@ -1,0 +1,627 @@
+{
+  "encounter_id": "day3_consultation08",
+  "model": "qwen/qwen3.8-27b",
+  "prompt_version": "verify-prompt-v1.1-batch",
+  "loader_version": "loader-v2",
+  "updated_at": "2026-11-19T16:30:27+00:00",
+  "mode": "batched",
+  "batch_size": 10,
+  "usage": {
+    "prompt": 13248,
+    "completion": 3360,
+    "calls": 4
+  },
+  "records": [
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C1",
+      "section": "subjective",
+      "claim_text": "Patient reports cough",
+      "verdict": {
+        "analysis": "The doctor asks about a cough in T13, and the patient confirms in T14 that they have been 'coughing'. This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T13",
+          "T14"
+        ],
+        "evidence_quote": "cough and a cold... coughing",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C2",
+      "section": "subjective",
+      "claim_text": "Patient reports cold",
+      "verdict": {
+        "analysis": "The doctor asks about a 'cough and a cold' in T13, and the patient confirms 'Yeah, yeah' in T14. This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T13",
+          "T14"
+        ],
+        "evidence_quote": "cough and a cold... Yeah, yeah",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C3",
+      "section": "subjective",
+      "claim_text": "Patient reports runny nose",
+      "verdict": {
+        "analysis": "In T14, the patient explicitly states they have a 'general runny nose'. This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T14"
+        ],
+        "evidence_quote": "general runny nose",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C4",
+      "section": "subjective",
+      "claim_text": "Patient reports muscle aches",
+      "verdict": {
+        "analysis": "In T19, the patient lists symptoms including 'muscles aching'. This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T19"
+        ],
+        "evidence_quote": "muscles aching",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C5",
+      "section": "subjective",
+      "claim_text": "Patient reports occasional headache",
+      "verdict": {
+        "analysis": "In T19, the patient reports 'occasional feeling like headache'. This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T19"
+        ],
+        "evidence_quote": "occasional feeling like headache",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C6",
+      "section": "subjective",
+      "claim_text": "Patient reports chills for about five days",
+      "verdict": {
+        "analysis": "The patient reports chills in T19. In T16, they state the symptoms started 'about like five days'. The claim combines these two facts, which are both present in the transcript.",
+        "status": "supported",
+        "evidence_turns": [
+          "T16",
+          "T19"
+        ],
+        "evidence_quote": "about like five days... chills",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C7",
+      "section": "subjective",
+      "claim_text": "Patient describes cough as dry, hacking.",
+      "verdict": {
+        "analysis": "In T24, the patient describes the cough as 'dry cough' and 'hacking'. This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T24"
+        ],
+        "evidence_quote": "dry cough... hacking",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C8",
+      "section": "subjective",
+      "claim_text": "Patient denies shortness of breath",
+      "verdict": {
+        "analysis": "The doctor asks if the patient is short of breath in T27. The patient replies 'No, no, no shortness' in T28. This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T27",
+          "T28"
+        ],
+        "evidence_quote": "short of breath... No, no, no shortness",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C9",
+      "section": "subjective",
+      "claim_text": "Patient denies wheeze",
+      "verdict": {
+        "analysis": "The doctor asks if the patient is wheezy in T29. The patient replies 'No' in T30. This directly supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T29",
+          "T30"
+        ],
+        "evidence_quote": "wheezy... No.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C10",
+      "section": "subjective",
+      "claim_text": "Patient denies blood in sputum",
+      "verdict": {
+        "analysis": "The doctor asks if the patient is bringing up blood in T26. The patient does not explicitly answer 'no' to this specific question; the next patient turn (T28) answers the subsequent question about shortness of breath. Therefore, the denial is not documented.",
+        "status": "uncertain",
+        "evidence_turns": [
+          "T26"
+        ],
+        "evidence_quote": "bringing up any blood",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C11",
+      "section": "subjective",
+      "claim_text": "Patient denies chest pain",
+      "verdict": {
+        "analysis": "The transcript does not contain any question about chest pain, nor does the patient mention it. The patient denies shortness of breath and wheezing, but chest pain is never discussed.",
+        "status": "unsupported",
+        "evidence_turns": [],
+        "evidence_quote": "",
+        "reason": ""
+      },
+      "quote_valid": null,
+      "turns_valid": null,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C12",
+      "section": "subjective",
+      "claim_text": "Patient denies fever",
+      "verdict": {
+        "analysis": "The patient mentions 'cold, chills' in T19, but there is no specific question about fever, nor does the patient explicitly deny having a fever. The mention of chills is not a denial of fever.",
+        "status": "unsupported",
+        "evidence_turns": [],
+        "evidence_quote": "",
+        "reason": ""
+      },
+      "quote_valid": null,
+      "turns_valid": null,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C13",
+      "section": "subjective",
+      "claim_text": "Patient reports taking paracetamol for pain.",
+      "verdict": {
+        "analysis": "In T31-T35, the doctor asks about painkillers. The patient mentions 'pain killers' in T32. In T35, the doctor suggests 'Paracetamol', and the patient does not correct this, implying confirmation. The context is taking it for the current illness/pain.",
+        "status": "supported",
+        "evidence_turns": [
+          "T32",
+          "T35"
+        ],
+        "evidence_quote": "just like pain killers... Paracetamol, OK.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C14",
+      "section": "subjective",
+      "claim_text": "Patient takes metformin for diabetes",
+      "verdict": {
+        "analysis": "In T38, the patient states, 'I take... metformin. I'm a diabetic, so.' This directly supports the claim that the patient takes metformin for diabetes.",
+        "status": "supported",
+        "evidence_turns": [
+          "T38"
+        ],
+        "evidence_quote": "I take... metformin. I'm a diabetic, so.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C15",
+      "section": "subjective",
+      "claim_text": "Patient takes lisinopril for blood pressure",
+      "verdict": {
+        "analysis": "In T38, the patient mentions taking 'lisinopril'. In T40, the patient clarifies it is for 'slight blood pressure'. This supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T38",
+          "T40"
+        ],
+        "evidence_quote": "lisinopril... slight blood pressure.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C16",
+      "section": "subjective",
+      "claim_text": "Patient has diabetes for five to six years",
+      "verdict": {
+        "analysis": "In T42, the patient states they have been a diabetic for 'maybe five or six years'. The claim states 'five to six years', which matches the patient's report.",
+        "status": "supported",
+        "evidence_turns": [
+          "T42"
+        ],
+        "evidence_quote": "maybe five or six years.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C17",
+      "section": "subjective",
+      "claim_text": "Patient monitors blood sugars at home with normal readings",
+      "verdict": {
+        "analysis": "In T45, the patient confirms monitoring blood sugars at home. In T47, the patient says 'no issues nothing like out of the ordinary', implying normal readings. This supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T45",
+          "T47"
+        ],
+        "evidence_quote": "Yes... no issues nothing like out of the ordinary there.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C18",
+      "section": "subjective",
+      "claim_text": "Patient's last blood pressure reading was taken this morning and was within normal range.",
+      "verdict": {
+        "analysis": "In T49, the patient says they took their blood pressure 'this morning'. In T51, the patient states it was 'within the normal range'. This supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T49",
+          "T51"
+        ],
+        "evidence_quote": "I've been this morning... within the normal range.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C19",
+      "section": "objective",
+      "claim_text": "Mild redness at the back of the throat.",
+      "verdict": {
+        "analysis": "In T57, the doctor states, 'there's just a bit mild redness at the back of your throat.' This is a direct observation by the clinician, supporting the Objective claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T57"
+        ],
+        "evidence_quote": "there's just a bit mild redness at the back of your throat.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C20",
+      "section": "objective",
+      "claim_text": "No enlarged tonsils.",
+      "verdict": {
+        "analysis": "In T57, the doctor states, 'there's no enlarged tonsils.' This is a direct observation by the clinician, supporting the Objective claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T57"
+        ],
+        "evidence_quote": "there's no enlarged tonsils.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C21",
+      "section": "objective",
+      "claim_text": "No palpable glands in the neck.",
+      "verdict": {
+        "analysis": "The doctor asked if the patient could feel any glands around the neck (T57). The patient responded \"No\" (T58) and \"No, I haven't had anything like that\" (T59). This is a patient report, not a clinician's physical examination finding. Therefore, it does not support an Objective claim.",
+        "status": "uncertain",
+        "evidence_turns": [
+          "T57",
+          "T58",
+          "T59"
+        ],
+        "evidence_quote": "Can you feel any glands around your neck, at all? ... No. No. ... No, I haven't had anything like that.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C22",
+      "section": "assessment",
+      "claim_text": "Clinician considers a viral upper respiratory infection (cold) with no evidence of chest infection.",
+      "verdict": {
+        "analysis": "The doctor explicitly states in T60, 'it looks like, it's just a viral infection,' and in T61 notes that chest infection would present with wheeze or shortness of breath, which are absent. This directly supports the assessment of a viral URI without chest infection.",
+        "status": "supported",
+        "evidence_turns": [
+          "T60",
+          "T61"
+        ],
+        "evidence_quote": "it looks like, it's just a viral infection. ... if you have things like a chest infection, you would have a bit like a wheeze or shortness of breath.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "single-retry",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C23",
+      "section": "plan",
+      "claim_text": "Patient advised to use over-the-counter symptomatic relief (Night Nurse, Day Nurse) which is compatible with current medications",
+      "verdict": {
+        "analysis": "In T62, the doctor recommends using \"Night Nurse, Day Nurse\" and explicitly states, \"It's still OK with your medications... It's still OK with your current medication.\" This directly supports the claim that the patient was advised to use these OTC remedies which are compatible with their current meds.",
+        "status": "supported",
+        "evidence_turns": [
+          "T62"
+        ],
+        "evidence_quote": "things that we would recommend is you can use the, you know, Night Nurse, Day Nurse. It's still OK with your medications",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C24",
+      "section": "plan",
+      "claim_text": "No prescription medication is required at this time.",
+      "verdict": {
+        "analysis": "In T70, the patient asks, \"so I don't need any prescription, or anything like that.\" In T71, the doctor confirms, \"No, no you don't need anything at the moment.\" This supports the plan that no prescription is required.",
+        "status": "supported",
+        "evidence_turns": [
+          "T70",
+          "T71"
+        ],
+        "evidence_quote": "so I don't need any prescription, or anything like that. ... No, no you don't need anything at the moment.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C25",
+      "section": "plan",
+      "claim_text": "Patient instructed to contact the service if shortness of breath",
+      "verdict": {
+        "analysis": "In T64, the doctor states, \"If there's any change, like you're feeling short of breath... then you need to get in touch with us.\" This is repeated in the summary in T69. This supports the instruction to contact the service for shortness of breath.",
+        "status": "supported",
+        "evidence_turns": [
+          "T64",
+          "T65"
+        ],
+        "evidence_quote": "If there's any change, like you're feeling short of breath ... then you need to get in touch with us",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": true,
+      "cited_turns_original": [
+        "T64",
+        "T69"
+      ],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C26",
+      "section": "plan",
+      "claim_text": "Patient instructed to contact the service if wheeze",
+      "verdict": {
+        "analysis": "In T69, the doctor summarizes the instructions: \"if any change in your symptoms, like shortness of breath, wheezy, or symptoms are lasting more than three weeks, then get in touch with us.\" This explicitly includes wheeze as a reason to contact the service.",
+        "status": "supported",
+        "evidence_turns": [
+          "T69"
+        ],
+        "evidence_quote": "if any change in your symptoms, like shortness of breath, wheezy, or symptoms are lasting more than three weeks, then get in touch with us",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation08",
+      "claim_id": "C27",
+      "section": "plan",
+      "claim_text": "Patient instructed to contact the service if symptoms persist beyond three weeks or worsen",
+      "verdict": {
+        "analysis": "In T64, the doctor says, \"or be your symptoms are lasting more than three weeks or something... then you need to get in touch with us.\" T69 reiterates \"symptoms are lasting more than three weeks... then get in touch with us.\" This supports the instruction regarding symptom duration.",
+        "status": "supported",
+        "evidence_turns": [
+          "T64",
+          "T65"
+        ],
+        "evidence_quote": "or be your symptoms are lasting more than three weeks or something ... then you need to get in touch with us",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": true,
+      "cited_turns_original": [
+        "T64",
+        "T69"
+      ],
+      "needs_review": false
+    }
+  ]
+}

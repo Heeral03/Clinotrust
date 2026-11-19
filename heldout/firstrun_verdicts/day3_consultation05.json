@@ -1,0 +1,751 @@
+{
+  "encounter_id": "day3_consultation05",
+  "model": "qwen/qwen3.8-27b",
+  "prompt_version": "verify-prompt-v1.1-batch",
+  "loader_version": "loader-v2",
+  "updated_at": "2026-11-19T16:22:30+00:00",
+  "mode": "batched",
+  "batch_size": 10,
+  "usage": {
+    "prompt": 21658,
+    "completion": 4128,
+    "calls": 6
+  },
+  "records": [
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C1",
+      "section": "subjective",
+      "claim_text": "Patient reports dizziness",
+      "verdict": {
+        "analysis": "The doctor asks if the patient is feeling dizzy (T13), and the patient confirms with 'Yeah' (T14) and elaborates on feeling dizzy (T15).",
+        "status": "supported",
+        "evidence_turns": [
+          "T13",
+          "T14",
+          "T15"
+        ],
+        "evidence_quote": "So you've mentioned that you're feeling dizzy... Yeah.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C2",
+      "section": "subjective",
+      "claim_text": "Patient reports feeling the room spinning",
+      "verdict": {
+        "analysis": "The patient explicitly states 'the room is sort of spinning' (T15) and confirms 'Yep' when asked about the room spinning (T26).",
+        "status": "supported",
+        "evidence_turns": [
+          "T15",
+          "T25",
+          "T26"
+        ],
+        "evidence_quote": "the room is sort of spinning... Yep.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C3",
+      "section": "subjective",
+      "claim_text": "Patient reports difficulty walking straight",
+      "verdict": {
+        "analysis": "The patient states 'I can't walk properly... but not straight' (T16) and later explains she doesn't feel stable because the room is spinning (T43).",
+        "status": "supported",
+        "evidence_turns": [
+          "T16",
+          "T43"
+        ],
+        "evidence_quote": "I can't walk properly... but not straight",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C4",
+      "section": "subjective",
+      "claim_text": "Patient reports buzzing in ears.",
+      "verdict": {
+        "analysis": "The patient reports 'my ears are buzzing a bit' (T17) and describes 'a bit of a buzzy noise in my ears' (T50).",
+        "status": "supported",
+        "evidence_turns": [
+          "T17",
+          "T50"
+        ],
+        "evidence_quote": "my ears are buzzing a bit",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C5",
+      "section": "subjective",
+      "claim_text": "Patient reports feeling very sick.",
+      "verdict": {
+        "analysis": "The patient states 'I'm feeling very sick' (T15) and later confirms 'now I'm feeling very sick' (T53) in response to a question about being physically sick.",
+        "status": "supported",
+        "evidence_turns": [
+          "T15",
+          "T52",
+          "T53"
+        ],
+        "evidence_quote": "I'm feeling very sick",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C6",
+      "section": "subjective",
+      "claim_text": "Patient reports a similar episode about a month ago lasting 5-10 minutes.",
+      "verdict": {
+        "analysis": "The patient mentions a similar episode 'about a month ago' (T20) and states it lasted 'Probably only about five, ten minutes' (T47).",
+        "status": "supported",
+        "evidence_turns": [
+          "T20",
+          "T46",
+          "T47"
+        ],
+        "evidence_quote": "similar sort of thing about a month ago... Probably only about five, ten minutes.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C7",
+      "section": "subjective",
+      "claim_text": "Patient denies fever",
+      "verdict": {
+        "analysis": "The doctor asks 'Do you have a temperature at all?' (T37) and the patient responds 'I don't think so' (T38), which counts as a denial.",
+        "status": "supported",
+        "evidence_turns": [
+          "T37",
+          "T38"
+        ],
+        "evidence_quote": "Do you have a temperature at all? ... I don't think so",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C8",
+      "section": "subjective",
+      "claim_text": "Patient denies viral illness",
+      "verdict": {
+        "analysis": "The doctor asks about viral illness in the recent past (T31) and the patient answers 'No' (T32), confirming no cold or cough (T34).",
+        "status": "supported",
+        "evidence_turns": [
+          "T31",
+          "T32"
+        ],
+        "evidence_quote": "Did you have any kind of viral illness... No.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C9",
+      "section": "subjective",
+      "claim_text": "Patient denies ear pain",
+      "verdict": {
+        "analysis": "The doctor asks about ear pain or discharge (T35) and the patient answers 'No, nothing' (T36), denying both.",
+        "status": "supported",
+        "evidence_turns": [
+          "T35",
+          "T36"
+        ],
+        "evidence_quote": "Any kind of ear pain or ear discharge... No, nothing.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C10",
+      "section": "subjective",
+      "claim_text": "Patient denies ear discharge",
+      "verdict": {
+        "analysis": "The doctor asks about ear pain or discharge (T35) and the patient answers 'No, nothing' (T36), denying both.",
+        "status": "supported",
+        "evidence_turns": [
+          "T35",
+          "T36"
+        ],
+        "evidence_quote": "Any kind of ear pain or ear discharge... No, nothing.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C11",
+      "section": "subjective",
+      "claim_text": "Patient denies hearing loss",
+      "verdict": {
+        "analysis": "The doctor asked if the patient has hearing problems (T48). The patient answered \"No\" (T49) and clarified she can hear everything (T50), directly supporting the denial of hearing loss.",
+        "status": "supported",
+        "evidence_turns": [
+          "T48",
+          "T49",
+          "T50"
+        ],
+        "evidence_quote": "do you have any problems hearing at the moment? ... No. ... otherwise I can hear everything.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C12",
+      "section": "subjective",
+      "claim_text": "Patient denies weakness",
+      "verdict": {
+        "analysis": "The doctor asked if there is weakness in arms and legs (T44). The patient answered \"No\" (T45), directly supporting the denial of weakness.",
+        "status": "supported",
+        "evidence_turns": [
+          "T44",
+          "T45"
+        ],
+        "evidence_quote": "So there's no weakness of your arms and legs. ... No.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C13",
+      "section": "subjective",
+      "claim_text": "Patient denies headache",
+      "verdict": {
+        "analysis": "The transcript does not contain a question about headache or a patient statement denying headache. Headache is only mentioned as a warning sign for A&E (T67), not as a current symptom denied by the patient.",
+        "status": "unsupported",
+        "evidence_turns": [],
+        "evidence_quote": "",
+        "reason": ""
+      },
+      "quote_valid": null,
+      "turns_valid": null,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C14",
+      "section": "subjective",
+      "claim_text": "Patient denies nausea",
+      "verdict": {
+        "analysis": "The doctor asked if the patient was physically sick (T52). The patient denied vomiting (\"No\") but explicitly stated \"now I'm feeling very sick\" (T53), which the doctor labeled as nausea (T54). Thus, the patient does not deny nausea.",
+        "status": "contradicted",
+        "evidence_turns": [
+          "T52",
+          "T53",
+          "T54"
+        ],
+        "evidence_quote": "No, but now I'm feeling very sick. ... Nausea, OK.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C15",
+      "section": "subjective",
+      "claim_text": "Patient reports no recent cold",
+      "verdict": {
+        "analysis": "The doctor asked about viral illness and specifically \"No cold\" (T33). The patient answered \"No\" (T32) and confirmed being healthy (T34), supporting the report of no recent cold.",
+        "status": "supported",
+        "evidence_turns": [
+          "T31",
+          "T32",
+          "T33",
+          "T34"
+        ],
+        "evidence_quote": "Did you have any kind of viral illness... No. ... No cold, cough, nothing. ... No",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C16",
+      "section": "subjective",
+      "claim_text": "Patient reports no cough",
+      "verdict": {
+        "analysis": "The doctor asked \"No cold, cough, nothing\" (T33). The patient answered \"No\" (T34), which in context denies the presence of cold and cough, supporting the report of no cough.",
+        "status": "supported",
+        "evidence_turns": [
+          "T33",
+          "T34"
+        ],
+        "evidence_quote": "No cold, cough, nothing. ... No",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C17",
+      "section": "subjective",
+      "claim_text": "Patient reports premature ovarian failure",
+      "verdict": {
+        "analysis": "When asked about medical conditions (T55), the patient stated \"I've had premature ovarian failure\" (T56), directly supporting the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T55",
+          "T56"
+        ],
+        "evidence_quote": "is there any medical conditions... I've had premature ovarian failure",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C18",
+      "section": "subjective",
+      "claim_text": "Patient has taken HRT",
+      "verdict": {
+        "analysis": "In T56, the patient explicitly states, 'I've taken HRT' when listing her medical history. This directly supports the claim that the patient has taken HRT.",
+        "status": "supported",
+        "evidence_turns": [
+          "T56"
+        ],
+        "evidence_quote": "I've taken HRT.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "single-retry",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C19",
+      "section": "subjective",
+      "claim_text": "Patient reports no current medications other than HRT.",
+      "verdict": {
+        "analysis": "The patient reported taking H R T (T56). When asked \"any other medications at all?\" (T57), she answered\"No\" (T58). This confirms no medications other than the H R T she just mentioned, so the claim is accurate and specific to the transcript.",
+        "status": "supported",
+        "evidence_turns": [
+          "T56",
+          "T57",
+          "T58"
+        ],
+        "evidence_quote": "I've taken HRT. ... any other medications at all? ... No.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C20",
+      "section": "subjective",
+      "claim_text": "Patient reports no allergies.",
+      "verdict": {
+        "analysis": "In T59, the doctor asks, 'do you have any allergies at all?', and in T60, the patient responds, 'No.' This directly supports the claim that the patient reports no allergies.",
+        "status": "supported",
+        "evidence_turns": [
+          "T59",
+          "T60"
+        ],
+        "evidence_quote": "do you have any allergies at all? ... No.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "single-retry",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C21",
+      "section": "objective",
+      "claim_text": "No weakness of arms",
+      "verdict": {
+        "analysis": "The transcript records the patient's report that her arms are working fine (T43) and the doctor's verbal confirmation (T44). However, the section is Objective, which requires a clinician-stated examination finding. Since no physical examination was performed in the transcript, this is not supported as an Objective finding.",
+        "status": "uncertain",
+        "evidence_turns": [
+          "T43",
+          "T44"
+        ],
+        "evidence_quote": "my legs and arms and everything are working fine ... So there's no weakness of your arms and legs.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C22",
+      "section": "objective",
+      "claim_text": "No weakness of legs",
+      "verdict": {
+        "analysis": "Similar to C21, the transcript contains the patient's report of no weakness and the doctor's verbal acknowledgment (T43, T44). It does not contain a documented clinical examination finding, which is required for an Objective section claim.",
+        "status": "uncertain",
+        "evidence_turns": [
+          "T43",
+          "T44"
+        ],
+        "evidence_quote": "my legs and arms and everything are working fine ... So there's no weakness of your arms and legs.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": true
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C23",
+      "section": "assessment",
+      "claim_text": "Clinician considers possible labyrinthitis.",
+      "verdict": {
+        "analysis": "In T61, the doctor states, \"the most common um, you know, diagnosis we would you're suffering from at the moment is something called labyrinthitis.\" This directly supports the assessment that the clinician considers labyrinthitis.",
+        "status": "supported",
+        "evidence_turns": [
+          "T61"
+        ],
+        "evidence_quote": "diagnosis we would you're suffering from at the moment is something called labyrinthitis",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C24",
+      "section": "plan",
+      "claim_text": "Prescribe medication: one tablet three times daily for ten days.",
+      "verdict": {
+        "analysis": "In T74, the doctor explicitly states the prescription details: \"It's one tablet three times a day. So I'll give you about ten days worth.\" This matches the claim exactly.",
+        "status": "supported",
+        "evidence_turns": [
+          "T74"
+        ],
+        "evidence_quote": "It's one tablet three times a day. So I'll give you about ten days worth.",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C25",
+      "section": "plan",
+      "claim_text": "Arrange appointment with doctor for ear examination.",
+      "verdict": {
+        "analysis": "In T65, the doctor says, \"I would still like you to be seen by one of our doctors to take a look inside your ears.\" This supports the plan to arrange an appointment for an ear examination.",
+        "status": "supported",
+        "evidence_turns": [
+          "T65"
+        ],
+        "evidence_quote": "I would still like you to be seen by one of our doctors to take a look inside your ears",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C26",
+      "section": "plan",
+      "claim_text": "Measure blood pressure during appointment.",
+      "verdict": {
+        "analysis": "In T66, the doctor states, \"while you're with the doctors, we'd like to do your blood pressure.\" This directly supports the plan to measure blood pressure during the appointment.",
+        "status": "supported",
+        "evidence_turns": [
+          "T66"
+        ],
+        "evidence_quote": "while you're with the doctors, we'd like to do your blood pressure",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C27",
+      "section": "plan",
+      "claim_text": "Advise patient to seek A&E if sudden weakness",
+      "verdict": {
+        "analysis": "In T67 and T69, the doctor advises that if the patient experiences \"weakness of your legs or arms\" or other symptoms, they \"would need to take your to A and E.\" This supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T67",
+          "T69"
+        ],
+        "evidence_quote": "if you double up any weakness of your legs or arms ... you would need to take your to A and E",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C28",
+      "section": "plan",
+      "claim_text": "Advise patient to seek A&E if headache",
+      "verdict": {
+        "analysis": "In T67 and T69, the doctor lists \"a sudden headache\" as a symptom that would require the patient to go to A&E. This supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T67",
+          "T69"
+        ],
+        "evidence_quote": "or, or, you know, a sudden headache ... you would need to take your to A and E",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C29",
+      "section": "plan",
+      "claim_text": "Advise patient to seek A&E if violent sickness occurs",
+      "verdict": {
+        "analysis": "In T69, the doctor states that if the patient \"start being violently sick with it, then you know, you would need to take your to A and E.\" This supports the claim.",
+        "status": "supported",
+        "evidence_turns": [
+          "T69"
+        ],
+        "evidence_quote": "or you start being violently sick with it, then you know, you would need to take your to A and E",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C30",
+      "section": "plan",
+      "claim_text": "Patient to call support to book appointment.",
+      "verdict": {
+        "analysis": "In T81, the doctor instructs, \"Just make sure you call support to book that appointment, OK?\" This directly supports the plan for the patient to call support.",
+        "status": "supported",
+        "evidence_turns": [
+          "T81"
+        ],
+        "evidence_quote": "Just make sure you call support to book that appointment",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C31",
+      "section": "plan",
+      "claim_text": "Medication can be taken with food",
+      "verdict": {
+        "analysis": "In T79, the doctor states, \"It doesn't really matter, you can take it,\" in response to the patient asking if it needs to be taken with food. This implies it can be taken with or without food, supporting the claim that it can be taken with food.",
+        "status": "supported",
+        "evidence_turns": [
+          "T78",
+          "T79"
+        ],
+        "evidence_quote": "It doesn't really matter, you can take it",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    },
+    {
+      "encounter_id": "day3_consultation05",
+      "claim_id": "C32",
+      "section": "plan",
+      "claim_text": "Medication can be taken without food",
+      "verdict": {
+        "analysis": "In T79, the doctor states, \"It doesn't really matter, you can take it,\" indicating that taking the medication with or without food is acceptable. This supports the claim that it can be taken without food.",
+        "status": "supported",
+        "evidence_turns": [
+          "T78",
+          "T79"
+        ],
+        "evidence_quote": "It doesn't really matter, you can take it",
+        "reason": ""
+      },
+      "quote_valid": true,
+      "turns_valid": true,
+      "error": null,
+      "via": "batch",
+      "turn_corrected": false,
+      "cited_turns_original": [],
+      "needs_review": false
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+T1 [Patient] (2.0s): Hello.
+T2 [Doctor] (2.7s): Hello, hi, I'm Doctor Jacob and welcome to Babylon. Hello.
+T3 [Patient] (7.3s): Nice to meet you.
+T4 [Doctor] (8.0s): Nice to meet you too. So just before we start, is it all right if you could confirm your name for me please?
+T5 [Patient] (15.3s): Michael John .
+T6 [Doctor] (16.7s): And your date of birth?
+T7 [Patient] (19.4s): Oh nine two nine eighty-three.
+T8 [Doctor] (22.2s): OK, and your address for me please.
+T9 [Patient] (26.2s): Two three one, Leonard, London street uh, sorry, London.
+T10 [Doctor] (32.5s): OK and that's correct, and just to confirm that you're in a secure location and we can have a confidential conversation.
+T11 [Patient] (39.3s): Yes.
+T12 [Doctor] (40.1s): OK, uh, you've mentioned on our notes that you're suffering from bad diarrhea. I'm sorry to hear about it. So if you tell me a bit more about it, please.
+T13 [Patient] (49.2s): Uh, it's been happening for about, three days now? Um, yeah it, started off uh, was, I don't know it's just something that I thought would go away pretty quickly.
+T14 [Doctor] (53.6s): OK.
+T15 [Patient] (64.7s): I've had that from time to time after eating certain types of food or going on certain travels, but, uh nothing funky in my diet and no travels recently, um and it just kinda kept up. I'm a bit confused as to what to do .
+T16 [Doctor] (69.7s): Mmm.
+T17 [Doctor] (77.0s): Mm-hmm.
+T18 [Doctor] (80.4s): So you haven't had anything from outside? Nothing dodgy anything ? No.
+T19 [Patient] (85.3s): No, no no no, just a little bit, yeah I I don't know I mean it's pretty standard diarrhoea, where it's was like a little bit of abdominal pain. I threw up once, that was a little worrying, uh.
+T20 [Doctor] (96.9s): Mm-hmm.
+T21 [Doctor] (99.9s): Repeat that please, that wasn't clear. What did you say?
+T22 [Patient] (103.0s): I threw up once, yeah.
+T23 [Doctor] (104.6s): After that we'd said something.
+T24 [Patient] (108.1s): Uh, nothing else was worrisome.
+T25 [Doctor] (111.1s): OK, right, and with the diarrhea, how many times a day are you going to the toilet?
+T26 [Patient] (117.8s): Uh, four to five.
+T27 [Doctor] (120.7s): Four to five times, yeah. And is there any? And it's like water? Is it like water or is it just loose?
+T28 [Patient] (128.9s): Uh, what do you mean?
+T29 [Doctor] (131.7s): Are you going like water? Or is it just, you know bit, bit of solid stools, bit loose kind of thing?
+T30 [Patient] (141.0s): It probably depends on the time of day to be honest, .
+T31 [Doctor] (143.4s): Sure OK. Bit of both and is there any blood or mucus?
+T32 [Patient] (149.7s): No blood. What do you mean mucus?
+T33 [Doctor] (152.6s): It's like the snotty stuff.
+T34 [Patient] (155.5s): In the stool?
+T35 [Doctor] (156.3s): Yeah, it looks like snot .
+T36 [Patient] (159.2s): No.
+T37 [Doctor] (159.8s): No, so no mucus, OK. Any fever at all?
+T38 [Patient] (165.4s): Uh, maybe a little bit, but.
+T39 [Doctor] (169.0s): Mm-hmm.
+T40 [Patient] (170.8s): It hasn't been, that in particular hasn't been too worrying.
+T41 [Doctor] (174.8s): Are you still able to eat, and drink?
+T42 [Patient] (179.4s): Uh, a little bit of.
+T43 [Patient] (182.4s): Appetite loss I guess worse than normal, but also not something I've, like I, if that was alone I wouldn't have, reached out.
+T44 [Doctor] (185.3s): OK.
+T45 [Doctor] (191.4s): Sure. So but you're you're still able to drink quite a bit yeah? You're drinking plenty.
+T46 [Patient] (196.9s): Yeah yeah yeah.
+T47 [Doctor] (198.2s): OK. Excellent.
+T48 [Patient] (200.0s): Mostly it's been dry and red.
+T49 [Doctor] (202.1s): OK, and, um, what have you take, have you taken anything so far for the diarrhea?
+T50 [Patient] (208.7s): Nothing yet.
+T51 [Doctor] (209.6s): Nothing yet, OK. Anything for the abdominal pain?
+T52 [Patient] (214.4s): Uh, nothing yet.
+T53 [Doctor] (216.1s): OK. Right, and any unfortunately we don't have any of your past medical history, is there anything you'd like to say?
+T54 [Patient] (225.5s): Uh, I.
+T55 [Patient] (229.2s): Probably I I had asthma.
+T56 [Doctor] (231.7s): Mm-hmm.
+T57 [Patient] (231.8s): Um or, or I don't know I guess I still have it.
+T58 [Doctor] (235.0s): OK and uh, are you, any, uh, anything else other than asthma?
+T59 [Patient] (240.3s): Uh, my dad had hypertension.
+T60 [Doctor] (244.6s): OK.
+T61 [Patient] (245.6s): Has hypertension. Had hypertension. Yeah he died of bowel cancer ten years ago.
+T62 [Doctor] (246.8s): Yeah .
+T63 [Doctor] (251.4s): Ohh dear, OK. Bowel cancer. Ten years ago. And how old was he when he died?
+T64 [Patient] (258.2s): Uh, sixty-two.
+T65 [Doctor] (260.4s): K, and um, you mentioned you had asthma, are you using any inhalers at all?
+T66 [Patient] (267.2s): Yes.
+T67 [Doctor] (268.4s): Which ones?
+T68 [Patient] (270.2s): Lexapro.
+T69 [Doctor] (272.0s): Sorry?
+T70 [Patient] (273.2s): Lexapro.
+T71 [Doctor] (275.3s): Laxepro.
+T72 [Patient] (277.9s): Yes.
+T73 [Doctor] (279.8s): OK, not heard of it may. Is it like Salbutamol? Is it like a blue colour?
+T74 [Patient] (285.9s): Yellow.
+T75 [Doctor] (287.4s): Yellow, OK. I'll have to check that one, not sure. Laxepro.
+T76 [Doctor] (293.8s): OK. Um, that's fine. Any other medication that you're using?
+T77 [Doctor] (299.4s): Over the counter, anything at all?
+T78 [Doctor] (302.3s): OK. Right. Any allergies?
+T79 [Patient] (302.3s): No.
+T80 [Patient] (309.7s): Nothing, yeah, nothing.
+T81 [Doctor] (312.7s): No allergies at all, righty . Fine so, obviously, you know you just have diarrhea it's about four to five times a day. Um, you're still drinking plenty and you look like you're not dehydrated which is a good sign, OK? Um, when we start worrying about diarrhea is if you're going more than eight times a day.
+T82 [Doctor] (335.3s): That means probably you are, you know, whatever you're eating is going straight through, OK? You still need to drink plenty of water because you're losing a lot of fluids.
+T83 [Patient] (345.8s): Mmm.
+T84 [Doctor] (346.2s): OK, when you go to the toilet. Um, things that one would advise is a soft diet. So avoid dairy, fish, meat, eggs, while you're having the diarrhea. Go, sorry?
+T85 [Patient] (357.4s): Soft .
+T86 [Patient] (361.1s): What is a soft diet? What does that ? Like, outside of, not those things, what do you mean by soft?
+T87 [Doctor] (366.3s): OK, so that will be like crackers, toast, jam, those kind of things that's easily digested. Like what we are good give babies yeah. When they start eating you give, simple food for babies. You don't give eggs or meat the first time they start feeding. So that's the kind of soft diet we're talking about, yeah? Once you are able to, you know keep most of it in, you can start off with some just boiled vegetables and mash.
+T88 [Doctor] (393.1s): Once you're OK with that for about forty-eight hours then you can start having meat. So just don't have meat once you feel like you're slightly better, because you might go back to square one again, all right?
+T89 [Patient] (405.6s): What do you mean OK with that diet, like once?
+T90 [Doctor] (409.1s): Forty-eight hours you're not having any diarrhea, you're fine then you can go and start having meat, egg, fish and all. So that .
+T91 [Patient] (416.1s): OK, if if the diarrhoea is getting better but isn't getting, or do you want it to go away completely at that point, or if it's like trending upwards?
+T92 [Doctor] (426.9s): No, no, no preferably just don't because, what why do we say this? It's because it takes much more time for meat to get digested. So because your gut flora, you know, the, the, the bacteria in your gut is not you know as it should be, it takes a bit more effort for one to digest these food.
+T93 [Doctor] (447.3s): While it doesn't take that much of an effort to, you know digest mash and vegetables. Does that make sense?
+T94 [Patient] (454.3s): Yes.
+T95 [Doctor] (455.2s): Yeah? So, um, at the same time you could have some, although you can't milk is not a good idea, yoghurts are a good idea because they are probiotics, it help to build up the normal, um gut, gut bacteria back.
+T96 [Doctor] (472.0s): OK.
+T97 [Patient] (472.2s): OK.
+T98 [Doctor] (473.1s): So those kinda, now, things to look out for, if your diarrhoea doesn't go away in a week's time, or if you're passing blood, we need a stool sample, because that means you you may have , um, some particular bugs that might need treatment with antibiotics.
+T99 [Patient] (492.4s): OK.
+T100 [Doctor] (493.2s): OK. If you're again, as I've mentioned previously if you're going about six to eight times a day, that means there's a high chance that, uh, you are, having dehydration and you might need to go into hospital at that point in time. If that happens you get in touch with us again, all right?
+T101 [Patient] (514.5s): OK.
+T102 [Doctor] (515.3s): Any questions? You look a bit confused.
+T103 [Patient] (519.1s): No, that's it.
+T104 [Doctor] (520.3s): Yeah? OK and also you could get something called Dioralyte over the counter. So, it helps to uh, replenish your, the salts that you've been, that's lost through going to the toilet.
+T105 [Patient] (534.2s): OK.
+T106 [Doctor] (535.1s): OK? If you're a bit confused you know you can actually, uh, all this is all recorded in your app. So you can go back. I'll put that all in detail so if, you know I know sometimes it's a bit difficult to process everything, you can go back and read, read the notes.
+T107 [Patient] (552.8s): Perfect, that's great.
+T108 [Doctor] (552.9s): Is that OK?
+T109 [Doctor] (555.2s): All right then, you take care.
+T110 [Patient] (557.9s): Bye.
+T111 [Doctor] (558.5s): Bye now, bye bye.
