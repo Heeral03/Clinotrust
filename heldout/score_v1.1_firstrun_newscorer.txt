@@ -1,0 +1,195 @@
+SCORING VERDICTS FROM: outputs/verdicts/heldout-v1.1-batched
+  5 verdict files, 152 verdicts for the selected encounters
+  labels: heldout/claims_labeled.csv   encounters: 03, 04, 05, 08, 10
+
+==============================================================================
+ALL ROWS   [outputs/verdicts/heldout-v1.1-batched]
+==============================================================================
+gold-labeled claims: 152   scored: 150   no verdict: 2   text mismatch: 0
+  no verdict for: 03:C30, 10:C2
+
+4-class confusion matrix (rows = YOUR label, columns = VERIFIER)
+                   supported  contradicted   unsupported     uncertain         total
+supported                125             1             1             1           128
+contradicted               0             2             0             3             5
+unsupported                0             0             3             0             3
+uncertain                  8             0             2             4            14
+
+binary: positive = NOT SUPPORTED (contradicted + unsupported + uncertain)
+                      verifier: not supported   verifier: supported
+  you: not supported  TP=14                 FN=8   (errors the verifier missed)
+  you: supported      FP=3                  TN=125   (correct claims it wrongly flagged)
+  precision=0.824  recall=0.636  F1=0.718  4-class accuracy=0.893
+  quotes: 142 given, 2 with quote_valid=False, 2 turn ids corrected
+
+flagging on needs_review = (status != supported) OR (quote_valid is False):
+  you: not supported  TP=14                 FN=8
+  you: supported      FP=5                  TN=123
+  precision=0.737  recall=0.636
+
+recall per error_type (share of that error_type's claims flagged; status | needs_review)
+  negation             n=1   (you: not-supported 1 )  status 1/1 = 1.000   needs_review 1/1 = 1.000
+  overstated           n=6   (you: not-supported 6 )  status 2/6 = 0.333   needs_review 2/6 = 0.333
+  over_interpretation  n=4   (you: not-supported 4 )  status 2/4 = 0.500   needs_review 2/4 = 0.500
+  wrong_section        n=4   (you: not-supported 4 )  status 4/4 = 1.000   needs_review 4/4 = 1.000
+  other                n=5   (you: not-supported 5 )  status 5/5 = 1.000   needs_review 5/5 = 1.000
+  decomposition_error  n=2   (you: not-supported 2 )  status 0/2 = 0.000   needs_review 0/2 = 0.000
+
+no-verdict handling (claims with no usable verdict: 2 = 2 gold not-supported + 0 gold supported)
+  (a) as missed errors  [main numbers above]  precision=0.824  recall=0.636   (on 150 scored claims; missing ones left out)
+  (b) as flagged for human review (safety policy)  precision=0.842  recall=0.667   (TP=16 FP=3 FN=8)
+
+verdicts with analysis_truncated=True (scored claims): 0
+
+recall by section (gold not-supported claims flagged by status)
+  subjective   10/15 = 0.667
+  objective    3/3 = 1.000
+  assessment   0/0 = n/a
+  plan         1/4 = 0.250
+
+disagreements (4-class): 16
+
+[03 C7] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient can walk a mile without SOB
+  YOU     : uncertain / overstated   turns=T86;T87;T129   quote="That's right, yes."
+  VERIFIER: supported   turns=['T86', 'T87']   quote="you can walk about a mile and you don't feel short of breath at all. ... That's right, yes."   quote_valid=True
+  analysis: In T86, the doctor states, 'you can walk about a mile and you don't feel short of breath at all.' The patient confirms this in T87 with 'That's right, yes.'
+
+[03 C14] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports no bowel changes
+  YOU     : uncertain / overstated   turns=T59   quote="I don't really have problems when going to the toilet"
+  VERIFIER: supported   turns=['T55', 'T59', 'T65', 'T67']   quote="That's OK, I would say... no, no, nothing."   quote_valid=True
+  analysis: The doctor asks about bowels (T55) and later asks if there is blood or mucus (T65). The patient says bowels are 'OK' (T59) and 'no, no, nothing' regarding blood/mucus (T67). The doctor summarizes 'your bowels are fine' (T128). This supports the report of no significant bowel changes.
+
+[03 C21] FALSE ALARM (gold supported, verifier flags it)
+  claim   : Not documented
+  YOU     : supported / none   turns=-   quote=''
+  VERIFIER: contradicted   turns=['T117']   quote="I'm not quite clear on what picture we are having here"   quote_valid=True
+  analysis: The transcript contains the doctor's clinical impression in T117, where he states he is "not quite clear on what picture we are having here" and notes the symptoms are opposite to typical underactive thyroid. This constitutes a documented assessment.
+
+[03 C22] same side, different label
+  claim   : Order a general set of blood tests to evaluate thyroid function
+  YOU     : uncertain / over_interpretation   turns=T119   quote='vitamin levels, and your'
+  VERIFIER: unsupported   turns=-   quote=''   quote_valid=None
+  analysis: The doctor orders a "general set of bloods" in T119 to check for anaemia, kidney/liver function, and vitamins. While thyroid issues are discussed, the specific plan for blood tests does not explicitly state the purpose is to evaluate thyroid function, but rather general health markers.
+
+[03 C29] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient advised to seek urgent care (A&E) if worsening palpitations develop
+  YOU     : uncertain / over_interpretation   turns=T128   quote='Obviously with palpitations or chest pain'
+  VERIFIER: supported   turns=['T128']   quote='with palpitations or chest pain... You need to go to A and E'   quote_valid=True
+  analysis: In T128, the doctor states, "Obviously with palpitations or chest pain... You need to go to A and E for that." This directly advises seeking urgent care for palpitations.
+
+[04 C3] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports tightness worsened when running
+  YOU     : uncertain / decomposition_error   turns=T12   quote='I was running with a friend'
+  VERIFIER: supported   turns=['T12']   quote='I was running with a friend... I found myself actually short of breath.'   quote_valid=True
+  analysis: In T12, the patient states, 'I was running with a friend... I found myself actually short of breath.' This directly supports the claim that tightness (shortness of breath) worsened during running.
+
+[04 C4] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports tightness worsened when walking briskly
+  YOU     : uncertain / decomposition_error   turns=T12   quote="if I'm walking briskly now"
+  VERIFIER: supported   turns=['T12']   quote="but definitely um, if I'm walking briskly now"   quote_valid=True
+  analysis: In T12, the patient states, "but definitely um, if I'm walking briskly now," in the context of being short of breath. This confirms the symptom occurs/worsens when walking briskly.
+
+[04 C24] FALSE ALARM (gold supported, verifier flags it)
+  claim   : Patient reports peak flow reading when good about 380.
+  YOU     : supported / none   turns=T59;T60   quote='three eighty'
+  VERIFIER: unsupported   turns=-   quote=''   quote_valid=None
+  analysis: The doctor asked for the normal peak flow reading (T55-T56). The patient hesitated (T57-T58), and the doctor suggested "three eighty" (T59), which the patient confirmed with "Yeah" (T60). The patient did not state the number; the doctor did. Thus, the patient did not report it.
+
+[04 C26] same side, different label
+  claim   : Peak flow reading when good: 380.
+  YOU     : contradicted / wrong_section   turns=T54;T55   quote="peak flow reading when you're good"
+  VERIFIER: uncertain   turns=['T59', 'T60']   quote="it's about, um, three eighty, yeah? ... Yeah."   quote_valid=True
+  analysis: The transcript shows the doctor suggesting the value 380 and the patient agreeing. However, no actual measurement or examination finding is recorded in the transcript; it is a conversational confirmation of a reported value, not an objective clinical observation recorded by the clinician.
+
+[05 C21] same side, different label
+  claim   : No weakness of arms
+  YOU     : contradicted / wrong_section   turns=T43;T44   quote='My, my legs and arms and everything are working fine'
+  VERIFIER: uncertain   turns=['T43', 'T44']   quote="my legs and arms and everything are working fine ... So there's no weakness of your arms and legs."   quote_valid=True
+  analysis: The transcript records the patient's report that her arms are working fine (T43) and the doctor's verbal confirmation (T44). However, the section is Objective, which requires a clinician-stated examination finding. Since no physical examination was performed in the transcript, this is not supported as an Objective finding.
+
+[05 C22] same side, different label
+  claim   : No weakness of legs
+  YOU     : contradicted / wrong_section   turns=T43;T44   quote='My, my legs and arms and everything are working fine'
+  VERIFIER: uncertain   turns=['T43', 'T44']   quote="my legs and arms and everything are working fine ... So there's no weakness of your arms and legs."   quote_valid=True
+  analysis: Similar to C21, the transcript contains the patient's report of no weakness and the doctor's verbal acknowledgment (T43, T44). It does not contain a documented clinical examination finding, which is required for an Objective section claim.
+
+[05 C28] MISSED (gold not-supported, verifier says supported)
+  claim   : Advise patient to seek A&E if headache
+  YOU     : uncertain / overstated   turns=T67   quote='a sudden headache'
+  VERIFIER: supported   turns=['T67', 'T69']   quote='or, or, you know, a sudden headache ... you would need to take your to A and E'   quote_valid=True
+  analysis: In T67 and T69, the doctor lists "a sudden headache" as a symptom that would require the patient to go to A&E. This supports the claim.
+
+[08 C21] FALSE ALARM (gold supported, verifier flags it)
+  claim   : No palpable glands in the neck.
+  YOU     : supported / none   turns=T57;T59   quote="No, I haven't had anything like that."
+  VERIFIER: uncertain   turns=['T57', 'T58', 'T59']   quote="Can you feel any glands around your neck, at all? ... No. No. ... No, I haven't had anything like that."   quote_valid=True
+  analysis: The doctor asked if the patient could feel any glands around the neck (T57). The patient responded "No" (T58) and "No, I haven't had anything like that" (T59). This is a patient report, not a clinician's physical examination finding. Therefore, it does not support an Objective claim.
+
+[10 C9] MISSED (gold not-supported, verifier says supported)
+  claim   : Patient reports stool is a mix of liquid and loose
+  YOU     : uncertain / over_interpretation   turns=T30;T31   quote='It probably depends on the time of day to be honest'
+  VERIFIER: supported   turns=['T30', 'T31']   quote='It probably depends on the time of day to be honest ... Bit of both'   quote_valid=True
+  analysis: In T30, the patient describes the stool consistency as depending on the time of day. In T31, the doctor summarizes this as "Bit of both" (referring to the previous question about water vs. loose/solid), and the patient does not correct this, implying a mix of liquid and loose stools.
+
+[10 C17] same side, different label
+  claim   : Patient reports no other medication
+  YOU     : uncertain / other   turns=T76;T77;T79;T80   quote='No.'
+  VERIFIER: unsupported   turns=-   quote=''   quote_valid=None
+  analysis: The doctor asked about other medications (T76-T77). The patient did not provide a verbal answer to this specific question; the transcript shows the doctor immediately moving to the next topic (allergies) in T78. Therefore, the claim that the patient reported no other medication is not supported by the transcript.
+
+[10 C28] MISSED (gold not-supported, verifier says supported)
+  claim   : Follow up if symptoms worsen
+  YOU     : uncertain / overstated   turns=T100   quote='you get in touch with us again'
+  VERIFIER: supported   turns=['T100']   quote='If that happens you get in touch with us again'   quote_valid=True
+  analysis: In T100, the doctor instructs, 'If that happens you get in touch with us again,' referring to the scenario of high frequency/dehydration. This constitutes a follow-up instruction if symptoms worsen.
+
+==============================================================================
+EXCLUDING error_type = decomposition_error   [outputs/verdicts/heldout-v1.1-batched]
+==============================================================================
+gold-labeled claims: 150   scored: 148   no verdict: 2   text mismatch: 0
+  no verdict for: 03:C30, 10:C2
+
+4-class confusion matrix (rows = YOUR label, columns = VERIFIER)
+                   supported  contradicted   unsupported     uncertain         total
+supported                125             1             1             1           128
+contradicted               0             2             0             3             5
+unsupported                0             0             3             0             3
+uncertain                  6             0             2             4            12
+
+binary: positive = NOT SUPPORTED (contradicted + unsupported + uncertain)
+                      verifier: not supported   verifier: supported
+  you: not supported  TP=14                 FN=6   (errors the verifier missed)
+  you: supported      FP=3                  TN=125   (correct claims it wrongly flagged)
+  precision=0.824  recall=0.700  F1=0.757  4-class accuracy=0.905
+  quotes: 140 given, 2 with quote_valid=False, 2 turn ids corrected
+
+flagging on needs_review = (status != supported) OR (quote_valid is False):
+  you: not supported  TP=14                 FN=6
+  you: supported      FP=5                  TN=123
+  precision=0.737  recall=0.700
+
+recall per error_type (share of that error_type's claims flagged; status | needs_review)
+  negation             n=1   (you: not-supported 1 )  status 1/1 = 1.000   needs_review 1/1 = 1.000
+  overstated           n=6   (you: not-supported 6 )  status 2/6 = 0.333   needs_review 2/6 = 0.333
+  over_interpretation  n=4   (you: not-supported 4 )  status 2/4 = 0.500   needs_review 2/4 = 0.500
+  wrong_section        n=4   (you: not-supported 4 )  status 4/4 = 1.000   needs_review 4/4 = 1.000
+  other                n=5   (you: not-supported 5 )  status 5/5 = 1.000   needs_review 5/5 = 1.000
+
+comparison folders:  single=outputs/verdicts/verifier-v0   batched=outputs/verdicts/verifier-v0-batched
+
+==============================================================================
+SINGLE vs BATCHED (claims with a usable verdict in both)
+==============================================================================
+no claims have both a single and a batched verdict yet.
+
+==============================================================================
+v0 vs v1 PROMPT, same claims, same labels  [ALL ROWS; v0=outputs/verdicts/verifier-v0-batched v1=outputs/verdicts/verifier-v1-batched]
+==============================================================================
+no claims have a usable verdict in both folders yet.
+
+==============================================================================
+v0 vs v1 PROMPT, same claims, same labels  [EXCLUDING decomposition_error; v0=outputs/verdicts/verifier-v0-batched v1=outputs/verdicts/verifier-v1-batched]
+==============================================================================
+no claims have a usable verdict in both folders yet.
